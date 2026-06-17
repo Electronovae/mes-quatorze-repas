@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mes 14 repas">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#F1ECE0">
+<meta name="description" content="Compose tes 14 repas de la semaine par catégories à quotas, avec recettes, ingrédients ajustables en portions et liste de courses.">
+<title>Mes 14 repas</title>
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%232F5D45'/%3E%3Ctext x='60' y='80' font-family='Georgia,serif' font-size='56' font-weight='700' fill='white' text-anchor='middle'%3E14%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%232F5D45'/%3E%3Ctext x='60' y='80' font-family='Georgia,serif' font-size='56' font-weight='700' fill='white' text-anchor='middle'%3E14%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-bar"><h1>Mes 14 repas</h1></div>
+
+<div class="summary-bar">
+  <div class="summary-stats">
+    <div><p class="label">Repas choisis</p><p class="value" id="count-out">0 / 14</p></div>
+    <div><p class="label">Coût estimé</p><p class="value" id="cost-out">0,00 €</p></div>
+  </div>
+  <div class="summary-actions">
+    <button class="btn" id="clear-btn">Vider</button>
+    <button class="btn btn-primary" id="draw-btn">Tirer la semaine</button>
+  </div>
+</div>
+
+<div class="view" id="view-choisir" role="tabpanel">
+  <p class="hint">Touche un plat pour l'ajouter, jusqu'au quota indiqué pour chaque catégorie.</p>
+  <div id="categories"></div>
+</div>
+
+<div class="view hidden" id="view-semaine" role="tabpanel">
+  <p class="hint">Touche un repas pour voir ses ingrédients et sa recette. Le nombre de portions ajuste les quantités et le coût.</p>
+  <div id="week-list"></div>
+</div>
+
+<div class="view hidden" id="view-courses" role="tabpanel">
+  <div class="shopping-header">
+    <p class="hint" style="margin:0;">Liste cumulée sur tes repas choisis, selon les portions réglées.</p>
+    <button class="btn" id="copy-list-btn">Copier la liste</button>
+  </div>
+  <ul class="shopping-list" id="shopping-list"></ul>
+</div>
+
+<div class="tabbar" role="tablist">
+  <button class="tab-btn active" data-view="choisir" role="tab" aria-selected="true">Choisir</button>
+  <button class="tab-btn" data-view="semaine" role="tab" aria-selected="false">Ma semaine</button>
+  <button class="tab-btn" data-view="courses" role="tab" aria-selected="false">Courses</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
