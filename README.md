@@ -1,5 +1,7 @@
 # Mes 14 repas
 
+Site en ligne : https://electronovae.github.io/mes-quatorze-repas/
+
 Petite application web pour composer 14 repas par semaine à partir de catégories à quotas (volaille, légumineuses, poisson maigre, poisson gras, viande rouge, plaisirs allégés, végétarien), avec recettes, ingrédients ajustables en nombre de portions, et génération d'une liste de courses cumulée.
 
 ## Utilisation
@@ -26,7 +28,7 @@ puis ouvrir `http://localhost:8000` dans le navigateur.
 
 1. Créer un dépôt GitHub et y pousser ces fichiers.
 2. Dans les paramètres du dépôt, section Pages, choisir la branche principale comme source.
-3. L'application est alors accessible à une adresse du type `https://nom-utilisateur.github.io/nom-du-depot/`.
+3. L'application est déjà en ligne à cette adresse : https://electronovae.github.io/mes-quatorze-repas/
 4. Cette adresse peut être ajoutée à l'écran d'accueil sur téléphone (Safari : partager puis "Sur l'écran d'accueil" ; Chrome Android : menu puis "Ajouter à l'écran d'accueil").
 
 ## Étendre la liste de repas

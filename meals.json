@@ -12,12 +12,36 @@
           "benefit": "Protéine maigre et fibres du brocoli, sauce maison pour limiter le sel et le sucre.",
           "pricePerPortion": 2.8,
           "ingredients": [
-            {"name": "Blanc de poulet", "qty": 150, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Brocolis", "qty": 200, "unit": "g"},
-            {"name": "Sauce soja réduite en sel", "qty": 15, "unit": "ml"},
-            {"name": "Miel", "qty": 10, "unit": "g"},
-            {"name": "Gingembre frais", "qty": 5, "unit": "g"}
+            {
+              "name": "Blanc de poulet",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Brocolis",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            },
+            {
+              "name": "Miel",
+              "qty": 10,
+              "unit": "g"
+            },
+            {
+              "name": "Gingembre frais",
+              "qty": 5,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Couper le poulet en morceaux et le faire dorer à la poêle.",
@@ -32,11 +56,31 @@
           "benefit": "Bien moins de sel que la version classique, légumes sautés pour les fibres.",
           "pricePerPortion": 2.9,
           "ingredients": [
-            {"name": "Blanc de poulet", "qty": 150, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Légumes sautés (carotte, poivron, oignon)", "qty": 200, "unit": "g"},
-            {"name": "Sauce soja réduite en sel", "qty": 15, "unit": "ml"},
-            {"name": "Piment doux ou gochujang", "qty": 10, "unit": "g"}
+            {
+              "name": "Blanc de poulet",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes sautés (carotte, poivron, oignon)",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            },
+            {
+              "name": "Piment doux ou gochujang",
+              "qty": 10,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire mariner le poulet coupé en lanières avec sauce soja et piment doux.",
@@ -51,11 +95,31 @@
           "benefit": "Grosse densité de légumes pour peu de calories.",
           "pricePerPortion": 2.6,
           "ingredients": [
-            {"name": "Blanc de poulet", "qty": 130, "unit": "g"},
-            {"name": "Mélange de légumes pour wok", "qty": 250, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Sauce soja réduite en sel", "qty": 15, "unit": "ml"},
-            {"name": "Huile de colza", "qty": 5, "unit": "ml"}
+            {
+              "name": "Blanc de poulet",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Mélange de légumes pour wok",
+              "qty": 250,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            },
+            {
+              "name": "Huile de colza",
+              "qty": 5,
+              "unit": "ml"
+            }
           ],
           "recipe": [
             "Couper le poulet en lanières et le saisir dans l'huile de colza à feu vif.",
@@ -70,11 +134,31 @@
           "benefit": "Marinade au yaourt et épices, pas besoin de sel ajouté.",
           "pricePerPortion": 2.7,
           "ingredients": [
-            {"name": "Blanc de poulet", "qty": 140, "unit": "g"},
-            {"name": "Yaourt nature", "qty": 50, "unit": "g"},
-            {"name": "Épices tandoori", "qty": 10, "unit": "g"},
-            {"name": "Légumes à griller (poivron, courgette, oignon)", "qty": 200, "unit": "g"},
-            {"name": "Semoule crue", "qty": 60, "unit": "g"}
+            {
+              "name": "Blanc de poulet",
+              "qty": 140,
+              "unit": "g"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Épices tandoori",
+              "qty": 10,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes à griller (poivron, courgette, oignon)",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Semoule crue",
+              "qty": 60,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Mélanger le yaourt et les épices tandoori, y mariner le poulet en cubes au moins 30 minutes.",
@@ -89,12 +173,36 @@
           "benefit": "Parfums d'épices sans sel ajouté, fibres des carottes.",
           "pricePerPortion": 2.5,
           "ingredients": [
-            {"name": "Blanc de poulet", "qty": 130, "unit": "g"},
-            {"name": "Abricots secs", "qty": 40, "unit": "g"},
-            {"name": "Carottes", "qty": 100, "unit": "g"},
-            {"name": "Oignon", "qty": 50, "unit": "g"},
-            {"name": "Épices tajine (cumin, cannelle, curcuma)", "qty": 5, "unit": "g"},
-            {"name": "Semoule crue", "qty": 60, "unit": "g"}
+            {
+              "name": "Blanc de poulet",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Abricots secs",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Carottes",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Épices tajine (cumin, cannelle, curcuma)",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Semoule crue",
+              "qty": 60,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire revenir l'oignon et le poulet dans un fond d'huile.",
@@ -109,9 +217,21 @@
           "benefit": "La volaille la plus maigre, index glycémique modéré de la patate douce.",
           "pricePerPortion": 2.3,
           "ingredients": [
-            {"name": "Escalope de dinde", "qty": 130, "unit": "g"},
-            {"name": "Patate douce", "qty": 200, "unit": "g"},
-            {"name": "Haricots verts", "qty": 150, "unit": "g"}
+            {
+              "name": "Escalope de dinde",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Patate douce",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots verts",
+              "qty": 150,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire la patate douce à l'eau ou à la vapeur puis l'écraser en purée.",
@@ -126,11 +246,31 @@
           "benefit": "Version allégée du curry coco classique.",
           "pricePerPortion": 2.9,
           "ingredients": [
-            {"name": "Blanc de poulet", "qty": 140, "unit": "g"},
-            {"name": "Lait de coco allégé", "qty": 100, "unit": "ml"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Curry en poudre", "qty": 5, "unit": "g"},
-            {"name": "Oignon", "qty": 50, "unit": "g"}
+            {
+              "name": "Blanc de poulet",
+              "qty": 140,
+              "unit": "g"
+            },
+            {
+              "name": "Lait de coco allégé",
+              "qty": 100,
+              "unit": "ml"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Curry en poudre",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 50,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire revenir l'oignon puis le poulet coupé en morceaux.",
@@ -138,6 +278,488 @@
             "Cuire le riz à part.",
             "Servir le poulet nappé de sauce avec le riz."
           ]
+        },
+        {
+          "name": "Poulet basquaise allégé, riz",
+          "benefit": "Plat mijoté riche en légumes, peu de matière grasse ajoutée.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Poivrons",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir l'oignon et les poivrons coupés en lanières.",
+            "Ajouter le poulet en morceaux et le faire dorer.",
+            "Verser les tomates concassées et laisser mijoter 20 minutes.",
+            "Servir avec le riz."
+          ],
+          "id": "volaille-8"
+        },
+        {
+          "name": "Suprême de poulet à la moutarde légère, haricots verts, pommes de terre",
+          "benefit": "Sauce moutarde-yaourt sans crème, peu de sel.",
+          "pricePerPortion": 2.7,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Moutarde",
+              "qty": 15,
+              "unit": "g"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots verts",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Poêler le poulet quelques minutes de chaque côté.",
+            "Mélanger la moutarde et le yaourt, verser sur le poulet hors du feu.",
+            "Cuire les pommes de terre et les haricots verts à la vapeur.",
+            "Servir ensemble."
+          ],
+          "id": "volaille-9"
+        },
+        {
+          "name": "Poulet au citron et romarin, semoule, courgettes",
+          "benefit": "Aromates au lieu du sel, plat léger et parfumé.",
+          "pricePerPortion": 2.5,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.5,
+              "unit": "pièce"
+            },
+            {
+              "name": "Romarin",
+              "qty": 3,
+              "unit": "g"
+            },
+            {
+              "name": "Semoule crue",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Courgettes",
+              "qty": 200,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire mariner le poulet avec le jus de citron et le romarin.",
+            "Poêler ou cuire au four jusqu'à cuisson complète.",
+            "Cuire les courgettes à la vapeur et réhydrater la semoule.",
+            "Servir ensemble."
+          ],
+          "id": "volaille-10"
+        },
+        {
+          "name": "Émincé de poulet à l'orientale, boulgour, courgettes",
+          "benefit": "Épices à la place du sel, boulgour riche en fibres.",
+          "pricePerPortion": 2.5,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 140,
+              "unit": "g"
+            },
+            {
+              "name": "Cumin",
+              "qty": 3,
+              "unit": "g"
+            },
+            {
+              "name": "Paprika",
+              "qty": 3,
+              "unit": "g"
+            },
+            {
+              "name": "Boulgour cru",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Courgettes",
+              "qty": 200,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire mariner le poulet émincé avec cumin et paprika.",
+            "Le faire sauter à feu vif quelques minutes.",
+            "Cuire le boulgour et les courgettes à part.",
+            "Servir ensemble."
+          ],
+          "id": "volaille-11"
+        },
+        {
+          "name": "Brochettes de poulet teriyaki, riz, edamame",
+          "benefit": "Variante en brochettes du teriyaki, pratique pour varier la présentation.",
+          "pricePerPortion": 2.8,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            },
+            {
+              "name": "Miel",
+              "qty": 10,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Edamame",
+              "qty": 50,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire mariner le poulet en cubes dans la sauce soja et le miel.",
+            "Enfiler sur des brochettes et cuire à la poêle ou au four.",
+            "Cuire le riz et réchauffer les edamame.",
+            "Servir ensemble."
+          ],
+          "id": "volaille-12"
+        },
+        {
+          "name": "Poulet chasseur allégé, riz",
+          "benefit": "Sauce tomate-champignons sans crème ni vin en excès.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Champignons",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir l'oignon et les champignons.",
+            "Ajouter le poulet et le faire dorer.",
+            "Verser les tomates et laisser mijoter 15 minutes.",
+            "Servir avec le riz."
+          ],
+          "id": "volaille-13"
+        },
+        {
+          "name": "Wrap de poulet effiloché, tortilla complète, crudités, yaourt",
+          "benefit": "Format pratique pour un repas sur le pouce, sauce yaourt à la place de la mayonnaise.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 140,
+              "unit": "g"
+            },
+            {
+              "name": "Tortilla complète",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Crudités (salade, tomate, carotte)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 40,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire le poulet puis l'effilocher à la fourchette.",
+            "Mélanger le yaourt avec un peu de citron et d'herbes.",
+            "Garnir la tortilla de poulet, crudités et sauce.",
+            "Rouler et servir."
+          ],
+          "id": "volaille-14"
+        },
+        {
+          "name": "Poulet rôti aux herbes, pommes de terre grenaille, haricots verts",
+          "benefit": "Cuisson au four sans matière grasse ajoutée.",
+          "pricePerPortion": 2.4,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet ou cuisse",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Herbes de Provence",
+              "qty": 3,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre grenaille",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots verts",
+              "qty": 150,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Disposer le poulet et les pommes de terre sur une plaque avec les herbes.",
+            "Cuire au four 35 à 40 minutes à 200 degrés.",
+            "Cuire les haricots verts à la vapeur.",
+            "Servir ensemble."
+          ],
+          "id": "volaille-15"
+        },
+        {
+          "name": "Poulet à l'estragon allégé, riz, petits pois",
+          "benefit": "Sauce à l'estragon allégée au yaourt plutôt qu'à la crème.",
+          "pricePerPortion": 2.7,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Estragon",
+              "qty": 3,
+              "unit": "g"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Petits pois",
+              "qty": 100,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Poêler le poulet quelques minutes.",
+            "Ajouter l'estragon puis le yaourt hors du feu pour la sauce.",
+            "Cuire le riz et les petits pois.",
+            "Servir ensemble."
+          ],
+          "id": "volaille-16"
+        },
+        {
+          "name": "Sauté de poulet aux poivrons et oignons, riz",
+          "benefit": "Plat simple et rapide, riche en légumes colorés.",
+          "pricePerPortion": 2.4,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 140,
+              "unit": "g"
+            },
+            {
+              "name": "Poivrons",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Couper le poulet et les légumes en lanières.",
+            "Faire sauter le poulet quelques minutes puis ajouter les légumes.",
+            "Cuire jusqu'à ce que tout soit tendre.",
+            "Servir avec le riz."
+          ],
+          "id": "volaille-17"
+        },
+        {
+          "name": "Poulet mariné au paprika fumé, semoule, carottes",
+          "benefit": "Marinade aux épices fumées pour du goût sans sel.",
+          "pricePerPortion": 2.5,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Paprika fumé",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Semoule crue",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Carottes",
+              "qty": 150,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire mariner le poulet avec le paprika fumé et un peu d'huile.",
+            "Poêler ou cuire au four.",
+            "Cuire les carottes à la vapeur et réhydrater la semoule.",
+            "Servir ensemble."
+          ],
+          "id": "volaille-18"
+        },
+        {
+          "name": "Dinde à la provençale, pâtes complètes",
+          "benefit": "Volaille la plus maigre avec une sauce tomate maison peu salée.",
+          "pricePerPortion": 2.4,
+          "ingredients": [
+            {
+              "name": "Escalope de dinde",
+              "qty": 140,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Herbes de Provence",
+              "qty": 3,
+              "unit": "g"
+            },
+            {
+              "name": "Pâtes complètes crues",
+              "qty": 70,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Poêler la dinde coupée en morceaux.",
+            "Ajouter les tomates et les herbes, laisser mijoter 15 minutes.",
+            "Cuire les pâtes à part.",
+            "Mélanger ou servir à côté."
+          ],
+          "id": "volaille-19"
+        },
+        {
+          "name": "Poulet satay, riz, concombre",
+          "benefit": "Sauce cacahuète maison en petite quantité, moins sucrée que la version restaurant.",
+          "pricePerPortion": 2.9,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Beurre de cacahuète",
+              "qty": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 10,
+              "unit": "ml"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Concombre",
+              "qty": 100,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire mariner puis griller le poulet en brochettes.",
+            "Mélanger le beurre de cacahuète avec un peu d'eau chaude et la sauce soja pour la sauce.",
+            "Cuire le riz et couper le concombre.",
+            "Servir le poulet nappé de sauce avec le riz et le concombre."
+          ],
+          "id": "volaille-20"
         }
       ]
     },
@@ -153,12 +775,36 @@
           "benefit": "Deux légumineuses dans le même plat, comme l'a remarqué ta femme: profils de fibres complémentaires.",
           "pricePerPortion": 1.7,
           "ingredients": [
-            {"name": "Lentilles corail sèches", "qty": 40, "unit": "g"},
-            {"name": "Pois cassés secs", "qty": 30, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Oignon", "qty": 50, "unit": "g"},
-            {"name": "Curcuma", "qty": 3, "unit": "g"},
-            {"name": "Cumin", "qty": 3, "unit": "g"}
+            {
+              "name": "Lentilles corail sèches",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Pois cassés secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Curcuma",
+              "qty": 3,
+              "unit": "g"
+            },
+            {
+              "name": "Cumin",
+              "qty": 3,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire revenir l'oignon avec le curcuma et le cumin.",
@@ -173,12 +819,36 @@
           "benefit": "Même principe: deux légumineuses qui se complètent dans l'assiette.",
           "pricePerPortion": 1.85,
           "ingredients": [
-            {"name": "Pois chiches secs", "qty": 40, "unit": "g"},
-            {"name": "Lentilles vertes sèches", "qty": 30, "unit": "g"},
-            {"name": "Épinards", "qty": 100, "unit": "g"},
-            {"name": "Tomates concassées", "qty": 100, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Garam masala", "qty": 5, "unit": "g"}
+            {
+              "name": "Pois chiches secs",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Lentilles vertes sèches",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Épinards",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Garam masala",
+              "qty": 5,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire revenir un oignon avec le garam masala.",
@@ -193,12 +863,36 @@
           "benefit": "Mélange de légumineuses, aucune viande, très riche en fibres.",
           "pricePerPortion": 1.75,
           "ingredients": [
-            {"name": "Haricots rouges secs", "qty": 40, "unit": "g"},
-            {"name": "Pois chiches secs", "qty": 30, "unit": "g"},
-            {"name": "Maïs", "qty": 50, "unit": "g"},
-            {"name": "Poivrons", "qty": 100, "unit": "g"},
-            {"name": "Tomates concassées", "qty": 150, "unit": "g"},
-            {"name": "Épices chili (cumin, paprika, piment)", "qty": 5, "unit": "g"}
+            {
+              "name": "Haricots rouges secs",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Pois chiches secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Maïs",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Poivrons",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Épices chili (cumin, paprika, piment)",
+              "qty": 5,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire revenir les poivrons coupés en dés.",
@@ -213,11 +907,31 @@
           "benefit": "Plat froid pratique, deux légumineuses pour varier les apports.",
           "pricePerPortion": 1.65,
           "ingredients": [
-            {"name": "Lentilles sèches", "qty": 50, "unit": "g"},
-            {"name": "Pois chiches secs", "qty": 50, "unit": "g"},
-            {"name": "Tomates", "qty": 150, "unit": "g"},
-            {"name": "Oignon rouge", "qty": 30, "unit": "g"},
-            {"name": "Vinaigrette (huile d'olive, vinaigre)", "qty": 15, "unit": "ml"}
+            {
+              "name": "Lentilles sèches",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Pois chiches secs",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon rouge",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Vinaigrette (huile d'olive, vinaigre)",
+              "qty": 15,
+              "unit": "ml"
+            }
           ],
           "recipe": [
             "Cuire les lentilles et les pois chiches séparément jusqu'à tendreté.",
@@ -232,11 +946,31 @@
           "benefit": "Trois sources de légumineuses, très forte densité de fibres.",
           "pricePerPortion": 2.5,
           "ingredients": [
-            {"name": "Patate douce", "qty": 150, "unit": "g"},
-            {"name": "Pois chiches secs", "qty": 40, "unit": "g"},
-            {"name": "Edamame", "qty": 50, "unit": "g"},
-            {"name": "Houmous", "qty": 40, "unit": "g"},
-            {"name": "Quinoa cru", "qty": 60, "unit": "g"}
+            {
+              "name": "Patate douce",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pois chiches secs",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Edamame",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Houmous",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Quinoa cru",
+              "qty": 60,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire la patate douce coupée en dés au four ou à la vapeur.",
@@ -251,12 +985,36 @@
           "benefit": "Encore deux légumineuses associées, sans viande.",
           "pricePerPortion": 1.8,
           "ingredients": [
-            {"name": "Lentilles corail sèches", "qty": 40, "unit": "g"},
-            {"name": "Haricots blancs secs", "qty": 30, "unit": "g"},
-            {"name": "Légumes mélangés", "qty": 200, "unit": "g"},
-            {"name": "Lait de coco allégé", "qty": 50, "unit": "ml"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Curry en poudre", "qty": 5, "unit": "g"}
+            {
+              "name": "Lentilles corail sèches",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots blancs secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes mélangés",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Lait de coco allégé",
+              "qty": 50,
+              "unit": "ml"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Curry en poudre",
+              "qty": 5,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire revenir les légumes quelques minutes.",
@@ -264,6 +1022,517 @@
             "Laisser mijoter 20 minutes.",
             "Servir avec le riz."
           ]
+        },
+        {
+          "name": "Houmous de pois chiches et lentilles, crudités, pain complet",
+          "benefit": "Houmous maison combinant deux légumineuses, riche en fibres.",
+          "pricePerPortion": 1.5,
+          "ingredients": [
+            {
+              "name": "Pois chiches secs",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Lentilles sèches",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Crudités (carotte, concombre)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pain complet",
+              "qty": 1,
+              "unit": "tranche"
+            }
+          ],
+          "recipe": [
+            "Cuire les pois chiches et les lentilles jusqu'à tendreté.",
+            "Mixer avec un peu d'huile d'olive, citron et ail jusqu'à obtenir une pâte lisse.",
+            "Couper les crudités en bâtonnets.",
+            "Servir le houmous avec les crudités et le pain complet."
+          ],
+          "id": "legumineuses-7"
+        },
+        {
+          "name": "Curry de pois chiches et haricots rouges, épinards, riz",
+          "benefit": "Deux légumineuses associées, riche en fibres et sans viande.",
+          "pricePerPortion": 1.75,
+          "ingredients": [
+            {
+              "name": "Pois chiches secs",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots rouges secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Épinards",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Curry en poudre",
+              "qty": 5,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir un oignon avec le curry.",
+            "Ajouter les pois chiches, les haricots rouges et un peu d'eau, laisser mijoter 20 minutes.",
+            "Ajouter les épinards en fin de cuisson.",
+            "Servir avec le riz."
+          ],
+          "id": "legumineuses-8"
+        },
+        {
+          "name": "Soupe de lentilles corail et pois cassés, carottes",
+          "benefit": "Soupe réconfortante à deux légumineuses, très peu de sel nécessaire.",
+          "pricePerPortion": 1.4,
+          "ingredients": [
+            {
+              "name": "Lentilles corail sèches",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Pois cassés secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Carottes",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 40,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir l'oignon et les carottes en dés.",
+            "Ajouter les lentilles et les pois cassés rincés, couvrir d'eau.",
+            "Laisser cuire 25 minutes puis mixer si désiré.",
+            "Servir chaud."
+          ],
+          "id": "legumineuses-9"
+        },
+        {
+          "name": "Salade de haricots blancs et flageolets, tomates, basilic",
+          "benefit": "Salade froide pratique, deux légumineuses pour varier les fibres.",
+          "pricePerPortion": 1.6,
+          "ingredients": [
+            {
+              "name": "Haricots blancs secs",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Flageolets secs",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Basilic",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Vinaigrette",
+              "qty": 15,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Cuire les haricots blancs et les flageolets séparément jusqu'à tendreté.",
+            "Couper les tomates en dés.",
+            "Mélanger le tout avec le basilic et la vinaigrette.",
+            "Servir frais ou tiède."
+          ],
+          "id": "legumineuses-10"
+        },
+        {
+          "name": "Galettes de pois chiches et lentilles, salade",
+          "benefit": "Version maison des galettes végétales, deux légumineuses pour la texture et les fibres.",
+          "pricePerPortion": 1.7,
+          "ingredients": [
+            {
+              "name": "Pois chiches secs",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Lentilles sèches",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 80,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire les pois chiches et les lentilles puis les écraser grossièrement.",
+            "Mélanger avec l'oeuf et façonner des galettes.",
+            "Cuire à la poêle quelques minutes de chaque côté.",
+            "Servir avec la salade."
+          ],
+          "id": "legumineuses-11"
+        },
+        {
+          "name": "Riz cantonais aux légumes et edamame, oeuf",
+          "benefit": "Edamame comme source de légumineuse dans un plat familier.",
+          "pricePerPortion": 1.8,
+          "ingredients": [
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Edamame",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes (carotte, petits pois)",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 10,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Cuire le riz et le laisser refroidir si possible.",
+            "Faire sauter les légumes et les edamame.",
+            "Ajouter le riz et l'oeuf battu, bien mélanger en remuant.",
+            "Assaisonner avec la sauce soja."
+          ],
+          "id": "legumineuses-12"
+        },
+        {
+          "name": "Tacos de haricots noirs et maïs, tortilla complète, salade",
+          "benefit": "Deux légumineuses pour un repas mexicain léger et sans viande.",
+          "pricePerPortion": 1.65,
+          "ingredients": [
+            {
+              "name": "Haricots noirs secs",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Maïs",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Tortilla complète",
+              "qty": 2,
+              "unit": "pièce"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 80,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire les haricots noirs jusqu'à tendreté.",
+            "Mélanger avec le maïs et assaisonner.",
+            "Réchauffer les tortillas.",
+            "Garnir de haricots, maïs et salade."
+          ],
+          "id": "legumineuses-13"
+        },
+        {
+          "name": "Velouté de lentilles corail et pois chiches, croutons complets",
+          "benefit": "Velouté à deux légumineuses, fibres élevées pour peu de calories.",
+          "pricePerPortion": 1.5,
+          "ingredients": [
+            {
+              "name": "Lentilles corail sèches",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Pois chiches secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Pain complet",
+              "qty": 1,
+              "unit": "tranche"
+            }
+          ],
+          "recipe": [
+            "Faire revenir l'oignon.",
+            "Ajouter les lentilles et les pois chiches, couvrir d'eau et cuire 20 minutes.",
+            "Mixer jusqu'à obtenir un velouté.",
+            "Servir avec des croutons de pain complet."
+          ],
+          "id": "legumineuses-14"
+        },
+        {
+          "name": "Poêlée de flageolets et haricots verts, tomates",
+          "benefit": "Association légumineuse et légume vert frais, très digeste.",
+          "pricePerPortion": 1.5,
+          "ingredients": [
+            {
+              "name": "Flageolets secs",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots verts",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Ail",
+              "qty": 1,
+              "unit": "gousse"
+            }
+          ],
+          "recipe": [
+            "Cuire les flageolets jusqu'à tendreté.",
+            "Cuire les haricots verts à la vapeur.",
+            "Faire revenir l'ail et les tomates en dés.",
+            "Mélanger tous les éléments et servir tiède."
+          ],
+          "id": "legumineuses-15"
+        },
+        {
+          "name": "Curry de lentilles vertes et pois chiches, épinards, riz",
+          "benefit": "Encore une association de deux légumineuses pour varier les apports en fibres.",
+          "pricePerPortion": 1.75,
+          "ingredients": [
+            {
+              "name": "Lentilles vertes sèches",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Pois chiches secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Épinards",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Curry en poudre",
+              "qty": 5,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir un oignon avec le curry.",
+            "Ajouter les lentilles et les pois chiches, couvrir d'eau et laisser mijoter 20 minutes.",
+            "Ajouter les épinards en fin de cuisson.",
+            "Servir avec le riz."
+          ],
+          "id": "legumineuses-16"
+        },
+        {
+          "name": "Salade de pois chiches et edamame, concombre, menthe",
+          "benefit": "Salade fraîche à deux légumineuses, idéale en été.",
+          "pricePerPortion": 1.7,
+          "ingredients": [
+            {
+              "name": "Pois chiches secs",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Edamame",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Concombre",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Menthe",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Vinaigrette",
+              "qty": 15,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Cuire les pois chiches jusqu'à tendreté, décongeler les edamame.",
+            "Couper le concombre en dés.",
+            "Mélanger tous les ingrédients avec la menthe ciselée et la vinaigrette.",
+            "Servir frais."
+          ],
+          "id": "legumineuses-17"
+        },
+        {
+          "name": "Chili sin carne, haricots noirs et rouges, poivrons",
+          "benefit": "Variante du chili avec deux types de haricots, sans viande.",
+          "pricePerPortion": 1.7,
+          "ingredients": [
+            {
+              "name": "Haricots noirs secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots rouges secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Poivrons",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Épices chili",
+              "qty": 5,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir les poivrons en dés.",
+            "Ajouter les haricots, les tomates et les épices.",
+            "Laisser mijoter 20 minutes à couvert.",
+            "Servir tel quel ou avec du riz."
+          ],
+          "id": "legumineuses-18"
+        },
+        {
+          "name": "Couscous de légumineuses, légumes, semoule complète",
+          "benefit": "Version végétarienne du couscous, deux légumineuses pour les protéines.",
+          "pricePerPortion": 1.8,
+          "ingredients": [
+            {
+              "name": "Pois chiches secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Lentilles sèches",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes (carotte, courgette)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Semoule complète crue",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire les pois chiches et les lentilles séparément.",
+            "Cuire les légumes à la vapeur ou dans un bouillon léger.",
+            "Réhydrater la semoule.",
+            "Dresser le tout ensemble."
+          ],
+          "id": "legumineuses-19"
+        },
+        {
+          "name": "Dahl de lentilles jaunes et pois chiches, riz complet",
+          "benefit": "Variante du dahl avec des lentilles jaunes, toujours deux légumineuses associées.",
+          "pricePerPortion": 1.6,
+          "ingredients": [
+            {
+              "name": "Lentilles jaunes sèches",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Pois chiches secs",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Riz complet cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Curcuma",
+              "qty": 3,
+              "unit": "g"
+            },
+            {
+              "name": "Cumin",
+              "qty": 3,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir un oignon avec le curcuma et le cumin.",
+            "Ajouter les lentilles et les pois chiches, couvrir d'eau et cuire 20 à 25 minutes.",
+            "Cuire le riz complet à part.",
+            "Servir le dahl sur le riz."
+          ],
+          "id": "legumineuses-20"
         }
       ]
     },
@@ -279,11 +1548,31 @@
           "benefit": "Cuisson sans matière grasse, quasiment sans sel.",
           "pricePerPortion": 2.1,
           "ingredients": [
-            {"name": "Filet de colin", "qty": 130, "unit": "g"},
-            {"name": "Citron", "qty": 0.25, "unit": "pièce"},
-            {"name": "Herbes (persil, aneth)", "qty": 5, "unit": "g"},
-            {"name": "Légumes vapeur", "qty": 200, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"}
+            {
+              "name": "Filet de colin",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            },
+            {
+              "name": "Herbes (persil, aneth)",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes vapeur",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Poser le filet de colin sur une feuille de papillote avec citron et herbes.",
@@ -298,11 +1587,31 @@
           "benefit": "Très peu de graisses saturées, riche en protéines.",
           "pricePerPortion": 2.5,
           "ingredients": [
-            {"name": "Crevettes décortiquées", "qty": 120, "unit": "g"},
-            {"name": "Ail", "qty": 1, "unit": "gousse"},
-            {"name": "Citron", "qty": 0.25, "unit": "pièce"},
-            {"name": "Courgettes", "qty": 200, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"}
+            {
+              "name": "Crevettes décortiquées",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Ail",
+              "qty": 1,
+              "unit": "gousse"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            },
+            {
+              "name": "Courgettes",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire sauter les courgettes coupées en rondelles dans un peu d'huile.",
@@ -317,10 +1626,26 @@
           "benefit": "Poisson maigre, épices pour le goût sans ajouter de sel.",
           "pricePerPortion": 2.4,
           "ingredients": [
-            {"name": "Filet de colin ou cabillaud", "qty": 130, "unit": "g"},
-            {"name": "Lait de coco allégé", "qty": 100, "unit": "ml"},
-            {"name": "Légumes mélangés", "qty": 150, "unit": "g"},
-            {"name": "Curry en poudre", "qty": 5, "unit": "g"}
+            {
+              "name": "Filet de colin ou cabillaud",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Lait de coco allégé",
+              "qty": 100,
+              "unit": "ml"
+            },
+            {
+              "name": "Légumes mélangés",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Curry en poudre",
+              "qty": 5,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire revenir les légumes puis ajouter le curry.",
@@ -335,10 +1660,26 @@
           "benefit": "Version plus légère de ton classique, sauce réduite en beurre.",
           "pricePerPortion": 2.3,
           "ingredients": [
-            {"name": "Filet de poisson blanc", "qty": 130, "unit": "g"},
-            {"name": "Sauce hollandaise allégée", "qty": 40, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Brocolis", "qty": 150, "unit": "g"}
+            {
+              "name": "Filet de poisson blanc",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce hollandaise allégée",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Brocolis",
+              "qty": 150,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire le poisson au four ou à la vapeur.",
@@ -353,9 +1694,21 @@
           "benefit": "Poireaux riches en fibres, cuisson sans excès de matière grasse.",
           "pricePerPortion": 2.4,
           "ingredients": [
-            {"name": "Filet de cabillaud", "qty": 130, "unit": "g"},
-            {"name": "Pommes de terre", "qty": 200, "unit": "g"},
-            {"name": "Poireaux", "qty": 100, "unit": "g"}
+            {
+              "name": "Filet de cabillaud",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Poireaux",
+              "qty": 100,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire les pommes de terre à l'eau puis les écraser en purée.",
@@ -370,12 +1723,36 @@
           "benefit": "Bien moins sucré et salé que la version restaurant.",
           "pricePerPortion": 2.8,
           "ingredients": [
-            {"name": "Crevettes décortiquées", "qty": 120, "unit": "g"},
-            {"name": "Nouilles de riz crues", "qty": 70, "unit": "g"},
-            {"name": "Légumes (carotte, pousses de soja, poivron)", "qty": 150, "unit": "g"},
-            {"name": "Sauce soja réduite en sel", "qty": 15, "unit": "ml"},
-            {"name": "Citron", "qty": 0.25, "unit": "pièce"},
-            {"name": "Cacahuètes", "qty": 10, "unit": "g"}
+            {
+              "name": "Crevettes décortiquées",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Nouilles de riz crues",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes (carotte, pousses de soja, poivron)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            },
+            {
+              "name": "Cacahuètes",
+              "qty": 10,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire tremper les nouilles de riz selon les instructions du paquet.",
@@ -383,6 +1760,507 @@
             "Ajouter les nouilles égouttées et la sauce soja, bien mélanger.",
             "Servir avec un trait de citron et des cacahuètes concassées."
           ]
+        },
+        {
+          "name": "Tartare de poisson blanc mariné au citron, riz, concombre",
+          "benefit": "Préparation crue marinée, sans matière grasse de cuisson.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Filet de poisson blanc très frais",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.5,
+              "unit": "pièce"
+            },
+            {
+              "name": "Concombre",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Couper le poisson en petits dés.",
+            "Mariner dans le jus de citron pendant 10 minutes.",
+            "Couper le concombre en dés.",
+            "Servir avec le riz et le concombre."
+          ],
+          "id": "poisson-maigre-7"
+        },
+        {
+          "name": "Brochettes de crevettes marinées, riz, légumes grillés",
+          "benefit": "Marinade ail-citron sans sel ajouté.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Crevettes décortiquées",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Ail",
+              "qty": 1,
+              "unit": "gousse"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes à griller",
+              "qty": 150,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire mariner les crevettes avec l'ail et le citron.",
+            "Enfiler sur des brochettes et griller quelques minutes.",
+            "Griller les légumes à part.",
+            "Servir avec le riz."
+          ],
+          "id": "poisson-maigre-8"
+        },
+        {
+          "name": "Filet de sole meunière allégée, pommes de terre vapeur, haricots verts",
+          "benefit": "Version allégée de la meunière, peu de beurre utilisé.",
+          "pricePerPortion": 2.7,
+          "ingredients": [
+            {
+              "name": "Filet de sole",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots verts",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            }
+          ],
+          "recipe": [
+            "Cuire les pommes de terre et les haricots verts à la vapeur.",
+            "Poêler le filet de sole quelques minutes avec un peu de matière grasse.",
+            "Arroser de jus de citron.",
+            "Servir ensemble."
+          ],
+          "id": "poisson-maigre-9"
+        },
+        {
+          "name": "Curry de crevettes au lait de coco léger, riz",
+          "benefit": "Crustacé maigre, lait de coco en petite quantité.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Crevettes décortiquées",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Lait de coco allégé",
+              "qty": 100,
+              "unit": "ml"
+            },
+            {
+              "name": "Curry en poudre",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir le curry quelques secondes dans un fond d'huile.",
+            "Ajouter le lait de coco et laisser chauffer.",
+            "Ajouter les crevettes et cuire 3 à 4 minutes.",
+            "Servir avec le riz."
+          ],
+          "id": "poisson-maigre-10"
+        },
+        {
+          "name": "Soupe thaï de crevettes, nouilles de riz",
+          "benefit": "Bouillon parfumé sans sel ajouté, léger pour le soir.",
+          "pricePerPortion": 2.4,
+          "ingredients": [
+            {
+              "name": "Crevettes décortiquées",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Nouilles de riz crues",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Champignons",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            }
+          ],
+          "recipe": [
+            "Faire chauffer un bouillon avec le citron.",
+            "Ajouter les champignons puis les crevettes.",
+            "Ajouter les nouilles de riz précuites.",
+            "Servir chaud."
+          ],
+          "id": "poisson-maigre-11"
+        },
+        {
+          "name": "Merlu poêlé, purée de céleri-rave, brocolis",
+          "benefit": "Purée de céleri-rave en alternative à la pomme de terre, faible en sel.",
+          "pricePerPortion": 2.2,
+          "ingredients": [
+            {
+              "name": "Filet de merlu",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Céleri-rave",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Brocolis",
+              "qty": 150,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire le céleri-rave à l'eau puis l'écraser en purée.",
+            "Cuire les brocolis à la vapeur.",
+            "Poêler le merlu quelques minutes de chaque côté.",
+            "Servir ensemble."
+          ],
+          "id": "poisson-maigre-12"
+        },
+        {
+          "name": "Riz cantonais aux crevettes et petits pois",
+          "benefit": "Plat complet et léger, peu de matière grasse ajoutée.",
+          "pricePerPortion": 2.5,
+          "ingredients": [
+            {
+              "name": "Crevettes décortiquées",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Petits pois",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 10,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Cuire le riz et le laisser refroidir si possible.",
+            "Faire sauter les petits pois et les crevettes.",
+            "Ajouter le riz et l'oeuf battu, bien mélanger.",
+            "Assaisonner avec la sauce soja."
+          ],
+          "id": "poisson-maigre-13"
+        },
+        {
+          "name": "Salade de la mer, vinaigrette citronnée",
+          "benefit": "Salade froide pratique, riche en protéines maigres.",
+          "pricePerPortion": 2.5,
+          "ingredients": [
+            {
+              "name": "Crevettes décortiquées",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes croquants (poivron, concombre)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Vinaigrette citronnée",
+              "qty": 15,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Cuire le riz et les crevettes séparément, laisser refroidir.",
+            "Couper les légumes en dés.",
+            "Mélanger tous les ingrédients avec la vinaigrette.",
+            "Servir frais."
+          ],
+          "id": "poisson-maigre-14"
+        },
+        {
+          "name": "Filet de lieu noir vapeur, sauce citron-herbes, riz, courgettes",
+          "benefit": "Cuisson vapeur, aucune matière grasse de cuisson nécessaire.",
+          "pricePerPortion": 2.2,
+          "ingredients": [
+            {
+              "name": "Filet de lieu noir",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            },
+            {
+              "name": "Herbes",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Courgettes",
+              "qty": 150,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire le poisson à la vapeur 10 minutes.",
+            "Mélanger jus de citron et herbes pour la sauce.",
+            "Cuire le riz et les courgettes à la vapeur.",
+            "Servir le poisson nappé de sauce avec le riz et les courgettes."
+          ],
+          "id": "poisson-maigre-15"
+        },
+        {
+          "name": "Brandade légère de morue, pommes de terre, lait écrémé",
+          "benefit": "Version allégée d'un classique, lait écrémé à la place de la crème.",
+          "pricePerPortion": 2.0,
+          "ingredients": [
+            {
+              "name": "Morue dessalée",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Lait écrémé",
+              "qty": 50,
+              "unit": "ml"
+            },
+            {
+              "name": "Ail",
+              "qty": 1,
+              "unit": "gousse"
+            }
+          ],
+          "recipe": [
+            "Cuire la morue dessalée et l'émietter.",
+            "Cuire les pommes de terre puis les écraser.",
+            "Mélanger la morue, la purée, le lait et l'ail écrasé.",
+            "Réchauffer doucement et servir."
+          ],
+          "id": "poisson-maigre-16"
+        },
+        {
+          "name": "Wok de crevettes et légumes, sauce soja réduite en sel, nouilles",
+          "benefit": "Plat complet en une poêlée, peu de matière grasse.",
+          "pricePerPortion": 2.7,
+          "ingredients": [
+            {
+              "name": "Crevettes décortiquées",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes pour wok",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Nouilles de riz crues",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Faire tremper les nouilles selon les instructions.",
+            "Faire sauter les légumes puis ajouter les crevettes.",
+            "Ajouter les nouilles et la sauce soja.",
+            "Bien mélanger et servir chaud."
+          ],
+          "id": "poisson-maigre-17"
+        },
+        {
+          "name": "Truite vapeur, citron, amandes, riz, haricots verts",
+          "benefit": "Quelques amandes pour le croquant, sans excès de matière grasse.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Filet de truite",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            },
+            {
+              "name": "Amandes effilées",
+              "qty": 10,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots verts",
+              "qty": 150,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire la truite à la vapeur 10 minutes.",
+            "Faire légèrement dorer les amandes à sec.",
+            "Cuire le riz et les haricots verts.",
+            "Servir le poisson avec le citron, les amandes et les accompagnements."
+          ],
+          "id": "poisson-maigre-18"
+        },
+        {
+          "name": "Calamars sautés à l'ail et au persil, riz, salade",
+          "benefit": "Fruit de mer maigre, cuisson rapide à feu vif.",
+          "pricePerPortion": 2.4,
+          "ingredients": [
+            {
+              "name": "Calamars",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Ail",
+              "qty": 1,
+              "unit": "gousse"
+            },
+            {
+              "name": "Persil",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Couper les calamars en anneaux.",
+            "Faire sauter à feu vif avec l'ail et le persil pendant 2 à 3 minutes pour rester tendre.",
+            "Cuire le riz à part.",
+            "Servir avec la salade."
+          ],
+          "id": "poisson-maigre-19"
+        },
+        {
+          "name": "Cabillaud à la provençale, semoule",
+          "benefit": "Sauce tomate maison aux herbes, peu de sel grâce aux aromates.",
+          "pricePerPortion": 2.3,
+          "ingredients": [
+            {
+              "name": "Filet de cabillaud",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Olives noires",
+              "qty": 15,
+              "unit": "g"
+            },
+            {
+              "name": "Herbes de Provence",
+              "qty": 3,
+              "unit": "g"
+            },
+            {
+              "name": "Semoule crue",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir les tomates en dés avec les herbes.",
+            "Ajouter le cabillaud et les olives, couvrir et cuire 10 minutes.",
+            "Réhydrater la semoule.",
+            "Servir ensemble."
+          ],
+          "id": "poisson-maigre-20"
         }
       ]
     },
@@ -398,11 +2276,31 @@
           "benefit": "Oméga-3 du saumon, moins de graisses saturées: utile aussi pour ton cholestérol.",
           "pricePerPortion": 3.0,
           "ingredients": [
-            {"name": "Saumon", "qty": 90, "unit": "g"},
-            {"name": "Pâtes crues", "qty": 70, "unit": "g"},
-            {"name": "Épinards", "qty": 80, "unit": "g"},
-            {"name": "Yaourt nature", "qty": 60, "unit": "g"},
-            {"name": "Citron", "qty": 0.25, "unit": "pièce"}
+            {
+              "name": "Saumon",
+              "qty": 90,
+              "unit": "g"
+            },
+            {
+              "name": "Pâtes crues",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Épinards",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            }
           ],
           "recipe": [
             "Cuire les pâtes selon les instructions du paquet.",
@@ -417,9 +2315,21 @@
           "benefit": "Le poisson gras le moins cher, riche en EPA et DHA.",
           "pricePerPortion": 2.0,
           "ingredients": [
-            {"name": "Maquereau (frais ou en conserve)", "qty": 130, "unit": "g"},
-            {"name": "Pommes de terre", "qty": 200, "unit": "g"},
-            {"name": "Salade verte", "qty": 60, "unit": "g"}
+            {
+              "name": "Maquereau (frais ou en conserve)",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire les pommes de terre à la vapeur.",
@@ -434,9 +2344,21 @@
           "benefit": "La solution la plus économique pour faire le plein d'oméga-3.",
           "pricePerPortion": 1.7,
           "ingredients": [
-            {"name": "Sardines en conserve", "qty": 2, "unit": "boîte"},
-            {"name": "Tomates", "qty": 150, "unit": "g"},
-            {"name": "Pain complet", "qty": 1, "unit": "tranche"}
+            {
+              "name": "Sardines en conserve",
+              "qty": 2,
+              "unit": "boîte"
+            },
+            {
+              "name": "Tomates",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pain complet",
+              "qty": 1,
+              "unit": "tranche"
+            }
           ],
           "recipe": [
             "Égoutter les sardines.",
@@ -450,11 +2372,31 @@
           "benefit": "Sans avocat: edamame et concombre apportent fraîcheur et texture.",
           "pricePerPortion": 3.5,
           "ingredients": [
-            {"name": "Saumon", "qty": 100, "unit": "g"},
-            {"name": "Edamame", "qty": 50, "unit": "g"},
-            {"name": "Concombre", "qty": 100, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Vinaigre de riz", "qty": 10, "unit": "ml"}
+            {
+              "name": "Saumon",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Edamame",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Concombre",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Vinaigre de riz",
+              "qty": 10,
+              "unit": "ml"
+            }
           ],
           "recipe": [
             "Cuire le riz puis l'assaisonner avec le vinaigre de riz une fois tiède.",
@@ -469,11 +2411,31 @@
           "benefit": "Option plus gourmande, saumon fumé en petite quantité pour limiter le sel.",
           "pricePerPortion": 3.1,
           "ingredients": [
-            {"name": "Saumon fumé", "qty": 80, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Petits pois", "qty": 100, "unit": "g"},
-            {"name": "Oignon", "qty": 30, "unit": "g"},
-            {"name": "Bouillon de légumes", "qty": 300, "unit": "ml"}
+            {
+              "name": "Saumon fumé",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Petits pois",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Bouillon de légumes",
+              "qty": 300,
+              "unit": "ml"
+            }
           ],
           "recipe": [
             "Faire revenir l'oignon puis ajouter le riz et le nacrer 1 minute.",
@@ -481,6 +2443,488 @@
             "Incorporer les petits pois en cours de cuisson.",
             "Ajouter le saumon fumé coupé en lanières hors du feu."
           ]
+        },
+        {
+          "name": "Saumon teriyaki au four, riz, brocolis",
+          "benefit": "Cuisson au four sans matière grasse ajoutée, riche en oméga-3.",
+          "pricePerPortion": 3.2,
+          "ingredients": [
+            {
+              "name": "Saumon",
+              "qty": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            },
+            {
+              "name": "Miel",
+              "qty": 10,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Brocolis",
+              "qty": 150,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Mélanger sauce soja et miel, en napper le saumon.",
+            "Cuire au four 12 à 15 minutes à 200 degrés.",
+            "Cuire le riz et les brocolis à la vapeur.",
+            "Servir ensemble."
+          ],
+          "id": "poisson-gras-6"
+        },
+        {
+          "name": "Truite saumonée grillée, pommes de terre vapeur, salade",
+          "benefit": "Alternative au saumon classique, également riche en oméga-3.",
+          "pricePerPortion": 2.8,
+          "ingredients": [
+            {
+              "name": "Filet de truite saumonée",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire les pommes de terre à la vapeur.",
+            "Griller la truite quelques minutes de chaque côté.",
+            "Préparer la salade avec une vinaigrette légère.",
+            "Servir le tout ensemble."
+          ],
+          "id": "poisson-gras-7"
+        },
+        {
+          "name": "Tartare de saumon au citron et aneth, riz, concombre",
+          "benefit": "Préparation crue, oméga-3 préservés sans cuisson.",
+          "pricePerPortion": 3.3,
+          "ingredients": [
+            {
+              "name": "Saumon très frais",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.5,
+              "unit": "pièce"
+            },
+            {
+              "name": "Aneth",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Concombre",
+              "qty": 100,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Couper le saumon en petits dés.",
+            "Mariner avec le jus de citron et l'aneth quelques minutes.",
+            "Cuire le riz et couper le concombre.",
+            "Servir ensemble."
+          ],
+          "id": "poisson-gras-8"
+        },
+        {
+          "name": "Maquereau mariné façon escabèche légère, pommes de terre, salade",
+          "benefit": "Préparation marinée économique, toujours riche en oméga-3.",
+          "pricePerPortion": 2.0,
+          "ingredients": [
+            {
+              "name": "Maquereau",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Vinaigre",
+              "qty": 15,
+              "unit": "ml"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Poêler le maquereau puis le réserver.",
+            "Faire revenir l'oignon avec un peu de vinaigre pour la marinade.",
+            "Verser sur le poisson et laisser mariner au frais quelques heures si possible.",
+            "Servir avec les pommes de terre et la salade."
+          ],
+          "id": "poisson-gras-9"
+        },
+        {
+          "name": "Pavé de thon mi-cuit, riz vinaigré, edamame",
+          "benefit": "Thon frais riche en oméga-3, cuisson rapide pour rester tendre.",
+          "pricePerPortion": 3.4,
+          "ingredients": [
+            {
+              "name": "Thon frais",
+              "qty": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Vinaigre de riz",
+              "qty": 10,
+              "unit": "ml"
+            },
+            {
+              "name": "Edamame",
+              "qty": 50,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire le riz puis l'assaisonner de vinaigre une fois tiède.",
+            "Saisir le thon 1 à 2 minutes par face pour qu'il reste rosé au centre.",
+            "Réchauffer les edamame.",
+            "Servir ensemble."
+          ],
+          "id": "poisson-gras-10"
+        },
+        {
+          "name": "Saumon en papillote, citron et herbes, légumes vapeur",
+          "benefit": "Cuisson en papillote sans matière grasse ajoutée.",
+          "pricePerPortion": 3.0,
+          "ingredients": [
+            {
+              "name": "Saumon",
+              "qty": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            },
+            {
+              "name": "Herbes",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes vapeur",
+              "qty": 200,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Poser le saumon sur une feuille de papillote avec citron et herbes.",
+            "Fermer et cuire au four 15 minutes à 180 degrés.",
+            "Cuire les légumes à la vapeur.",
+            "Servir ensemble."
+          ],
+          "id": "poisson-gras-11"
+        },
+        {
+          "name": "Sardines grillées, pommes de terre, salade de tomates",
+          "benefit": "Sardines fraîches grillées, alternative économique au saumon.",
+          "pricePerPortion": 2.2,
+          "ingredients": [
+            {
+              "name": "Sardines fraîches",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates",
+              "qty": 100,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Griller les sardines quelques minutes de chaque côté.",
+            "Cuire les pommes de terre à la vapeur.",
+            "Préparer la salade de tomates.",
+            "Servir le tout ensemble."
+          ],
+          "id": "poisson-gras-12"
+        },
+        {
+          "name": "Curry de saumon au lait de coco léger, riz",
+          "benefit": "Curry parfumé, lait de coco en petite quantité.",
+          "pricePerPortion": 3.1,
+          "ingredients": [
+            {
+              "name": "Saumon",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Lait de coco allégé",
+              "qty": 100,
+              "unit": "ml"
+            },
+            {
+              "name": "Curry en poudre",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir le curry quelques secondes.",
+            "Ajouter le lait de coco et laisser chauffer.",
+            "Ajouter le saumon en morceaux et cuire 8 minutes.",
+            "Servir avec le riz."
+          ],
+          "id": "poisson-gras-13"
+        },
+        {
+          "name": "Tartines de sardines écrasées, pain complet, tomates",
+          "benefit": "Option rapide et économique pour les oméga-3.",
+          "pricePerPortion": 1.5,
+          "ingredients": [
+            {
+              "name": "Sardines en conserve",
+              "qty": 1,
+              "unit": "boîte"
+            },
+            {
+              "name": "Pain complet",
+              "qty": 2,
+              "unit": "tranche"
+            },
+            {
+              "name": "Tomates",
+              "qty": 100,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Égoutter les sardines et les écraser à la fourchette.",
+            "Tartiner sur le pain complet.",
+            "Couper les tomates en tranches.",
+            "Servir ensemble."
+          ],
+          "id": "poisson-gras-14"
+        },
+        {
+          "name": "Saumon poêlé, lentilles corail, épinards",
+          "benefit": "Association poisson gras et légumineuse, repas complet en fibres et oméga-3.",
+          "pricePerPortion": 2.9,
+          "ingredients": [
+            {
+              "name": "Saumon",
+              "qty": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Lentilles corail sèches",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Épinards",
+              "qty": 100,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire les lentilles corail dans l'eau jusqu'à tendreté.",
+            "Ajouter les épinards en fin de cuisson.",
+            "Poêler le saumon quelques minutes de chaque côté.",
+            "Servir le saumon sur les lentilles."
+          ],
+          "id": "poisson-gras-15"
+        },
+        {
+          "name": "Maquereau au four, pommes de terre, oignons",
+          "benefit": "Cuisson au four simple, pas de matière grasse ajoutée.",
+          "pricePerPortion": 2.0,
+          "ingredients": [
+            {
+              "name": "Maquereau",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Oignons",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Disposer le maquereau, les pommes de terre et les oignons sur une plaque.",
+            "Cuire au four 25 minutes à 190 degrés.",
+            "Servir directement."
+          ],
+          "id": "poisson-gras-16"
+        },
+        {
+          "name": "Wok de saumon et légumes, sauce soja réduite en sel, riz",
+          "benefit": "Façon différente de cuisiner le saumon, beaucoup de légumes.",
+          "pricePerPortion": 3.0,
+          "ingredients": [
+            {
+              "name": "Saumon",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes pour wok",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Couper le saumon en cubes.",
+            "Faire sauter les légumes puis ajouter le saumon quelques minutes.",
+            "Verser la sauce soja en fin de cuisson.",
+            "Servir avec le riz."
+          ],
+          "id": "poisson-gras-17"
+        },
+        {
+          "name": "Truite fumée, salade de pommes de terre, vinaigrette légère",
+          "benefit": "Option froide pratique, toujours riche en oméga-3.",
+          "pricePerPortion": 2.7,
+          "ingredients": [
+            {
+              "name": "Truite fumée",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Vinaigrette légère",
+              "qty": 15,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Cuire les pommes de terre puis les couper en dés.",
+            "Mélanger avec la vinaigrette encore tièdes.",
+            "Ajouter la truite fumée émiettée.",
+            "Servir frais ou tiède."
+          ],
+          "id": "poisson-gras-18"
+        },
+        {
+          "name": "Hareng mariné, pommes de terre vapeur, salade verte",
+          "benefit": "Poisson gras traditionnel, déjà mariné donc sans cuisson nécessaire.",
+          "pricePerPortion": 1.9,
+          "ingredients": [
+            {
+              "name": "Hareng mariné",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire les pommes de terre à la vapeur.",
+            "Préparer la salade.",
+            "Servir le hareng mariné avec les pommes de terre et la salade."
+          ],
+          "id": "poisson-gras-19"
+        },
+        {
+          "name": "Saumon grillé, riz complet, petits pois",
+          "benefit": "Version simple et rapide, riz complet pour plus de fibres.",
+          "pricePerPortion": 3.0,
+          "ingredients": [
+            {
+              "name": "Saumon",
+              "qty": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Riz complet cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Petits pois",
+              "qty": 100,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Griller le saumon quelques minutes de chaque côté.",
+            "Cuire le riz complet et les petits pois.",
+            "Servir ensemble."
+          ],
+          "id": "poisson-gras-20"
         }
       ]
     },
@@ -496,12 +2940,36 @@
           "benefit": "Mijoté longuement avec peu de matière grasse ajoutée, riche en fer.",
           "pricePerPortion": 3.2,
           "ingredients": [
-            {"name": "Boeuf à mijoter", "qty": 130, "unit": "g"},
-            {"name": "Carottes", "qty": 75, "unit": "g"},
-            {"name": "Champignons", "qty": 75, "unit": "g"},
-            {"name": "Pommes de terre", "qty": 200, "unit": "g"},
-            {"name": "Oignon", "qty": 30, "unit": "g"},
-            {"name": "Bouillon ou vin rouge", "qty": 100, "unit": "ml"}
+            {
+              "name": "Boeuf à mijoter",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Carottes",
+              "qty": 75,
+              "unit": "g"
+            },
+            {
+              "name": "Champignons",
+              "qty": 75,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Bouillon ou vin rouge",
+              "qty": 100,
+              "unit": "ml"
+            }
           ],
           "recipe": [
             "Faire dorer le boeuf en morceaux dans un fond d'huile.",
@@ -516,9 +2984,21 @@
           "benefit": "Abat que tu apprécies, très riche en fer, naturellement maigre.",
           "pricePerPortion": 2.0,
           "ingredients": [
-            {"name": "Foie de volaille", "qty": 120, "unit": "g"},
-            {"name": "Pommes de terre", "qty": 200, "unit": "g"},
-            {"name": "Oignons", "qty": 80, "unit": "g"}
+            {
+              "name": "Foie de volaille",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Oignons",
+              "qty": 80,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire les pommes de terre à la vapeur.",
@@ -533,9 +3013,21 @@
           "benefit": "Cuisson au four plutôt qu'en friture, sauce en petite quantité.",
           "pricePerPortion": 3.4,
           "ingredients": [
-            {"name": "Boeuf (steak ou bavette)", "qty": 130, "unit": "g"},
-            {"name": "Patate douce", "qty": 200, "unit": "g"},
-            {"name": "Sauce au bleu allégée", "qty": 30, "unit": "g"}
+            {
+              "name": "Boeuf (steak ou bavette)",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Patate douce",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce au bleu allégée",
+              "qty": 30,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Couper la patate douce en frites et cuire au four 20 à 25 minutes à 200 degrés.",
@@ -550,9 +3042,21 @@
           "benefit": "Le steak haché le plus maigre du rayon.",
           "pricePerPortion": 2.7,
           "ingredients": [
-            {"name": "Steak haché 5 pour cent", "qty": 130, "unit": "g"},
-            {"name": "Patate douce", "qty": 200, "unit": "g"},
-            {"name": "Haricots verts", "qty": 150, "unit": "g"}
+            {
+              "name": "Steak haché 5 pour cent",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Patate douce",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots verts",
+              "qty": 150,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire la patate douce à l'eau puis l'écraser en purée.",
@@ -567,9 +3071,21 @@
           "benefit": "Autre abat apprécié, très maigre et riche en fer.",
           "pricePerPortion": 2.1,
           "ingredients": [
-            {"name": "Rognons", "qty": 130, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Champignons", "qty": 100, "unit": "g"}
+            {
+              "name": "Rognons",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Champignons",
+              "qty": 100,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire dégorger les rognons puis les couper en morceaux.",
@@ -577,6 +3093,490 @@
             "Ajouter les rognons et cuire à feu vif 3 à 4 minutes.",
             "Servir avec le riz."
           ]
+        },
+        {
+          "name": "Boeuf à la provençale, semoule",
+          "benefit": "Mijoté à la tomate, peu de matière grasse ajoutée.",
+          "pricePerPortion": 3.0,
+          "ingredients": [
+            {
+              "name": "Boeuf à mijoter",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Herbes de Provence",
+              "qty": 3,
+              "unit": "g"
+            },
+            {
+              "name": "Semoule crue",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire dorer le boeuf en morceaux.",
+            "Ajouter les tomates et les herbes, couvrir et laisser mijoter 1h.",
+            "Réhydrater la semoule.",
+            "Servir ensemble."
+          ],
+          "id": "viande-rouge-6"
+        },
+        {
+          "name": "Joue de boeuf mijotée, purée de pommes de terre, carottes",
+          "benefit": "Morceau naturellement maigre une fois bien mijoté, riche en fer.",
+          "pricePerPortion": 2.8,
+          "ingredients": [
+            {
+              "name": "Joue de boeuf",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Carottes",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire dorer la joue de boeuf avec l'oignon.",
+            "Ajouter les carottes et un peu d'eau, couvrir et laisser mijoter 2 heures à feu doux.",
+            "Cuire les pommes de terre et les écraser en purée.",
+            "Servir ensemble."
+          ],
+          "id": "viande-rouge-7"
+        },
+        {
+          "name": "Langue de boeuf sauce légère, pommes de terre, haricots verts",
+          "benefit": "Abat apprécié, naturellement maigre une fois cuit longuement.",
+          "pricePerPortion": 2.5,
+          "ingredients": [
+            {
+              "name": "Langue de boeuf",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots verts",
+              "qty": 150,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire la langue à l'eau plusieurs heures jusqu'à tendreté, puis la peler et la trancher.",
+            "Cuire les pommes de terre et les haricots verts à la vapeur.",
+            "Servir ensemble avec un filet de jus de cuisson."
+          ],
+          "id": "viande-rouge-8"
+        },
+        {
+          "name": "Steak de boeuf grillé, légumes grillés, pommes de terre",
+          "benefit": "Cuisson simple à la poêle ou au grill, sans sauce grasse.",
+          "pricePerPortion": 3.2,
+          "ingredients": [
+            {
+              "name": "Steak de boeuf",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes à griller (poivron, courgette)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Griller le steak à la cuisson souhaitée.",
+            "Griller les légumes à part.",
+            "Cuire les pommes de terre à la vapeur.",
+            "Servir ensemble."
+          ],
+          "id": "viande-rouge-9"
+        },
+        {
+          "name": "Boeuf sauté aux légumes, sauce soja réduite en sel, riz",
+          "benefit": "Façon asiatique de cuisiner le boeuf, beaucoup de légumes.",
+          "pricePerPortion": 3.0,
+          "ingredients": [
+            {
+              "name": "Boeuf à sauter",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes pour wok",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Couper le boeuf en fines lanières.",
+            "Faire sauter à feu vif puis ajouter les légumes.",
+            "Verser la sauce soja en fin de cuisson.",
+            "Servir avec le riz."
+          ],
+          "id": "viande-rouge-10"
+        },
+        {
+          "name": "Boulettes de boeuf maigre, sauce tomate légère, riz",
+          "benefit": "Boulettes maison avec une viande maigre, sauce tomate sans excès de sel.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Boeuf haché 5 pour cent",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Façonner le boeuf haché en boulettes.",
+            "Les poêler quelques minutes pour les saisir.",
+            "Ajouter les tomates concassées et laisser mijoter 15 minutes.",
+            "Servir avec le riz."
+          ],
+          "id": "viande-rouge-11"
+        },
+        {
+          "name": "Foie de veau poêlé, pommes de terre, oignons",
+          "benefit": "Abat très riche en fer, naturellement maigre.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Foie de veau",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Oignons",
+              "qty": 80,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire les pommes de terre à la vapeur.",
+            "Faire fondre les oignons à la poêle.",
+            "Ajouter le foie et le saisir 2 à 3 minutes par face.",
+            "Servir avec les pommes de terre."
+          ],
+          "id": "viande-rouge-12"
+        },
+        {
+          "name": "Carpaccio de boeuf, roquette, parmesan, citron",
+          "benefit": "Viande crue donc sans matière grasse de cuisson, à réserver à une viande de qualité.",
+          "pricePerPortion": 3.3,
+          "ingredients": [
+            {
+              "name": "Boeuf à carpaccio",
+              "qty": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Roquette",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Parmesan",
+              "qty": 10,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 0.25,
+              "unit": "pièce"
+            }
+          ],
+          "recipe": [
+            "Trancher le boeuf très finement.",
+            "Disposer sur une assiette avec la roquette.",
+            "Parsemer de copeaux de parmesan et d'un trait de citron.",
+            "Servir immédiatement."
+          ],
+          "id": "viande-rouge-13"
+        },
+        {
+          "name": "Boeuf braisé aux carottes, pommes de terre vapeur",
+          "benefit": "Mijoté classique allégé, riche en légumes.",
+          "pricePerPortion": 2.9,
+          "ingredients": [
+            {
+              "name": "Boeuf à braiser",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Carottes",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire dorer le boeuf et l'oignon.",
+            "Ajouter les carottes et un peu d'eau, laisser mijoter 1h30 à couvert.",
+            "Cuire les pommes de terre à la vapeur.",
+            "Servir ensemble."
+          ],
+          "id": "viande-rouge-14"
+        },
+        {
+          "name": "Rôti de boeuf maigre, légumes rôtis, pommes de terre",
+          "benefit": "Cuisson au four sans ajout de matière grasse.",
+          "pricePerPortion": 3.1,
+          "ingredients": [
+            {
+              "name": "Rôti de boeuf maigre",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes à rôtir (carotte, poivron)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Disposer le rôti et les légumes sur une plaque.",
+            "Cuire au four 25 à 30 minutes à 200 degrés selon la cuisson souhaitée.",
+            "Laisser reposer puis trancher.",
+            "Servir avec les pommes de terre."
+          ],
+          "id": "viande-rouge-15"
+        },
+        {
+          "name": "Émincé de boeuf à la moutarde légère, riz, haricots verts",
+          "benefit": "Sauce moutarde-yaourt sans crème.",
+          "pricePerPortion": 3.0,
+          "ingredients": [
+            {
+              "name": "Boeuf à émincer",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Moutarde",
+              "qty": 15,
+              "unit": "g"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Haricots verts",
+              "qty": 150,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Poêler le boeuf émincé quelques minutes.",
+            "Ajouter la moutarde puis le yaourt hors du feu pour la sauce.",
+            "Cuire le riz et les haricots verts.",
+            "Servir ensemble."
+          ],
+          "id": "viande-rouge-16"
+        },
+        {
+          "name": "Brochettes de boeuf et légumes grillés, semoule",
+          "benefit": "Format brochettes pratique, beaucoup de légumes grillés.",
+          "pricePerPortion": 3.1,
+          "ingredients": [
+            {
+              "name": "Boeuf à brochette",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes à griller (poivron, oignon, courgette)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Semoule crue",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Enfiler le boeuf et les légumes sur des brochettes.",
+            "Griller quelques minutes en tournant régulièrement.",
+            "Réhydrater la semoule.",
+            "Servir ensemble."
+          ],
+          "id": "viande-rouge-17"
+        },
+        {
+          "name": "Foie de génisse poêlé, purée de pommes de terre, oignons",
+          "benefit": "Autre option d'abat riche en fer et naturellement maigre.",
+          "pricePerPortion": 2.4,
+          "ingredients": [
+            {
+              "name": "Foie de génisse",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Oignons",
+              "qty": 80,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire les pommes de terre puis les écraser en purée.",
+            "Faire fondre les oignons à la poêle.",
+            "Ajouter le foie et le saisir rapidement à feu vif.",
+            "Servir avec la purée."
+          ],
+          "id": "viande-rouge-18"
+        },
+        {
+          "name": "Pot-au-feu léger, bouillon",
+          "benefit": "Plat mijoté traditionnel, naturellement pauvre en matière grasse ajoutée.",
+          "pricePerPortion": 3.0,
+          "ingredients": [
+            {
+              "name": "Boeuf à pot-au-feu",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Carottes",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Poireaux",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Navets",
+              "qty": 100,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Mettre le boeuf dans une grande casserole d'eau et écumer.",
+            "Ajouter les légumes coupés en morceaux.",
+            "Laisser mijoter à couvert au moins 2 heures.",
+            "Servir la viande et les légumes avec un peu de bouillon."
+          ],
+          "id": "viande-rouge-19"
+        },
+        {
+          "name": "Steak haché grillé, poêlée de courgettes et poivrons, riz",
+          "benefit": "Poêlée de légumes colorés avec une viande maigre grillée.",
+          "pricePerPortion": 2.7,
+          "ingredients": [
+            {
+              "name": "Steak haché 5 pour cent",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Courgettes",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Poivrons",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir les courgettes et les poivrons en dés.",
+            "Ajouter les tomates et laisser mijoter 15 minutes.",
+            "Griller le steak haché à la cuisson souhaitée.",
+            "Servir ensemble avec le riz."
+          ],
+          "id": "viande-rouge-20"
         }
       ]
     },
@@ -592,11 +3592,31 @@
           "benefit": "Bien moins de sel et de graisses saturées que la version lardons-crème.",
           "pricePerPortion": 2.1,
           "ingredients": [
-            {"name": "Pâtes crues", "qty": 70, "unit": "g"},
-            {"name": "Dinde fumée", "qty": 40, "unit": "g"},
-            {"name": "Oeuf", "qty": 1, "unit": "pièce"},
-            {"name": "Yaourt nature", "qty": 40, "unit": "g"},
-            {"name": "Parmesan", "qty": 10, "unit": "g"}
+            {
+              "name": "Pâtes crues",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Dinde fumée",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Parmesan",
+              "qty": 10,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire les pâtes selon les instructions du paquet.",
@@ -611,11 +3631,31 @@
           "benefit": "Sans la sauce blanche industrielle ni la viande grasse du kebab classique.",
           "pricePerPortion": 2.8,
           "ingredients": [
-            {"name": "Blanc de poulet", "qty": 130, "unit": "g"},
-            {"name": "Pain pita complet", "qty": 1, "unit": "pièce"},
-            {"name": "Crudités (salade, tomate, oignon)", "qty": 150, "unit": "g"},
-            {"name": "Yaourt nature", "qty": 50, "unit": "g"},
-            {"name": "Ail", "qty": 1, "unit": "gousse"}
+            {
+              "name": "Blanc de poulet",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Pain pita complet",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Crudités (salade, tomate, oignon)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Ail",
+              "qty": 1,
+              "unit": "gousse"
+            }
           ],
           "recipe": [
             "Faire mariner puis cuire le poulet coupé en lanières à la poêle.",
@@ -630,11 +3670,31 @@
           "benefit": "Le plaisir reste, la portion de fromage gras est nettement réduite.",
           "pricePerPortion": 3.5,
           "ingredients": [
-            {"name": "Pommes de terre", "qty": 250, "unit": "g"},
-            {"name": "Reblochon", "qty": 40, "unit": "g"},
-            {"name": "Dinde fumée", "qty": 30, "unit": "g"},
-            {"name": "Fromage blanc", "qty": 40, "unit": "g"},
-            {"name": "Oignon", "qty": 30, "unit": "g"}
+            {
+              "name": "Pommes de terre",
+              "qty": 250,
+              "unit": "g"
+            },
+            {
+              "name": "Reblochon",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Dinde fumée",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Fromage blanc",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire les pommes de terre à l'eau puis les couper en rondelles.",
@@ -649,10 +3709,26 @@
           "benefit": "Sauce allégée au yaourt, dinde à la place des lardons.",
           "pricePerPortion": 2.7,
           "ingredients": [
-            {"name": "Gnocchis", "qty": 200, "unit": "g"},
-            {"name": "Bleu", "qty": 20, "unit": "g"},
-            {"name": "Yaourt nature", "qty": 40, "unit": "g"},
-            {"name": "Dinde fumée", "qty": 30, "unit": "g"}
+            {
+              "name": "Gnocchis",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Bleu",
+              "qty": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Dinde fumée",
+              "qty": 30,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire les gnocchis selon les instructions du paquet.",
@@ -667,10 +3743,26 @@
           "benefit": "Fromage en quantité raisonnable, garniture riche en oméga-3.",
           "pricePerPortion": 3.0,
           "ingredients": [
-            {"name": "Pâte à pizza fine", "qty": 1, "unit": "pièce"},
-            {"name": "Saumon", "qty": 80, "unit": "g"},
-            {"name": "Épinards", "qty": 80, "unit": "g"},
-            {"name": "Fromage râpé", "qty": 40, "unit": "g"}
+            {
+              "name": "Pâte à pizza fine",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Saumon",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Épinards",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Fromage râpé",
+              "qty": 40,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Étaler la pâte fine sur une plaque.",
@@ -685,10 +3777,26 @@
           "benefit": "Pain complet pour les fibres, fromage limité à une portion raisonnable.",
           "pricePerPortion": 2.2,
           "ingredients": [
-            {"name": "Pain complet", "qty": 2, "unit": "tranche"},
-            {"name": "Jambon", "qty": 30, "unit": "g"},
-            {"name": "Fromage râpé ou en tranche", "qty": 30, "unit": "g"},
-            {"name": "Salade verte", "qty": 60, "unit": "g"}
+            {
+              "name": "Pain complet",
+              "qty": 2,
+              "unit": "tranche"
+            },
+            {
+              "name": "Jambon",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Fromage râpé ou en tranche",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Monter le croque avec le jambon et le fromage entre les tranches de pain.",
@@ -703,9 +3811,21 @@
           "benefit": "Cuisson au four plutôt qu'en friture.",
           "pricePerPortion": 2.9,
           "ingredients": [
-            {"name": "Blanc de poulet", "qty": 130, "unit": "g"},
-            {"name": "Pain à burger complet", "qty": 1, "unit": "pièce"},
-            {"name": "Patate douce", "qty": 200, "unit": "g"}
+            {
+              "name": "Blanc de poulet",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Pain à burger complet",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Patate douce",
+              "qty": 200,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Couper la patate douce en frites et cuire au four 20 à 25 minutes à 200 degrés.",
@@ -713,6 +3833,488 @@
             "Toaster légèrement le pain.",
             "Monter le burger avec le poulet et les garnitures de votre choix, servir avec les frites."
           ]
+        },
+        {
+          "name": "Quiche allégée jambon-épinards, pâte fine, salade",
+          "benefit": "Appareil au lait écrémé plutôt qu'à la crème, fromage limité.",
+          "pricePerPortion": 2.3,
+          "ingredients": [
+            {
+              "name": "Pâte à tarte fine",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Jambon",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Épinards",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 2,
+              "unit": "pièce"
+            },
+            {
+              "name": "Lait écrémé",
+              "qty": 100,
+              "unit": "ml"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Étaler la pâte dans un moule.",
+            "Répartir le jambon et les épinards.",
+            "Battre les oeufs avec le lait écrémé et verser sur la garniture.",
+            "Cuire au four 30 minutes à 180 degrés, servir avec la salade."
+          ],
+          "id": "plaisir-8"
+        },
+        {
+          "name": "Lasagnes allégées, salade",
+          "benefit": "Béchamel maison au lait écrémé, viande maigre, fromage limité.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Pâtes à lasagne",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Boeuf haché 5 pour cent",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Lait écrémé",
+              "qty": 100,
+              "unit": "ml"
+            },
+            {
+              "name": "Fromage râpé",
+              "qty": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir le boeuf haché puis ajouter les tomates.",
+            "Préparer une béchamel légère avec le lait écrémé et un peu de farine.",
+            "Monter les lasagnes en couches, couvrir de fromage râpé.",
+            "Cuire au four 30 minutes à 190 degrés, servir avec la salade."
+          ],
+          "id": "plaisir-9"
+        },
+        {
+          "name": "Risotto au jambon et petits pois, parmesan",
+          "benefit": "Risotto classique avec jambon dégraissé et parmesan en petite quantité.",
+          "pricePerPortion": 2.4,
+          "ingredients": [
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Jambon",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Petits pois",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Parmesan",
+              "qty": 10,
+              "unit": "g"
+            },
+            {
+              "name": "Bouillon de légumes",
+              "qty": 300,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Faire revenir l'oignon puis ajouter le riz et le nacrer.",
+            "Ajouter le bouillon louche par louche en remuant.",
+            "Incorporer le jambon coupé en dés et les petits pois en fin de cuisson.",
+            "Ajouter le parmesan hors du feu."
+          ],
+          "id": "plaisir-10"
+        },
+        {
+          "name": "Tacos de poulet maison, tortilla complète, crudités, sauce yaourt",
+          "benefit": "Sauce yaourt à la place de la crème fraîche, viande maigre.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Tortilla complète",
+              "qty": 2,
+              "unit": "pièce"
+            },
+            {
+              "name": "Crudités (salade, tomate, oignon)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 40,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire le poulet coupé en dés à la poêle.",
+            "Préparer la sauce avec le yaourt et des épices.",
+            "Réchauffer les tortillas.",
+            "Garnir de poulet, crudités et sauce."
+          ],
+          "id": "plaisir-11"
+        },
+        {
+          "name": "Hachis parmentier allégé, salade",
+          "benefit": "Purée allégée au lait écrémé, viande maigre.",
+          "pricePerPortion": 2.4,
+          "ingredients": [
+            {
+              "name": "Boeuf haché 5 pour cent",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Pommes de terre",
+              "qty": 250,
+              "unit": "g"
+            },
+            {
+              "name": "Lait écrémé",
+              "qty": 50,
+              "unit": "ml"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir le boeuf haché.",
+            "Cuire les pommes de terre et les écraser avec le lait écrémé.",
+            "Disposer la viande puis la purée dans un plat.",
+            "Passer au four 15 minutes à 200 degrés, servir avec la salade."
+          ],
+          "id": "plaisir-12"
+        },
+        {
+          "name": "Quesadilla poulet-fromage allégée, tortilla complète, salade",
+          "benefit": "Fromage limité à une portion raisonnable, viande maigre.",
+          "pricePerPortion": 2.5,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Tortilla complète",
+              "qty": 2,
+              "unit": "pièce"
+            },
+            {
+              "name": "Fromage râpé",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire le poulet coupé en dés.",
+            "Répartir le poulet et le fromage sur une tortilla, couvrir avec une seconde.",
+            "Cuire à la poêle jusqu'à ce que le fromage fonde.",
+            "Couper en parts, servir avec la salade."
+          ],
+          "id": "plaisir-13"
+        },
+        {
+          "name": "Pâtes à la bolognaise allégée, pâtes complètes",
+          "benefit": "Viande maigre et tomates maison, moins de sel qu'une sauce industrielle.",
+          "pricePerPortion": 2.3,
+          "ingredients": [
+            {
+              "name": "Pâtes complètes crues",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Boeuf haché 5 pour cent",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir l'oignon puis le boeuf haché.",
+            "Ajouter les tomates concassées et laisser mijoter 20 minutes.",
+            "Cuire les pâtes complètes à part.",
+            "Mélanger ou servir la sauce sur les pâtes."
+          ],
+          "id": "plaisir-14"
+        },
+        {
+          "name": "Galettes de pommes de terre allégées, saumon fumé, salade",
+          "benefit": "Galettes cuites à la poêle avec peu de matière grasse, garniture riche en oméga-3.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Saumon fumé",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Râper les pommes de terre et les mélanger avec l'oeuf.",
+            "Façonner des galettes et les cuire à la poêle quelques minutes de chaque côté.",
+            "Garnir de saumon fumé.",
+            "Servir avec la salade."
+          ],
+          "id": "plaisir-15"
+        },
+        {
+          "name": "Wrap césar allégé, tortilla complète",
+          "benefit": "Sauce césar maison au yaourt plutôt qu'à la mayonnaise.",
+          "pricePerPortion": 2.4,
+          "ingredients": [
+            {
+              "name": "Blanc de poulet",
+              "qty": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Tortilla complète",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Parmesan",
+              "qty": 10,
+              "unit": "g"
+            },
+            {
+              "name": "Yaourt nature",
+              "qty": 30,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire le poulet coupé en lanières.",
+            "Mélanger le yaourt avec un peu de parmesan et de citron pour la sauce.",
+            "Garnir la tortilla de salade, poulet, parmesan et sauce.",
+            "Rouler et servir."
+          ],
+          "id": "plaisir-16"
+        },
+        {
+          "name": "Pizza maison poulet-champignons, pâte fine",
+          "benefit": "Fromage en quantité raisonnable, garniture protéinée.",
+          "pricePerPortion": 2.7,
+          "ingredients": [
+            {
+              "name": "Pâte à pizza fine",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Blanc de poulet",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Champignons",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Fromage râpé",
+              "qty": 40,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Étaler la pâte fine sur une plaque.",
+            "Répartir le poulet cuit et les champignons.",
+            "Parsemer de fromage râpé.",
+            "Cuire au four 12 à 15 minutes à 220 degrés."
+          ],
+          "id": "plaisir-17"
+        },
+        {
+          "name": "Gratin dauphinois allégé, filet de poisson",
+          "benefit": "Lait écrémé à la place de la crème, accompagné d'une protéine maigre.",
+          "pricePerPortion": 2.5,
+          "ingredients": [
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Lait écrémé",
+              "qty": 100,
+              "unit": "ml"
+            },
+            {
+              "name": "Filet de poisson blanc",
+              "qty": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Ail",
+              "qty": 1,
+              "unit": "gousse"
+            }
+          ],
+          "recipe": [
+            "Couper les pommes de terre en fines tranches.",
+            "Disposer dans un plat avec le lait écrémé et l'ail, cuire au four 40 minutes à 180 degrés.",
+            "Cuire le poisson à la vapeur ou au four en parallèle.",
+            "Servir ensemble."
+          ],
+          "id": "plaisir-18"
+        },
+        {
+          "name": "Risotto chorizo allégé",
+          "benefit": "Chorizo en quantité réduite par rapport à la version classique, juste pour le goût fumé.",
+          "pricePerPortion": 2.3,
+          "ingredients": [
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Chorizo",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates concassées",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Bouillon de légumes",
+              "qty": 300,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Faire revenir l'oignon et le chorizo coupé en rondelles.",
+            "Ajouter le riz et le nacrer.",
+            "Ajouter le bouillon louche par louche puis les tomates.",
+            "Cuire jusqu'à ce que le riz soit tendre."
+          ],
+          "id": "plaisir-19"
+        },
+        {
+          "name": "Croque-monsieur au saumon, pain complet, salade",
+          "benefit": "Variante au saumon fumé du croque classique, fromage limité.",
+          "pricePerPortion": 2.6,
+          "ingredients": [
+            {
+              "name": "Pain complet",
+              "qty": 2,
+              "unit": "tranche"
+            },
+            {
+              "name": "Saumon fumé",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Fromage râpé",
+              "qty": 25,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Garnir le pain complet de saumon fumé et de fromage.",
+            "Cuire à la poêle ou au four jusqu'à ce que le fromage fonde.",
+            "Préparer la salade.",
+            "Servir chaud avec la salade."
+          ],
+          "id": "plaisir-20"
         }
       ]
     },
@@ -728,9 +4330,21 @@
           "benefit": "Riche en protéines, presque pas de matière grasse ajoutée.",
           "pricePerPortion": 1.5,
           "ingredients": [
-            {"name": "Oeufs", "qty": 2, "unit": "pièce"},
-            {"name": "Légumes (courgette, poivron, champignons)", "qty": 150, "unit": "g"},
-            {"name": "Salade verte", "qty": 60, "unit": "g"}
+            {
+              "name": "Oeufs",
+              "qty": 2,
+              "unit": "pièce"
+            },
+            {
+              "name": "Légumes (courgette, poivron, champignons)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Faire revenir les légumes coupés en dés quelques minutes.",
@@ -745,10 +4359,26 @@
           "benefit": "Léger pour le soir, protéines végétales, attention à ne pas resaler.",
           "pricePerPortion": 2.1,
           "ingredients": [
-            {"name": "Tofu", "qty": 100, "unit": "g"},
-            {"name": "Nouilles soba crues", "qty": 60, "unit": "g"},
-            {"name": "Champignons", "qty": 100, "unit": "g"},
-            {"name": "Pâte miso", "qty": 15, "unit": "g"}
+            {
+              "name": "Tofu",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Nouilles soba crues",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Champignons",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Pâte miso",
+              "qty": 15,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Cuire les nouilles soba selon les instructions du paquet et réserver.",
@@ -763,10 +4393,26 @@
           "benefit": "Beaucoup de légumes pour peu de fromage.",
           "pricePerPortion": 1.9,
           "ingredients": [
-            {"name": "Courgettes", "qty": 100, "unit": "g"},
-            {"name": "Poireaux", "qty": 75, "unit": "g"},
-            {"name": "Tomates", "qty": 75, "unit": "g"},
-            {"name": "Fromage râpé", "qty": 30, "unit": "g"}
+            {
+              "name": "Courgettes",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Poireaux",
+              "qty": 75,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates",
+              "qty": 75,
+              "unit": "g"
+            },
+            {
+              "name": "Fromage râpé",
+              "qty": 30,
+              "unit": "g"
+            }
           ],
           "recipe": [
             "Couper les légumes en rondelles et les disposer dans un plat à gratin.",
@@ -781,11 +4427,31 @@
           "benefit": "Plat végétarien réconfortant, fibres des champignons et des petits pois.",
           "pricePerPortion": 2.0,
           "ingredients": [
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Champignons", "qty": 150, "unit": "g"},
-            {"name": "Petits pois", "qty": 100, "unit": "g"},
-            {"name": "Oignon", "qty": 30, "unit": "g"},
-            {"name": "Bouillon de légumes", "qty": 300, "unit": "ml"}
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Champignons",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Petits pois",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Bouillon de légumes",
+              "qty": 300,
+              "unit": "ml"
+            }
           ],
           "recipe": [
             "Faire revenir l'oignon et les champignons.",
@@ -800,10 +4466,26 @@
           "benefit": "Protéine végétale, sauce allégée en sel.",
           "pricePerPortion": 1.9,
           "ingredients": [
-            {"name": "Tofu", "qty": 100, "unit": "g"},
-            {"name": "Légumes mélangés", "qty": 200, "unit": "g"},
-            {"name": "Riz cru", "qty": 70, "unit": "g"},
-            {"name": "Sauce soja réduite en sel", "qty": 15, "unit": "ml"}
+            {
+              "name": "Tofu",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes mélangés",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            }
           ],
           "recipe": [
             "Couper le tofu en cubes et le faire dorer à la poêle.",
@@ -811,6 +4493,540 @@
             "Verser la sauce soja en fin de cuisson.",
             "Servir avec le riz cuit."
           ]
+        },
+        {
+          "name": "Curry de légumes et tofu, lait de coco léger, riz",
+          "benefit": "Protéine végétale et légumes variés, lait de coco en petite quantité.",
+          "pricePerPortion": 1.9,
+          "ingredients": [
+            {
+              "name": "Tofu",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes mélangés",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Lait de coco allégé",
+              "qty": 100,
+              "unit": "ml"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Curry en poudre",
+              "qty": 5,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir les légumes avec le curry.",
+            "Ajouter le lait de coco et laisser mijoter 5 minutes.",
+            "Ajouter le tofu en cubes et cuire encore 5 minutes.",
+            "Servir avec le riz."
+          ],
+          "id": "vegetarien-6"
+        },
+        {
+          "name": "Wok de légumes et tofu, sauce soja réduite en sel, nouilles",
+          "benefit": "Plat complet en une poêlée, riche en légumes.",
+          "pricePerPortion": 1.9,
+          "ingredients": [
+            {
+              "name": "Tofu",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes pour wok",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Nouilles de riz crues",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Faire tremper les nouilles selon les instructions.",
+            "Faire dorer le tofu en cubes puis ajouter les légumes.",
+            "Ajouter les nouilles et la sauce soja.",
+            "Bien mélanger et servir chaud."
+          ],
+          "id": "vegetarien-7"
+        },
+        {
+          "name": "Quiche aux légumes et fromage de chèvre allégée, salade",
+          "benefit": "Appareil au lait écrémé, fromage de chèvre en petite quantité pour le goût.",
+          "pricePerPortion": 2.0,
+          "ingredients": [
+            {
+              "name": "Pâte à tarte fine",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Légumes (courgette, poivron)",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 2,
+              "unit": "pièce"
+            },
+            {
+              "name": "Lait écrémé",
+              "qty": 100,
+              "unit": "ml"
+            },
+            {
+              "name": "Fromage de chèvre",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Étaler la pâte dans un moule et répartir les légumes.",
+            "Battre les oeufs avec le lait écrémé et verser dessus.",
+            "Émietter le fromage de chèvre sur le dessus.",
+            "Cuire au four 30 minutes à 180 degrés, servir avec la salade."
+          ],
+          "id": "vegetarien-8"
+        },
+        {
+          "name": "Galettes de quinoa et légumes, salade",
+          "benefit": "Quinoa riche en protéines complètes pour un plat végétarien équilibré.",
+          "pricePerPortion": 1.7,
+          "ingredients": [
+            {
+              "name": "Quinoa cru",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes (carotte, courgette)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire le quinoa selon les instructions.",
+            "Mélanger avec les légumes râpés et l'oeuf.",
+            "Façonner des galettes et les cuire à la poêle.",
+            "Servir avec la salade."
+          ],
+          "id": "vegetarien-9"
+        },
+        {
+          "name": "Poêlée de courgettes et champignons, oeuf poché",
+          "benefit": "Plat léger et rapide, riche en protéines grâce aux oeufs.",
+          "pricePerPortion": 1.4,
+          "ingredients": [
+            {
+              "name": "Courgettes",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Champignons",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 2,
+              "unit": "pièce"
+            }
+          ],
+          "recipe": [
+            "Faire revenir les courgettes et les champignons.",
+            "Pocher les oeufs dans une casserole d'eau frémissante.",
+            "Dresser les légumes avec les oeufs pochés dessus.",
+            "Servir immédiatement."
+          ],
+          "id": "vegetarien-10"
+        },
+        {
+          "name": "Riz sauté aux légumes et oeuf, sauce soja réduite en sel",
+          "benefit": "Plat simple et complet, peu de matière grasse.",
+          "pricePerPortion": 1.6,
+          "ingredients": [
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes (carotte, petits pois, poivron)",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 10,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Cuire le riz et le laisser refroidir si possible.",
+            "Faire sauter les légumes puis ajouter le riz.",
+            "Ajouter l'oeuf battu et bien mélanger en remuant.",
+            "Assaisonner avec la sauce soja."
+          ],
+          "id": "vegetarien-11"
+        },
+        {
+          "name": "Tarte fine aux légumes, pâte fine",
+          "benefit": "Pâte fine, beaucoup de légumes, fromage limité.",
+          "pricePerPortion": 1.9,
+          "ingredients": [
+            {
+              "name": "Pâte à pizza ou tarte fine",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Courgette",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Tomate",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Poivron",
+              "qty": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Fromage râpé",
+              "qty": 30,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Étaler la pâte fine sur une plaque.",
+            "Disposer les légumes coupés en fines tranches.",
+            "Parsemer de fromage râpé.",
+            "Cuire au four 15 minutes à 210 degrés."
+          ],
+          "id": "vegetarien-12"
+        },
+        {
+          "name": "Velouté de courgettes, croutons complets, fromage frais",
+          "benefit": "Velouté léger, fromage frais allégé pour la texture.",
+          "pricePerPortion": 1.4,
+          "ingredients": [
+            {
+              "name": "Courgettes",
+              "qty": 250,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Fromage frais allégé",
+              "qty": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Pain complet",
+              "qty": 1,
+              "unit": "tranche"
+            }
+          ],
+          "recipe": [
+            "Faire revenir l'oignon puis ajouter les courgettes coupées en morceaux.",
+            "Couvrir d'eau et laisser cuire 15 minutes.",
+            "Mixer avec le fromage frais.",
+            "Servir avec des croutons de pain complet."
+          ],
+          "id": "vegetarien-13"
+        },
+        {
+          "name": "Curry de pommes de terre et épinards, riz",
+          "benefit": "Plat indien classique, riche en fibres et en fer végétal.",
+          "pricePerPortion": 1.5,
+          "ingredients": [
+            {
+              "name": "Pommes de terre",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Épinards",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Curry en poudre",
+              "qty": 5,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire revenir l'oignon avec le curry.",
+            "Ajouter les pommes de terre en dés et un peu d'eau, cuire 15 minutes.",
+            "Ajouter les épinards en fin de cuisson.",
+            "Servir avec le riz."
+          ],
+          "id": "vegetarien-14"
+        },
+        {
+          "name": "Soupe de légumes et vermicelles, parmesan",
+          "benefit": "Plat léger et réconfortant, riche en légumes.",
+          "pricePerPortion": 1.3,
+          "ingredients": [
+            {
+              "name": "Légumes variés",
+              "qty": 250,
+              "unit": "g"
+            },
+            {
+              "name": "Vermicelles crus",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Parmesan",
+              "qty": 10,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Cuire les légumes coupés en morceaux dans un bouillon.",
+            "Ajouter les vermicelles en fin de cuisson.",
+            "Mixer partiellement si désiré.",
+            "Servir avec un peu de parmesan."
+          ],
+          "id": "vegetarien-15"
+        },
+        {
+          "name": "Tofu grillé mariné, riz complet, légumes vapeur",
+          "benefit": "Tofu mariné pour plus de goût sans ajouter de sel en excès.",
+          "pricePerPortion": 1.7,
+          "ingredients": [
+            {
+              "name": "Tofu",
+              "qty": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Sauce soja réduite en sel",
+              "qty": 15,
+              "unit": "ml"
+            },
+            {
+              "name": "Riz complet cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Légumes vapeur",
+              "qty": 150,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire mariner le tofu en tranches dans la sauce soja.",
+            "Le griller quelques minutes de chaque côté.",
+            "Cuire le riz complet et les légumes à la vapeur.",
+            "Servir ensemble."
+          ],
+          "id": "vegetarien-16"
+        },
+        {
+          "name": "Oeufs cocotte aux épinards et tomates, pain complet",
+          "benefit": "Plat simple et rapide, riche en protéines.",
+          "pricePerPortion": 1.4,
+          "ingredients": [
+            {
+              "name": "Oeuf",
+              "qty": 2,
+              "unit": "pièce"
+            },
+            {
+              "name": "Épinards",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Tomates",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Pain complet",
+              "qty": 1,
+              "unit": "tranche"
+            }
+          ],
+          "recipe": [
+            "Répartir les épinards et les tomates dans des ramequins.",
+            "Casser un oeuf sur le dessus de chaque ramequin.",
+            "Cuire au four ou au bain-marie 10 à 12 minutes.",
+            "Servir avec le pain complet."
+          ],
+          "id": "vegetarien-17"
+        },
+        {
+          "name": "Galette de légumes et fromage frais, salade",
+          "benefit": "Galette maison peu grasse, fromage frais allégé en accompagnement.",
+          "pricePerPortion": 1.6,
+          "ingredients": [
+            {
+              "name": "Légumes (carotte, courgette)",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Farine complète",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Fromage frais allégé",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Salade verte",
+              "qty": 60,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Râper les légumes et les mélanger avec la farine et l'oeuf.",
+            "Façonner des galettes et les cuire à la poêle.",
+            "Servir avec le fromage frais et la salade."
+          ],
+          "id": "vegetarien-18"
+        },
+        {
+          "name": "Poêlée de patate douce et épinards, oeuf au plat",
+          "benefit": "Index glycémique modéré de la patate douce, repas simple et nourrissant.",
+          "pricePerPortion": 1.5,
+          "ingredients": [
+            {
+              "name": "Patate douce",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Épinards",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 1,
+              "unit": "pièce"
+            }
+          ],
+          "recipe": [
+            "Cuire la patate douce en dés à la poêle ou au four.",
+            "Ajouter les épinards en fin de cuisson.",
+            "Cuire l'oeuf au plat à part.",
+            "Servir l'oeuf sur la poêlée."
+          ],
+          "id": "vegetarien-19"
+        },
+        {
+          "name": "Risotto aux courgettes et petits pois, parmesan",
+          "benefit": "Risotto végétarien léger, parmesan en petite quantité pour le goût.",
+          "pricePerPortion": 1.8,
+          "ingredients": [
+            {
+              "name": "Riz cru",
+              "qty": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Courgettes",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Petits pois",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Oignon",
+              "qty": 30,
+              "unit": "g"
+            },
+            {
+              "name": "Parmesan",
+              "qty": 10,
+              "unit": "g"
+            },
+            {
+              "name": "Bouillon de légumes",
+              "qty": 300,
+              "unit": "ml"
+            }
+          ],
+          "recipe": [
+            "Faire revenir l'oignon et les courgettes.",
+            "Ajouter le riz et le nacrer.",
+            "Ajouter le bouillon louche par louche puis les petits pois.",
+            "Ajouter le parmesan hors du feu."
+          ],
+          "id": "vegetarien-20"
         }
       ]
     }
