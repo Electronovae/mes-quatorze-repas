@@ -171,3 +171,81 @@ body {
 }
 .instock-item .ing-name { flex: 1; text-decoration: line-through; color: var(--ink-faint); }
 .instock-item .ing-qty { font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); white-space: nowrap; }
+
+/* ── Nouvelles couleurs catégories ──────────────────────────────────────────── */
+:root {
+  --cat-petits-dejeuners: #B07A30;
+}
+
+/* ── Tabbar à 6 onglets ─────────────────────────────────────────────────────── */
+.tab-btn { font-size: 11.5px; padding: 8px 2px; }
+
+/* ── Match profil ────────────────────────────────────────────────────────────── */
+.meal-match { border-color: var(--accent) !important; }
+.match-badge { display:inline-block; font-size:10px; font-family:var(--font-mono); color:var(--accent); background:var(--accent-soft); border-radius:6px; padding:2px 7px; margin-bottom:6px; }
+
+/* ── Nutrition strip ─────────────────────────────────────────────────────────── */
+.nutri-strip { display:flex; gap:10px; flex-wrap:wrap; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-faint); padding:6px 0 2px; }
+.nutri-strip span::before { content:""; }
+
+/* ── Barre de complétion courses ─────────────────────────────────────────────── */
+.completion-bar-wrap { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+.completion-bar-track { flex:1; height:6px; background:var(--line); border-radius:999px; overflow:hidden; }
+.completion-bar-fill { height:100%; background:var(--accent); border-radius:999px; transition:width 0.3s ease; }
+.completion-label { font-family:var(--font-mono); font-size:10.5px; color:var(--ink-soft); white-space:nowrap; }
+
+/* ── Courses améliorées ──────────────────────────────────────────────────────── */
+.shopping-all-stock { list-style:none; text-align:center; padding:24px 20px; color:var(--accent); font-size:14px; font-weight:500; }
+.to-fridge-btn, .from-fridge-btn { background:none; border:none; font-size:15px; cursor:pointer; padding:2px 4px; opacity:0.5; flex-shrink:0; }
+.to-fridge-btn:hover, .from-fridge-btn:hover { opacity:1; }
+.ing-qty.partial { color: var(--accent); }
+.in-stock-hint { font-size:10px; color:var(--ink-faint); }
+.instock-section { list-style:none; margin-top:8px; }
+.instock-summary { font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-faint); cursor:pointer; padding:10px 4px; user-select:none; }
+.instock-list { list-style:none; margin:4px 0 0; padding:0; }
+.instock-item { display:flex; align-items:center; gap:10px; padding:8px 4px; border-bottom:1px solid var(--line); font-size:13px; opacity:0.5; }
+.instock-item .ing-name { flex:1; text-decoration:line-through; color:var(--ink-faint); }
+.instock-item .ing-qty { font-family:var(--font-mono); font-size:11px; color:var(--ink-faint); white-space:nowrap; }
+
+/* ── Frigo ────────────────────────────────────────────────────────────────────── */
+.frigo-add-row { display:flex; gap:6px; margin-bottom:16px; align-items:center; flex-wrap:wrap; }
+.frigo-input { flex:2; min-width:100px; font-family:var(--font-body); font-size:13px; border:1px solid var(--line); border-radius:999px; padding:8px 12px; background:var(--surface); color:var(--ink); outline:none; }
+.frigo-qty-input { width:60px; font-family:var(--font-mono); font-size:13px; border:1px solid var(--line); border-radius:999px; padding:8px 10px; background:var(--surface); color:var(--ink); outline:none; text-align:center; }
+.frigo-unit-input { width:64px; font-family:var(--font-mono); font-size:12px; border:1px solid var(--line); border-radius:999px; padding:8px 10px; background:var(--surface); color:var(--ink); outline:none; text-align:center; }
+.frigo-input:focus, .frigo-qty-input:focus, .frigo-unit-input:focus { border-color:var(--accent); }
+.frigo-list { list-style:none; margin:0; padding:0; }
+.frigo-item { display:flex; align-items:center; gap:8px; padding:10px 4px; border-bottom:1px solid var(--line); }
+.frigo-name { flex:1; font-size:13.5px; }
+.frigo-qty-row { display:flex; align-items:center; gap:6px; }
+.frigo-qty-btn { width:24px; height:24px; border-radius:50%; border:1px solid var(--line); background:var(--surface-soft); cursor:pointer; font-size:14px; line-height:1; }
+.frigo-qty-val { font-family:var(--font-mono); font-size:11.5px; color:var(--ink-soft); min-width:58px; text-align:center; }
+.frigo-remove { background:none; border:none; font-size:18px; color:var(--ink-faint); cursor:pointer; padding:2px 6px; line-height:1; }
+.frigo-empty { text-align:center; color:var(--ink-soft); font-size:13px; line-height:1.6; padding:28px 20px 0; }
+.frigo-clear-btn { margin-top:20px; width:100%; }
+
+/* ── Petits déjeuners ────────────────────────────────────────────────────────── */
+.premium-badge { display:inline-block; font-family:var(--font-mono); font-size:10.5px; background:#FFF8E7; color:#B07A30; border:1px solid #E8C97A; border-radius:999px; padding:4px 12px; margin-bottom:16px; }
+.pj-card { display:flex; align-items:flex-start; gap:12px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-sm); padding:12px; margin-bottom:10px; cursor:pointer; }
+.pj-card.pj-checked { border-color:var(--accent); background:var(--accent-soft); }
+.pj-checkbox { width:18px; height:18px; flex-shrink:0; margin-top:2px; accent-color:var(--accent); }
+.pj-info { flex:1; }
+.pj-name { font-weight:600; font-size:14px; margin:0 0 4px; }
+.pj-benefit { font-size:12px; color:var(--ink-soft); margin:0 0 8px; line-height:1.45; }
+.pj-row { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.pj-nutri { font-family:var(--font-mono); font-size:10.5px; color:var(--ink-faint); }
+
+/* ── Profil ──────────────────────────────────────────────────────────────────── */
+.profile-section { margin-bottom:24px; }
+.profile-label { font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-faint); margin:0 0 10px; }
+.profile-hint { text-transform:none; font-size:10px; letter-spacing:0; }
+.profile-stepper { margin-top:4px; }
+.pathologies-grid { display:flex; flex-wrap:wrap; gap:8px; }
+.patho-chip { display:flex; align-items:center; gap:7px; font-size:13px; background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:7px 13px; cursor:pointer; }
+.patho-chip.patho-active { background:var(--accent-soft); border-color:var(--accent); color:var(--accent); font-weight:500; }
+.patho-chip input { width:14px; height:14px; accent-color:var(--accent); }
+
+/* ── Semaine : section petits dej ────────────────────────────────────────────── */
+.week-section-title { font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-faint); margin:18px 4px 8px; }
+.slot-pj { background:var(--surface-soft); border-color:var(--cat-petits-dejeuners); }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

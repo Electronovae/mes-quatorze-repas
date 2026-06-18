@@ -48,6 +48,12 @@
             "Mélanger sauce soja, miel et gingembre, verser sur le poulet et laisser réduire 5 minutes.",
             "Cuire le riz et les brocolis à la vapeur pendant ce temps.",
             "Servir le poulet nappé de sauce avec le riz et les brocolis."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
           ]
         },
         {
@@ -87,6 +93,12 @@
             "Saisir le poulet à feu vif quelques minutes.",
             "Faire sauter les légumes à part, puis les mélanger au poulet.",
             "Servir avec le riz cuit."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
           ]
         },
         {
@@ -126,6 +138,12 @@
             "Ajouter les légumes et faire sauter quelques minutes en remuant.",
             "Verser la sauce soja en fin de cuisson.",
             "Servir avec le riz cuit à la vapeur."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
           ]
         },
         {
@@ -165,6 +183,12 @@
             "Enfiler le poulet sur des brochettes et cuire au four ou à la poêle.",
             "Griller les légumes à part.",
             "Servir avec la semoule réhydratée."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
           ]
         },
         {
@@ -209,6 +233,12 @@
             "Ajouter les carottes, les abricots secs et les épices, couvrir d'eau à mi-hauteur.",
             "Laisser mijoter à couvert 30 à 40 minutes.",
             "Servir avec la semoule réhydratée."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
           ]
         },
         {
@@ -238,6 +268,12 @@
             "Cuire les haricots verts à la vapeur.",
             "Poêler l'escalope de dinde quelques minutes de chaque côté.",
             "Servir ensemble."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
           ]
         },
         {
@@ -277,6 +313,12 @@
             "Saupoudrer de curry, ajouter le lait de coco et laisser mijoter 15 minutes.",
             "Cuire le riz à part.",
             "Servir le poulet nappé de sauce avec le riz."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
           ]
         },
         {
@@ -316,7 +358,13 @@
             "Verser les tomates concassées et laisser mijoter 20 minutes.",
             "Servir avec le riz."
           ],
-          "id": "volaille-8"
+          "id": "volaille-8",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Suprême de poulet à la moutarde légère, haricots verts, pommes de terre",
@@ -355,7 +403,13 @@
             "Cuire les pommes de terre et les haricots verts à la vapeur.",
             "Servir ensemble."
           ],
-          "id": "volaille-9"
+          "id": "volaille-9",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Poulet au citron et romarin, semoule, courgettes",
@@ -394,7 +448,13 @@
             "Cuire les courgettes à la vapeur et réhydrater la semoule.",
             "Servir ensemble."
           ],
-          "id": "volaille-10"
+          "id": "volaille-10",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Émincé de poulet à l'orientale, boulgour, courgettes",
@@ -433,7 +493,13 @@
             "Cuire le boulgour et les courgettes à part.",
             "Servir ensemble."
           ],
-          "id": "volaille-11"
+          "id": "volaille-11",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Brochettes de poulet teriyaki, riz, edamame",
@@ -472,7 +538,13 @@
             "Cuire le riz et réchauffer les edamame.",
             "Servir ensemble."
           ],
-          "id": "volaille-12"
+          "id": "volaille-12",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Poulet chasseur allégé, riz",
@@ -511,7 +583,13 @@
             "Verser les tomates et laisser mijoter 15 minutes.",
             "Servir avec le riz."
           ],
-          "id": "volaille-13"
+          "id": "volaille-13",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Wrap de poulet effiloché, tortilla complète, crudités, yaourt",
@@ -545,7 +623,13 @@
             "Garnir la tortilla de poulet, crudités et sauce.",
             "Rouler et servir."
           ],
-          "id": "volaille-14"
+          "id": "volaille-14",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Poulet rôti aux herbes, pommes de terre grenaille, haricots verts",
@@ -579,7 +663,13 @@
             "Cuire les haricots verts à la vapeur.",
             "Servir ensemble."
           ],
-          "id": "volaille-15"
+          "id": "volaille-15",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Poulet à l'estragon allégé, riz, petits pois",
@@ -618,7 +708,13 @@
             "Cuire le riz et les petits pois.",
             "Servir ensemble."
           ],
-          "id": "volaille-16"
+          "id": "volaille-16",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Sauté de poulet aux poivrons et oignons, riz",
@@ -652,7 +748,13 @@
             "Cuire jusqu'à ce que tout soit tendre.",
             "Servir avec le riz."
           ],
-          "id": "volaille-17"
+          "id": "volaille-17",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Poulet mariné au paprika fumé, semoule, carottes",
@@ -686,7 +788,13 @@
             "Cuire les carottes à la vapeur et réhydrater la semoule.",
             "Servir ensemble."
           ],
-          "id": "volaille-18"
+          "id": "volaille-18",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Dinde à la provençale, pâtes complètes",
@@ -720,7 +828,13 @@
             "Cuire les pâtes à part.",
             "Mélanger ou servir à côté."
           ],
-          "id": "volaille-19"
+          "id": "volaille-19",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         },
         {
           "name": "Poulet satay, riz, concombre",
@@ -759,7 +873,13 @@
             "Cuire le riz et couper le concombre.",
             "Servir le poulet nappé de sauce avec le riz et le concombre."
           ],
-          "id": "volaille-20"
+          "id": "volaille-20",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ]
         }
       ]
     },
@@ -811,6 +931,14 @@
             "Ajouter les lentilles et les pois cassés rincés, couvrir d'eau et cuire 20 à 25 minutes en remuant.",
             "Cuire le riz à part.",
             "Servir le dahl sur le riz."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -855,6 +983,14 @@
             "Ajouter les pois chiches, les lentilles, les tomates et un peu d'eau, laisser mijoter 20 minutes.",
             "Ajouter les épinards en fin de cuisson jusqu'à ce qu'ils tombent.",
             "Servir avec le riz."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -899,6 +1035,14 @@
             "Ajouter les haricots, les pois chiches, le maïs, les tomates et les épices.",
             "Laisser mijoter 20 minutes à couvert.",
             "Servir tel quel ou avec un peu de riz."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -938,6 +1082,14 @@
             "Couper les tomates et l'oignon rouge en dés.",
             "Mélanger le tout encore tiède avec la vinaigrette.",
             "Servir immédiatement ou réserver au frais."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -977,6 +1129,14 @@
             "Cuire le quinoa selon les instructions du paquet.",
             "Réchauffer ou décongeler les edamame.",
             "Dresser tous les éléments dans un bol avec une cuillère de houmous au centre."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -1021,6 +1181,14 @@
             "Ajouter les lentilles, les haricots, le curry et le lait de coco, couvrir d'eau si besoin.",
             "Laisser mijoter 20 minutes.",
             "Servir avec le riz."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -1055,7 +1223,15 @@
             "Couper les crudités en bâtonnets.",
             "Servir le houmous avec les crudités et le pain complet."
           ],
-          "id": "legumineuses-7"
+          "id": "legumineuses-7",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Curry de pois chiches et haricots rouges, épinards, riz",
@@ -1094,7 +1270,15 @@
             "Ajouter les épinards en fin de cuisson.",
             "Servir avec le riz."
           ],
-          "id": "legumineuses-8"
+          "id": "legumineuses-8",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Soupe de lentilles corail et pois cassés, carottes",
@@ -1128,7 +1312,15 @@
             "Laisser cuire 25 minutes puis mixer si désiré.",
             "Servir chaud."
           ],
-          "id": "legumineuses-9"
+          "id": "legumineuses-9",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Salade de haricots blancs et flageolets, tomates, basilic",
@@ -1167,7 +1359,15 @@
             "Mélanger le tout avec le basilic et la vinaigrette.",
             "Servir frais ou tiède."
           ],
-          "id": "legumineuses-10"
+          "id": "legumineuses-10",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Galettes de pois chiches et lentilles, salade",
@@ -1201,7 +1401,15 @@
             "Cuire à la poêle quelques minutes de chaque côté.",
             "Servir avec la salade."
           ],
-          "id": "legumineuses-11"
+          "id": "legumineuses-11",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Riz cantonais aux légumes et edamame, oeuf",
@@ -1240,7 +1448,15 @@
             "Ajouter le riz et l'oeuf battu, bien mélanger en remuant.",
             "Assaisonner avec la sauce soja."
           ],
-          "id": "legumineuses-12"
+          "id": "legumineuses-12",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Tacos de haricots noirs et maïs, tortilla complète, salade",
@@ -1274,7 +1490,15 @@
             "Réchauffer les tortillas.",
             "Garnir de haricots, maïs et salade."
           ],
-          "id": "legumineuses-13"
+          "id": "legumineuses-13",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Velouté de lentilles corail et pois chiches, croutons complets",
@@ -1308,7 +1532,15 @@
             "Mixer jusqu'à obtenir un velouté.",
             "Servir avec des croutons de pain complet."
           ],
-          "id": "legumineuses-14"
+          "id": "legumineuses-14",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Poêlée de flageolets et haricots verts, tomates",
@@ -1342,7 +1574,15 @@
             "Faire revenir l'ail et les tomates en dés.",
             "Mélanger tous les éléments et servir tiède."
           ],
-          "id": "legumineuses-15"
+          "id": "legumineuses-15",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Curry de lentilles vertes et pois chiches, épinards, riz",
@@ -1381,7 +1621,15 @@
             "Ajouter les épinards en fin de cuisson.",
             "Servir avec le riz."
           ],
-          "id": "legumineuses-16"
+          "id": "legumineuses-16",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Salade de pois chiches et edamame, concombre, menthe",
@@ -1420,7 +1668,15 @@
             "Mélanger tous les ingrédients avec la menthe ciselée et la vinaigrette.",
             "Servir frais."
           ],
-          "id": "legumineuses-17"
+          "id": "legumineuses-17",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Chili sin carne, haricots noirs et rouges, poivrons",
@@ -1459,7 +1715,15 @@
             "Laisser mijoter 20 minutes à couvert.",
             "Servir tel quel ou avec du riz."
           ],
-          "id": "legumineuses-18"
+          "id": "legumineuses-18",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Couscous de légumineuses, légumes, semoule complète",
@@ -1493,7 +1757,15 @@
             "Réhydrater la semoule.",
             "Dresser le tout ensemble."
           ],
-          "id": "legumineuses-19"
+          "id": "legumineuses-19",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Dahl de lentilles jaunes et pois chiches, riz complet",
@@ -1532,7 +1804,15 @@
             "Cuire le riz complet à part.",
             "Servir le dahl sur le riz."
           ],
-          "id": "legumineuses-20"
+          "id": "legumineuses-20",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         }
       ]
     },
@@ -1579,6 +1859,14 @@
             "Fermer et cuire au four 15 minutes à 180 degrés.",
             "Cuire les légumes et le riz à la vapeur pendant ce temps.",
             "Servir ensemble."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -1618,6 +1906,14 @@
             "Ajouter les crevettes et l'ail haché, cuire 3 à 4 minutes.",
             "Arroser de jus de citron en fin de cuisson.",
             "Servir avec le riz."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -1652,6 +1948,14 @@
             "Verser le lait de coco et laisser mijoter 5 minutes.",
             "Ajouter le poisson coupé en morceaux et cuire 8 à 10 minutes à couvert.",
             "Servir tel quel ou avec un peu de riz."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -1686,6 +1990,14 @@
             "Cuire le riz et les brocolis à la vapeur.",
             "Réchauffer doucement la sauce hollandaise.",
             "Dresser le poisson nappé de sauce avec le riz et les brocolis."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -1715,6 +2027,14 @@
             "Faire suer les poireaux émincés à la poêle.",
             "Poêler le cabillaud quelques minutes de chaque côté.",
             "Servir le cabillaud avec la purée et les poireaux."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -1759,6 +2079,14 @@
             "Faire sauter les légumes puis ajouter les crevettes.",
             "Ajouter les nouilles égouttées et la sauce soja, bien mélanger.",
             "Servir avec un trait de citron et des cacahuètes concassées."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -1793,7 +2121,15 @@
             "Couper le concombre en dés.",
             "Servir avec le riz et le concombre."
           ],
-          "id": "poisson-maigre-7"
+          "id": "poisson-maigre-7",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Brochettes de crevettes marinées, riz, légumes grillés",
@@ -1832,7 +2168,15 @@
             "Griller les légumes à part.",
             "Servir avec le riz."
           ],
-          "id": "poisson-maigre-8"
+          "id": "poisson-maigre-8",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Filet de sole meunière allégée, pommes de terre vapeur, haricots verts",
@@ -1866,7 +2210,15 @@
             "Arroser de jus de citron.",
             "Servir ensemble."
           ],
-          "id": "poisson-maigre-9"
+          "id": "poisson-maigre-9",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Curry de crevettes au lait de coco léger, riz",
@@ -1900,7 +2252,15 @@
             "Ajouter les crevettes et cuire 3 à 4 minutes.",
             "Servir avec le riz."
           ],
-          "id": "poisson-maigre-10"
+          "id": "poisson-maigre-10",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Soupe thaï de crevettes, nouilles de riz",
@@ -1934,7 +2294,15 @@
             "Ajouter les nouilles de riz précuites.",
             "Servir chaud."
           ],
-          "id": "poisson-maigre-11"
+          "id": "poisson-maigre-11",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Merlu poêlé, purée de céleri-rave, brocolis",
@@ -1963,7 +2331,15 @@
             "Poêler le merlu quelques minutes de chaque côté.",
             "Servir ensemble."
           ],
-          "id": "poisson-maigre-12"
+          "id": "poisson-maigre-12",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Riz cantonais aux crevettes et petits pois",
@@ -2002,7 +2378,15 @@
             "Ajouter le riz et l'oeuf battu, bien mélanger.",
             "Assaisonner avec la sauce soja."
           ],
-          "id": "poisson-maigre-13"
+          "id": "poisson-maigre-13",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Salade de la mer, vinaigrette citronnée",
@@ -2036,7 +2420,15 @@
             "Mélanger tous les ingrédients avec la vinaigrette.",
             "Servir frais."
           ],
-          "id": "poisson-maigre-14"
+          "id": "poisson-maigre-14",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Filet de lieu noir vapeur, sauce citron-herbes, riz, courgettes",
@@ -2075,7 +2467,15 @@
             "Cuire le riz et les courgettes à la vapeur.",
             "Servir le poisson nappé de sauce avec le riz et les courgettes."
           ],
-          "id": "poisson-maigre-15"
+          "id": "poisson-maigre-15",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Brandade légère de morue, pommes de terre, lait écrémé",
@@ -2109,7 +2509,15 @@
             "Mélanger la morue, la purée, le lait et l'ail écrasé.",
             "Réchauffer doucement et servir."
           ],
-          "id": "poisson-maigre-16"
+          "id": "poisson-maigre-16",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Wok de crevettes et légumes, sauce soja réduite en sel, nouilles",
@@ -2143,7 +2551,15 @@
             "Ajouter les nouilles et la sauce soja.",
             "Bien mélanger et servir chaud."
           ],
-          "id": "poisson-maigre-17"
+          "id": "poisson-maigre-17",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Truite vapeur, citron, amandes, riz, haricots verts",
@@ -2182,7 +2598,15 @@
             "Cuire le riz et les haricots verts.",
             "Servir le poisson avec le citron, les amandes et les accompagnements."
           ],
-          "id": "poisson-maigre-18"
+          "id": "poisson-maigre-18",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Calamars sautés à l'ail et au persil, riz, salade",
@@ -2221,7 +2645,15 @@
             "Cuire le riz à part.",
             "Servir avec la salade."
           ],
-          "id": "poisson-maigre-19"
+          "id": "poisson-maigre-19",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Cabillaud à la provençale, semoule",
@@ -2260,7 +2692,15 @@
             "Réhydrater la semoule.",
             "Servir ensemble."
           ],
-          "id": "poisson-maigre-20"
+          "id": "poisson-maigre-20",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         }
       ]
     },
@@ -2307,6 +2747,11 @@
             "Poêler le saumon coupé en morceaux quelques minutes.",
             "Ajouter les épinards puis le yaourt hors du feu pour faire la sauce.",
             "Mélanger avec les pâtes et un trait de citron."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
           ]
         },
         {
@@ -2336,6 +2781,11 @@
             "Griller le maquereau frais quelques minutes de chaque côté, ou réchauffer doucement s'il est en conserve.",
             "Préparer la salade avec une vinaigrette légère.",
             "Servir le tout ensemble."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
           ]
         },
         {
@@ -2364,6 +2814,11 @@
             "Égoutter les sardines.",
             "Couper les tomates en quartiers et assaisonner.",
             "Servir les sardines avec la salade de tomates et le pain complet."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
           ]
         },
         {
@@ -2403,6 +2858,11 @@
             "Couper le saumon en cubes (cru de qualité sashimi ou cuit selon préférence).",
             "Décongeler ou cuire les edamame, couper le concombre en dés.",
             "Dresser tous les éléments dans un bol."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
           ]
         },
         {
@@ -2442,6 +2902,11 @@
             "Ajouter le bouillon louche par louche en remuant jusqu'à cuisson du riz.",
             "Incorporer les petits pois en cours de cuisson.",
             "Ajouter le saumon fumé coupé en lanières hors du feu."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
           ]
         },
         {
@@ -2481,7 +2946,12 @@
             "Cuire le riz et les brocolis à la vapeur.",
             "Servir ensemble."
           ],
-          "id": "poisson-gras-6"
+          "id": "poisson-gras-6",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Truite saumonée grillée, pommes de terre vapeur, salade",
@@ -2510,7 +2980,12 @@
             "Préparer la salade avec une vinaigrette légère.",
             "Servir le tout ensemble."
           ],
-          "id": "poisson-gras-7"
+          "id": "poisson-gras-7",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Tartare de saumon au citron et aneth, riz, concombre",
@@ -2549,7 +3024,12 @@
             "Cuire le riz et couper le concombre.",
             "Servir ensemble."
           ],
-          "id": "poisson-gras-8"
+          "id": "poisson-gras-8",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Maquereau mariné façon escabèche légère, pommes de terre, salade",
@@ -2588,7 +3068,12 @@
             "Verser sur le poisson et laisser mariner au frais quelques heures si possible.",
             "Servir avec les pommes de terre et la salade."
           ],
-          "id": "poisson-gras-9"
+          "id": "poisson-gras-9",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Pavé de thon mi-cuit, riz vinaigré, edamame",
@@ -2622,7 +3107,12 @@
             "Réchauffer les edamame.",
             "Servir ensemble."
           ],
-          "id": "poisson-gras-10"
+          "id": "poisson-gras-10",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Saumon en papillote, citron et herbes, légumes vapeur",
@@ -2656,7 +3146,12 @@
             "Cuire les légumes à la vapeur.",
             "Servir ensemble."
           ],
-          "id": "poisson-gras-11"
+          "id": "poisson-gras-11",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Sardines grillées, pommes de terre, salade de tomates",
@@ -2685,7 +3180,12 @@
             "Préparer la salade de tomates.",
             "Servir le tout ensemble."
           ],
-          "id": "poisson-gras-12"
+          "id": "poisson-gras-12",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Curry de saumon au lait de coco léger, riz",
@@ -2719,7 +3219,12 @@
             "Ajouter le saumon en morceaux et cuire 8 minutes.",
             "Servir avec le riz."
           ],
-          "id": "poisson-gras-13"
+          "id": "poisson-gras-13",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Tartines de sardines écrasées, pain complet, tomates",
@@ -2748,7 +3253,12 @@
             "Couper les tomates en tranches.",
             "Servir ensemble."
           ],
-          "id": "poisson-gras-14"
+          "id": "poisson-gras-14",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Saumon poêlé, lentilles corail, épinards",
@@ -2777,7 +3287,12 @@
             "Poêler le saumon quelques minutes de chaque côté.",
             "Servir le saumon sur les lentilles."
           ],
-          "id": "poisson-gras-15"
+          "id": "poisson-gras-15",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Maquereau au four, pommes de terre, oignons",
@@ -2805,7 +3320,12 @@
             "Cuire au four 25 minutes à 190 degrés.",
             "Servir directement."
           ],
-          "id": "poisson-gras-16"
+          "id": "poisson-gras-16",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Wok de saumon et légumes, sauce soja réduite en sel, riz",
@@ -2839,7 +3359,12 @@
             "Verser la sauce soja en fin de cuisson.",
             "Servir avec le riz."
           ],
-          "id": "poisson-gras-17"
+          "id": "poisson-gras-17",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Truite fumée, salade de pommes de terre, vinaigrette légère",
@@ -2868,7 +3393,12 @@
             "Ajouter la truite fumée émiettée.",
             "Servir frais ou tiède."
           ],
-          "id": "poisson-gras-18"
+          "id": "poisson-gras-18",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Hareng mariné, pommes de terre vapeur, salade verte",
@@ -2896,7 +3426,12 @@
             "Préparer la salade.",
             "Servir le hareng mariné avec les pommes de terre et la salade."
           ],
-          "id": "poisson-gras-19"
+          "id": "poisson-gras-19",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         },
         {
           "name": "Saumon grillé, riz complet, petits pois",
@@ -2924,7 +3459,12 @@
             "Cuire le riz complet et les petits pois.",
             "Servir ensemble."
           ],
-          "id": "poisson-gras-20"
+          "id": "poisson-gras-20",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hypercholesterolemie",
+            "hta"
+          ]
         }
       ]
     },
@@ -2976,7 +3516,8 @@
             "Ajouter l'oignon, les carottes et les champignons, puis le bouillon.",
             "Laisser mijoter à couvert au moins 1h30 à feu doux.",
             "Servir avec les pommes de terre cuites à la vapeur."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "id": "viande-rouge-2",
@@ -3005,7 +3546,8 @@
             "Faire fondre les oignons émincés à la poêle.",
             "Ajouter le foie et le saisir 2 à 3 minutes par face, il doit rester rosé à l'intérieur.",
             "Servir avec les pommes de terre."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "id": "viande-rouge-3",
@@ -3034,7 +3576,8 @@
             "Poêler le boeuf selon la cuisson souhaitée.",
             "Réchauffer doucement la sauce au bleu.",
             "Servir ensemble."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "id": "viande-rouge-4",
@@ -3063,7 +3606,8 @@
             "Cuire les haricots verts à la vapeur.",
             "Poêler le steak haché à la cuisson souhaitée.",
             "Servir ensemble."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "id": "viande-rouge-5",
@@ -3092,7 +3636,8 @@
             "Faire sauter les champignons à la poêle.",
             "Ajouter les rognons et cuire à feu vif 3 à 4 minutes.",
             "Servir avec le riz."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "name": "Boeuf à la provençale, semoule",
@@ -3126,7 +3671,8 @@
             "Réhydrater la semoule.",
             "Servir ensemble."
           ],
-          "id": "viande-rouge-6"
+          "id": "viande-rouge-6",
+          "pathologies": []
         },
         {
           "name": "Joue de boeuf mijotée, purée de pommes de terre, carottes",
@@ -3160,7 +3706,8 @@
             "Cuire les pommes de terre et les écraser en purée.",
             "Servir ensemble."
           ],
-          "id": "viande-rouge-7"
+          "id": "viande-rouge-7",
+          "pathologies": []
         },
         {
           "name": "Langue de boeuf sauce légère, pommes de terre, haricots verts",
@@ -3188,7 +3735,8 @@
             "Cuire les pommes de terre et les haricots verts à la vapeur.",
             "Servir ensemble avec un filet de jus de cuisson."
           ],
-          "id": "viande-rouge-8"
+          "id": "viande-rouge-8",
+          "pathologies": []
         },
         {
           "name": "Steak de boeuf grillé, légumes grillés, pommes de terre",
@@ -3217,7 +3765,8 @@
             "Cuire les pommes de terre à la vapeur.",
             "Servir ensemble."
           ],
-          "id": "viande-rouge-9"
+          "id": "viande-rouge-9",
+          "pathologies": []
         },
         {
           "name": "Boeuf sauté aux légumes, sauce soja réduite en sel, riz",
@@ -3251,7 +3800,8 @@
             "Verser la sauce soja en fin de cuisson.",
             "Servir avec le riz."
           ],
-          "id": "viande-rouge-10"
+          "id": "viande-rouge-10",
+          "pathologies": []
         },
         {
           "name": "Boulettes de boeuf maigre, sauce tomate légère, riz",
@@ -3280,7 +3830,8 @@
             "Ajouter les tomates concassées et laisser mijoter 15 minutes.",
             "Servir avec le riz."
           ],
-          "id": "viande-rouge-11"
+          "id": "viande-rouge-11",
+          "pathologies": []
         },
         {
           "name": "Foie de veau poêlé, pommes de terre, oignons",
@@ -3309,7 +3860,8 @@
             "Ajouter le foie et le saisir 2 à 3 minutes par face.",
             "Servir avec les pommes de terre."
           ],
-          "id": "viande-rouge-12"
+          "id": "viande-rouge-12",
+          "pathologies": []
         },
         {
           "name": "Carpaccio de boeuf, roquette, parmesan, citron",
@@ -3343,7 +3895,8 @@
             "Parsemer de copeaux de parmesan et d'un trait de citron.",
             "Servir immédiatement."
           ],
-          "id": "viande-rouge-13"
+          "id": "viande-rouge-13",
+          "pathologies": []
         },
         {
           "name": "Boeuf braisé aux carottes, pommes de terre vapeur",
@@ -3377,7 +3930,8 @@
             "Cuire les pommes de terre à la vapeur.",
             "Servir ensemble."
           ],
-          "id": "viande-rouge-14"
+          "id": "viande-rouge-14",
+          "pathologies": []
         },
         {
           "name": "Rôti de boeuf maigre, légumes rôtis, pommes de terre",
@@ -3406,7 +3960,8 @@
             "Laisser reposer puis trancher.",
             "Servir avec les pommes de terre."
           ],
-          "id": "viande-rouge-15"
+          "id": "viande-rouge-15",
+          "pathologies": []
         },
         {
           "name": "Émincé de boeuf à la moutarde légère, riz, haricots verts",
@@ -3445,7 +4000,8 @@
             "Cuire le riz et les haricots verts.",
             "Servir ensemble."
           ],
-          "id": "viande-rouge-16"
+          "id": "viande-rouge-16",
+          "pathologies": []
         },
         {
           "name": "Brochettes de boeuf et légumes grillés, semoule",
@@ -3474,7 +4030,8 @@
             "Réhydrater la semoule.",
             "Servir ensemble."
           ],
-          "id": "viande-rouge-17"
+          "id": "viande-rouge-17",
+          "pathologies": []
         },
         {
           "name": "Foie de génisse poêlé, purée de pommes de terre, oignons",
@@ -3503,7 +4060,8 @@
             "Ajouter le foie et le saisir rapidement à feu vif.",
             "Servir avec la purée."
           ],
-          "id": "viande-rouge-18"
+          "id": "viande-rouge-18",
+          "pathologies": []
         },
         {
           "name": "Pot-au-feu léger, bouillon",
@@ -3537,7 +4095,8 @@
             "Laisser mijoter à couvert au moins 2 heures.",
             "Servir la viande et les légumes avec un peu de bouillon."
           ],
-          "id": "viande-rouge-19"
+          "id": "viande-rouge-19",
+          "pathologies": []
         },
         {
           "name": "Steak haché grillé, poêlée de courgettes et poivrons, riz",
@@ -3576,7 +4135,8 @@
             "Griller le steak haché à la cuisson souhaitée.",
             "Servir ensemble avec le riz."
           ],
-          "id": "viande-rouge-20"
+          "id": "viande-rouge-20",
+          "pathologies": []
         }
       ]
     },
@@ -3623,7 +4183,8 @@
             "Faire revenir la dinde fumée coupée en lardons.",
             "Battre l'oeuf avec le yaourt et le parmesan hors du feu.",
             "Mélanger les pâtes chaudes égouttées avec la dinde puis avec l'appareil oeuf-yaourt pour napper sans cuire l'oeuf."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "id": "plaisir-2",
@@ -3662,7 +4223,8 @@
             "Préparer la sauce en mélangeant yaourt, ail écrasé et herbes.",
             "Réchauffer légèrement le pain pita.",
             "Garnir le pain avec le poulet, les crudités et la sauce."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "id": "plaisir-3",
@@ -3701,7 +4263,8 @@
             "Faire revenir l'oignon et la dinde quelques minutes.",
             "Mélanger les pommes de terre, l'oignon, la dinde et le fromage blanc dans un plat.",
             "Couvrir de reblochon coupé en tranches et passer au four 15 minutes à 200 degrés."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "id": "plaisir-4",
@@ -3735,7 +4298,8 @@
             "Faire revenir la dinde coupée en lardons.",
             "Faire fondre le bleu avec le yaourt à feu doux pour faire la sauce.",
             "Mélanger le tout avec les gnocchis égouttés."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "id": "plaisir-5",
@@ -3769,7 +4333,8 @@
             "Répartir les épinards puis le saumon coupé en morceaux.",
             "Parsemer de fromage râpé.",
             "Cuire au four 12 à 15 minutes à 220 degrés."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "id": "plaisir-6",
@@ -3803,7 +4368,8 @@
             "Cuire à la poêle ou au four jusqu'à ce que le fromage fonde.",
             "Préparer la salade à côté.",
             "Servir chaud avec la salade."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "id": "plaisir-7",
@@ -3832,7 +4398,8 @@
             "Poêler ou griller le poulet jusqu'à cuisson complète.",
             "Toaster légèrement le pain.",
             "Monter le burger avec le poulet et les garnitures de votre choix, servir avec les frites."
-          ]
+          ],
+          "pathologies": []
         },
         {
           "name": "Quiche allégée jambon-épinards, pâte fine, salade",
@@ -3876,7 +4443,8 @@
             "Battre les oeufs avec le lait écrémé et verser sur la garniture.",
             "Cuire au four 30 minutes à 180 degrés, servir avec la salade."
           ],
-          "id": "plaisir-8"
+          "id": "plaisir-8",
+          "pathologies": []
         },
         {
           "name": "Lasagnes allégées, salade",
@@ -3920,7 +4488,8 @@
             "Monter les lasagnes en couches, couvrir de fromage râpé.",
             "Cuire au four 30 minutes à 190 degrés, servir avec la salade."
           ],
-          "id": "plaisir-9"
+          "id": "plaisir-9",
+          "pathologies": []
         },
         {
           "name": "Risotto au jambon et petits pois, parmesan",
@@ -3964,7 +4533,8 @@
             "Incorporer le jambon coupé en dés et les petits pois en fin de cuisson.",
             "Ajouter le parmesan hors du feu."
           ],
-          "id": "plaisir-10"
+          "id": "plaisir-10",
+          "pathologies": []
         },
         {
           "name": "Tacos de poulet maison, tortilla complète, crudités, sauce yaourt",
@@ -3998,7 +4568,8 @@
             "Réchauffer les tortillas.",
             "Garnir de poulet, crudités et sauce."
           ],
-          "id": "plaisir-11"
+          "id": "plaisir-11",
+          "pathologies": []
         },
         {
           "name": "Hachis parmentier allégé, salade",
@@ -4032,7 +4603,8 @@
             "Disposer la viande puis la purée dans un plat.",
             "Passer au four 15 minutes à 200 degrés, servir avec la salade."
           ],
-          "id": "plaisir-12"
+          "id": "plaisir-12",
+          "pathologies": []
         },
         {
           "name": "Quesadilla poulet-fromage allégée, tortilla complète, salade",
@@ -4066,7 +4638,8 @@
             "Cuire à la poêle jusqu'à ce que le fromage fonde.",
             "Couper en parts, servir avec la salade."
           ],
-          "id": "plaisir-13"
+          "id": "plaisir-13",
+          "pathologies": []
         },
         {
           "name": "Pâtes à la bolognaise allégée, pâtes complètes",
@@ -4100,7 +4673,8 @@
             "Cuire les pâtes complètes à part.",
             "Mélanger ou servir la sauce sur les pâtes."
           ],
-          "id": "plaisir-14"
+          "id": "plaisir-14",
+          "pathologies": []
         },
         {
           "name": "Galettes de pommes de terre allégées, saumon fumé, salade",
@@ -4134,7 +4708,8 @@
             "Garnir de saumon fumé.",
             "Servir avec la salade."
           ],
-          "id": "plaisir-15"
+          "id": "plaisir-15",
+          "pathologies": []
         },
         {
           "name": "Wrap césar allégé, tortilla complète",
@@ -4173,7 +4748,8 @@
             "Garnir la tortilla de salade, poulet, parmesan et sauce.",
             "Rouler et servir."
           ],
-          "id": "plaisir-16"
+          "id": "plaisir-16",
+          "pathologies": []
         },
         {
           "name": "Pizza maison poulet-champignons, pâte fine",
@@ -4207,7 +4783,8 @@
             "Parsemer de fromage râpé.",
             "Cuire au four 12 à 15 minutes à 220 degrés."
           ],
-          "id": "plaisir-17"
+          "id": "plaisir-17",
+          "pathologies": []
         },
         {
           "name": "Gratin dauphinois allégé, filet de poisson",
@@ -4241,7 +4818,8 @@
             "Cuire le poisson à la vapeur ou au four en parallèle.",
             "Servir ensemble."
           ],
-          "id": "plaisir-18"
+          "id": "plaisir-18",
+          "pathologies": []
         },
         {
           "name": "Risotto chorizo allégé",
@@ -4280,7 +4858,8 @@
             "Ajouter le bouillon louche par louche puis les tomates.",
             "Cuire jusqu'à ce que le riz soit tendre."
           ],
-          "id": "plaisir-19"
+          "id": "plaisir-19",
+          "pathologies": []
         },
         {
           "name": "Croque-monsieur au saumon, pain complet, salade",
@@ -4314,7 +4893,8 @@
             "Préparer la salade.",
             "Servir chaud avec la salade."
           ],
-          "id": "plaisir-20"
+          "id": "plaisir-20",
+          "pathologies": []
         }
       ]
     },
@@ -4351,6 +4931,14 @@
             "Battre les oeufs et les verser sur les légumes.",
             "Cuire à feu doux jusqu'à ce que l'omelette soit prise.",
             "Servir avec la salade."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -4385,6 +4973,14 @@
             "Faire chauffer de l'eau avec les champignons quelques minutes.",
             "Délayer la pâte miso hors du feu vif dans le bouillon chaud.",
             "Ajouter le tofu coupé en dés et les nouilles, servir chaud."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -4419,6 +5015,14 @@
             "Parsemer de fromage râpé.",
             "Cuire au four 25 à 30 minutes à 190 degrés.",
             "Servir chaud."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -4458,6 +5062,14 @@
             "Ajouter le riz et le nacrer 1 minute.",
             "Verser le bouillon louche par louche en remuant jusqu'à cuisson.",
             "Incorporer les petits pois en fin de cuisson."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -4492,6 +5104,14 @@
             "Ajouter les légumes et faire sauter quelques minutes.",
             "Verser la sauce soja en fin de cuisson.",
             "Servir avec le riz cuit."
+          ],
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
           ]
         },
         {
@@ -4531,7 +5151,15 @@
             "Ajouter le tofu en cubes et cuire encore 5 minutes.",
             "Servir avec le riz."
           ],
-          "id": "vegetarien-6"
+          "id": "vegetarien-6",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Wok de légumes et tofu, sauce soja réduite en sel, nouilles",
@@ -4565,7 +5193,15 @@
             "Ajouter les nouilles et la sauce soja.",
             "Bien mélanger et servir chaud."
           ],
-          "id": "vegetarien-7"
+          "id": "vegetarien-7",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Quiche aux légumes et fromage de chèvre allégée, salade",
@@ -4609,7 +5245,15 @@
             "Émietter le fromage de chèvre sur le dessus.",
             "Cuire au four 30 minutes à 180 degrés, servir avec la salade."
           ],
-          "id": "vegetarien-8"
+          "id": "vegetarien-8",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Galettes de quinoa et légumes, salade",
@@ -4643,7 +5287,15 @@
             "Façonner des galettes et les cuire à la poêle.",
             "Servir avec la salade."
           ],
-          "id": "vegetarien-9"
+          "id": "vegetarien-9",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Poêlée de courgettes et champignons, oeuf poché",
@@ -4672,7 +5324,15 @@
             "Dresser les légumes avec les oeufs pochés dessus.",
             "Servir immédiatement."
           ],
-          "id": "vegetarien-10"
+          "id": "vegetarien-10",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Riz sauté aux légumes et oeuf, sauce soja réduite en sel",
@@ -4706,7 +5366,15 @@
             "Ajouter l'oeuf battu et bien mélanger en remuant.",
             "Assaisonner avec la sauce soja."
           ],
-          "id": "vegetarien-11"
+          "id": "vegetarien-11",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Tarte fine aux légumes, pâte fine",
@@ -4745,7 +5413,15 @@
             "Parsemer de fromage râpé.",
             "Cuire au four 15 minutes à 210 degrés."
           ],
-          "id": "vegetarien-12"
+          "id": "vegetarien-12",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Velouté de courgettes, croutons complets, fromage frais",
@@ -4779,7 +5455,15 @@
             "Mixer avec le fromage frais.",
             "Servir avec des croutons de pain complet."
           ],
-          "id": "vegetarien-13"
+          "id": "vegetarien-13",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Curry de pommes de terre et épinards, riz",
@@ -4818,7 +5502,15 @@
             "Ajouter les épinards en fin de cuisson.",
             "Servir avec le riz."
           ],
-          "id": "vegetarien-14"
+          "id": "vegetarien-14",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Soupe de légumes et vermicelles, parmesan",
@@ -4847,7 +5539,15 @@
             "Mixer partiellement si désiré.",
             "Servir avec un peu de parmesan."
           ],
-          "id": "vegetarien-15"
+          "id": "vegetarien-15",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Tofu grillé mariné, riz complet, légumes vapeur",
@@ -4881,7 +5581,15 @@
             "Cuire le riz complet et les légumes à la vapeur.",
             "Servir ensemble."
           ],
-          "id": "vegetarien-16"
+          "id": "vegetarien-16",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Oeufs cocotte aux épinards et tomates, pain complet",
@@ -4915,7 +5623,15 @@
             "Cuire au four ou au bain-marie 10 à 12 minutes.",
             "Servir avec le pain complet."
           ],
-          "id": "vegetarien-17"
+          "id": "vegetarien-17",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Galette de légumes et fromage frais, salade",
@@ -4953,7 +5669,15 @@
             "Façonner des galettes et les cuire à la poêle.",
             "Servir avec le fromage frais et la salade."
           ],
-          "id": "vegetarien-18"
+          "id": "vegetarien-18",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Poêlée de patate douce et épinards, oeuf au plat",
@@ -4982,7 +5706,15 @@
             "Cuire l'oeuf au plat à part.",
             "Servir l'oeuf sur la poêlée."
           ],
-          "id": "vegetarien-19"
+          "id": "vegetarien-19",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
         },
         {
           "name": "Risotto aux courgettes et petits pois, parmesan",
@@ -5026,7 +5758,370 @@
             "Ajouter le bouillon louche par louche puis les petits pois.",
             "Ajouter le parmesan hors du feu."
           ],
-          "id": "vegetarien-20"
+          "id": "vegetarien-20",
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "petits-dejeuners",
+      "name": "Petits déjeuners",
+      "quota": 7,
+      "colorVar": "--cat-petits-dejeuners",
+      "uiMode": "checkbox",
+      "premium": true,
+      "meals": [
+        {
+          "id": "pj-1",
+          "name": "Porridge avoine, lait écrémé, myrtilles",
+          "benefit": "Index glycémique bas, riche en fibres solubles (bêta-glucanes) qui réduisent les triglycérides.",
+          "pricePerPortion": 0.9,
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite",
+            "hypercholesterolemie"
+          ],
+          "ingredients": [
+            {
+              "name": "Flocons d'avoine",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Lait écrémé",
+              "qty": 200,
+              "unit": "ml"
+            },
+            {
+              "name": "Myrtilles",
+              "qty": 80,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Porter le lait écrémé à frémissement.",
+            "Ajouter les flocons d'avoine et cuire 5 min en remuant.",
+            "Servir avec les myrtilles."
+          ]
+        },
+        {
+          "id": "pj-2",
+          "name": "Pain complet, fromage blanc 0%, miel",
+          "benefit": "Protéines du fromage blanc rassasiantes, sucres naturels du miel en quantité modérée.",
+          "pricePerPortion": 1.1,
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "obesite"
+          ],
+          "ingredients": [
+            {
+              "name": "Pain complet (tranche)",
+              "qty": 2,
+              "unit": "tranche"
+            },
+            {
+              "name": "Fromage blanc",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Miel",
+              "qty": 10,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Toaster le pain complet.",
+            "Étaler le fromage blanc dessus.",
+            "Ajouter un filet de miel."
+          ]
+        },
+        {
+          "id": "pj-3",
+          "name": "Yaourt nature, fruits rouges, graines de chia",
+          "benefit": "Oméga-3 végétaux et fibres des graines de chia, antioxydants des fruits rouges.",
+          "pricePerPortion": 1.2,
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hta",
+            "obesite",
+            "hypercholesterolemie"
+          ],
+          "ingredients": [
+            {
+              "name": "Yaourt nature",
+              "qty": 200,
+              "unit": "g"
+            },
+            {
+              "name": "Fruits rouges",
+              "qty": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Graines de chia",
+              "qty": 15,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Verser le yaourt dans un bol.",
+            "Ajouter les fruits rouges et les graines de chia.",
+            "Mélanger et laisser reposer 5 min."
+          ]
+        },
+        {
+          "id": "pj-4",
+          "name": "Pain complet, oeuf mollet, tomate",
+          "benefit": "Protéines de l'oeuf pour un petit déjeuner rassasiant, lycopène de la tomate.",
+          "pricePerPortion": 1.3,
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "obesite"
+          ],
+          "ingredients": [
+            {
+              "name": "Pain complet (tranche)",
+              "qty": 2,
+              "unit": "tranche"
+            },
+            {
+              "name": "Oeuf",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Tomate",
+              "qty": 100,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Faire cuire l'oeuf 6 min dans l'eau bouillante.",
+            "Toaster le pain.",
+            "Servir avec la tomate en tranches."
+          ]
+        },
+        {
+          "id": "pj-5",
+          "name": "Smoothie banane, lait écrémé, graines de lin",
+          "benefit": "Oméga-3 des graines de lin bénéfiques pour les triglycérides, potassium de la banane.",
+          "pricePerPortion": 0.9,
+          "pathologies": [
+            "hypertriglyceridemie",
+            "hta",
+            "hypercholesterolemie"
+          ],
+          "ingredients": [
+            {
+              "name": "Banane",
+              "qty": 1,
+              "unit": "pièce"
+            },
+            {
+              "name": "Lait écrémé",
+              "qty": 200,
+              "unit": "ml"
+            },
+            {
+              "name": "Graines de lin",
+              "qty": 10,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Mixer la banane avec le lait écrémé.",
+            "Ajouter les graines de lin et mélanger.",
+            "Servir immédiatement."
+          ]
+        },
+        {
+          "id": "pj-6",
+          "name": "Muesli sans sucre, lait écrémé, kiwi",
+          "benefit": "Fibres et vitamines du muesli non sucré, vitamine C du kiwi.",
+          "pricePerPortion": 1.2,
+          "pathologies": [
+            "hypertriglyceridemie",
+            "diabete-type-2",
+            "obesite"
+          ],
+          "ingredients": [
+            {
+              "name": "Muesli sans sucre ajouté",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Lait écrémé",
+              "qty": 150,
+              "unit": "ml"
+            },
+            {
+              "name": "Kiwi",
+              "qty": 1,
+              "unit": "pièce"
+            }
+          ],
+          "recipe": [
+            "Verser le muesli dans un bol.",
+            "Ajouter le lait écrémé.",
+            "Accompagner du kiwi en rondelles."
+          ]
+        },
+        {
+          "id": "pj-7",
+          "name": "Pain complet, purée d'amande, banane",
+          "benefit": "Acides gras mono-insaturés de la purée d'amande, énergie progressive.",
+          "pricePerPortion": 1.4,
+          "pathologies": [
+            "steatose-hepatique",
+            "hta",
+            "hypercholesterolemie"
+          ],
+          "ingredients": [
+            {
+              "name": "Pain complet (tranche)",
+              "qty": 2,
+              "unit": "tranche"
+            },
+            {
+              "name": "Purée d'amande",
+              "qty": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Banane",
+              "qty": 1,
+              "unit": "pièce"
+            }
+          ],
+          "recipe": [
+            "Toaster le pain complet.",
+            "Étaler la purée d'amande.",
+            "Servir avec la banane en rondelles."
+          ]
+        },
+        {
+          "id": "pj-8",
+          "name": "Pain complet, saumon fumé, fromage frais allégé",
+          "benefit": "Oméga-3 du saumon fumé, protéines du fromage frais, IG bas du pain complet.",
+          "pricePerPortion": 2.2,
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "hta",
+            "hypercholesterolemie"
+          ],
+          "ingredients": [
+            {
+              "name": "Pain complet (tranche)",
+              "qty": 2,
+              "unit": "tranche"
+            },
+            {
+              "name": "Saumon fumé",
+              "qty": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Fromage frais allégé",
+              "qty": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Citron",
+              "qty": 1,
+              "unit": "pièce"
+            }
+          ],
+          "recipe": [
+            "Toaster le pain complet.",
+            "Étaler le fromage frais.",
+            "Déposer le saumon fumé et presser le citron."
+          ]
+        },
+        {
+          "id": "pj-9",
+          "name": "Fromage blanc, noix, pomme",
+          "benefit": "Acides gras insaturés des noix, fibres pectine de la pomme bénéfiques pour le cholestérol.",
+          "pricePerPortion": 1.3,
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "diabete-type-2",
+            "hypercholesterolemie",
+            "obesite"
+          ],
+          "ingredients": [
+            {
+              "name": "Fromage blanc",
+              "qty": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Noix",
+              "qty": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Pomme",
+              "qty": 1,
+              "unit": "pièce"
+            }
+          ],
+          "recipe": [
+            "Verser le fromage blanc dans un bol.",
+            "Ajouter les noix concassées.",
+            "Accompagner de la pomme en lamelles."
+          ]
+        },
+        {
+          "id": "pj-10",
+          "name": "Porridge avoine, lait écrémé, abricots secs",
+          "benefit": "Bêta-glucanes anti-triglycérides, potassium et bêta-carotène des abricots.",
+          "pricePerPortion": 1.0,
+          "pathologies": [
+            "hypertriglyceridemie",
+            "steatose-hepatique",
+            "hta",
+            "hypercholesterolemie"
+          ],
+          "ingredients": [
+            {
+              "name": "Flocons d'avoine",
+              "qty": 60,
+              "unit": "g"
+            },
+            {
+              "name": "Lait écrémé",
+              "qty": 200,
+              "unit": "ml"
+            },
+            {
+              "name": "Abricots secs",
+              "qty": 30,
+              "unit": "g"
+            }
+          ],
+          "recipe": [
+            "Porter le lait à frémissement.",
+            "Cuire les flocons 5 min.",
+            "Servir avec les abricots secs hachés."
+          ]
         }
       ]
     }

@@ -1,0 +1,1586 @@
+{
+  "Riz cru": {
+    "kcal": 356,
+    "glucides": 78.9,
+    "proteines": 6.7,
+    "lipides": 0.6,
+    "fibres": 1.4,
+    "per": "100g"
+  },
+  "Riz complet cru": {
+    "kcal": 352,
+    "glucides": 74.1,
+    "proteines": 7.9,
+    "lipides": 2.7,
+    "fibres": 3.5,
+    "per": "100g"
+  },
+  "Semoule crue": {
+    "kcal": 356,
+    "glucides": 72.5,
+    "proteines": 12.0,
+    "lipides": 1.5,
+    "fibres": 3.5,
+    "per": "100g"
+  },
+  "Semoule complète crue": {
+    "kcal": 340,
+    "glucides": 68.0,
+    "proteines": 13.0,
+    "lipides": 2.0,
+    "fibres": 6.0,
+    "per": "100g"
+  },
+  "Quinoa cru": {
+    "kcal": 368,
+    "glucides": 64.0,
+    "proteines": 14.0,
+    "lipides": 6.0,
+    "fibres": 7.0,
+    "per": "100g"
+  },
+  "Boulgour cru": {
+    "kcal": 342,
+    "glucides": 71.0,
+    "proteines": 12.3,
+    "lipides": 1.3,
+    "fibres": 4.5,
+    "per": "100g"
+  },
+  "Pâtes crues": {
+    "kcal": 353,
+    "glucides": 70.2,
+    "proteines": 11.9,
+    "lipides": 2.0,
+    "fibres": 3.0,
+    "per": "100g"
+  },
+  "Pâtes complètes crues": {
+    "kcal": 340,
+    "glucides": 66.0,
+    "proteines": 13.0,
+    "lipides": 2.5,
+    "fibres": 6.5,
+    "per": "100g"
+  },
+  "Pâtes à lasagne": {
+    "kcal": 353,
+    "glucides": 70.2,
+    "proteines": 11.9,
+    "lipides": 2.0,
+    "fibres": 3.0,
+    "per": "100g"
+  },
+  "Nouilles de riz crues": {
+    "kcal": 356,
+    "glucides": 80.0,
+    "proteines": 5.0,
+    "lipides": 0.5,
+    "fibres": 1.0,
+    "per": "100g"
+  },
+  "Nouilles soba crues": {
+    "kcal": 336,
+    "glucides": 70.0,
+    "proteines": 12.0,
+    "lipides": 1.0,
+    "fibres": 2.4,
+    "per": "100g"
+  },
+  "Vermicelles crus": {
+    "kcal": 356,
+    "glucides": 80.0,
+    "proteines": 5.0,
+    "lipides": 0.5,
+    "fibres": 1.0,
+    "per": "100g"
+  },
+  "Gnocchis": {
+    "kcal": 130,
+    "glucides": 27.0,
+    "proteines": 2.5,
+    "lipides": 0.5,
+    "fibres": 1.0,
+    "per": "100g"
+  },
+  "Farine complète": {
+    "kcal": 329,
+    "glucides": 66.0,
+    "proteines": 13.0,
+    "lipides": 2.0,
+    "fibres": 8.5,
+    "per": "100g"
+  },
+  "Pain complet": {
+    "kcal": 207,
+    "glucides": 37.0,
+    "proteines": 9.3,
+    "lipides": 2.3,
+    "fibres": 8.0,
+    "per": "100g"
+  },
+  "Pain complet (tranche)": {
+    "kcal": 62,
+    "glucides": 11.1,
+    "proteines": 2.8,
+    "lipides": 0.7,
+    "fibres": 2.4,
+    "per": "unite"
+  },
+  "Pain pita complet": {
+    "kcal": 150,
+    "glucides": 27.0,
+    "proteines": 5.0,
+    "lipides": 1.5,
+    "fibres": 4.0,
+    "per": "unite"
+  },
+  "Pain à burger complet": {
+    "kcal": 175,
+    "glucides": 32.0,
+    "proteines": 6.0,
+    "lipides": 2.0,
+    "fibres": 4.0,
+    "per": "unite"
+  },
+  "Tortilla complète": {
+    "kcal": 105,
+    "glucides": 18.0,
+    "proteines": 3.0,
+    "lipides": 2.5,
+    "fibres": 3.0,
+    "per": "unite"
+  },
+  "Pâte à pizza fine": {
+    "kcal": 355,
+    "glucides": 65.0,
+    "proteines": 10.0,
+    "lipides": 5.0,
+    "fibres": 3.0,
+    "per": "unite"
+  },
+  "Pâte à tarte fine": {
+    "kcal": 600,
+    "glucides": 72.0,
+    "proteines": 10.0,
+    "lipides": 30.0,
+    "fibres": 2.0,
+    "per": "unite"
+  },
+  "Pâte à pizza ou tarte fine": {
+    "kcal": 355,
+    "glucides": 65.0,
+    "proteines": 10.0,
+    "lipides": 5.0,
+    "fibres": 3.0,
+    "per": "unite"
+  },
+  "Pommes de terre": {
+    "kcal": 77,
+    "glucides": 17.1,
+    "proteines": 2.0,
+    "lipides": 0.1,
+    "fibres": 2.2,
+    "per": "100g"
+  },
+  "Pommes de terre grenaille": {
+    "kcal": 77,
+    "glucides": 17.1,
+    "proteines": 2.0,
+    "lipides": 0.1,
+    "fibres": 2.2,
+    "per": "100g"
+  },
+  "Patate douce": {
+    "kcal": 86,
+    "glucides": 20.0,
+    "proteines": 1.6,
+    "lipides": 0.1,
+    "fibres": 3.0,
+    "per": "100g"
+  },
+  "Blanc de poulet": {
+    "kcal": 107,
+    "glucides": 0.0,
+    "proteines": 23.5,
+    "lipides": 1.2,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Blanc de poulet ou cuisse": {
+    "kcal": 120,
+    "glucides": 0.0,
+    "proteines": 21.0,
+    "lipides": 3.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Escalope de dinde": {
+    "kcal": 99,
+    "glucides": 0.0,
+    "proteines": 21.4,
+    "lipides": 1.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Dinde fumée": {
+    "kcal": 130,
+    "glucides": 1.0,
+    "proteines": 22.0,
+    "lipides": 4.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Foie de volaille": {
+    "kcal": 119,
+    "glucides": 1.3,
+    "proteines": 16.6,
+    "lipides": 5.8,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Filet de poisson blanc": {
+    "kcal": 75,
+    "glucides": 0.0,
+    "proteines": 17.0,
+    "lipides": 0.7,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Filet de cabillaud": {
+    "kcal": 76,
+    "glucides": 0.0,
+    "proteines": 17.5,
+    "lipides": 0.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Filet de colin": {
+    "kcal": 74,
+    "glucides": 0.0,
+    "proteines": 16.5,
+    "lipides": 0.6,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Filet de colin ou cabillaud": {
+    "kcal": 75,
+    "glucides": 0.0,
+    "proteines": 17.0,
+    "lipides": 0.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Filet de lieu noir": {
+    "kcal": 72,
+    "glucides": 0.0,
+    "proteines": 16.0,
+    "lipides": 0.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Filet de sole": {
+    "kcal": 70,
+    "glucides": 0.0,
+    "proteines": 15.8,
+    "lipides": 0.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Filet de merlu": {
+    "kcal": 72,
+    "glucides": 0.0,
+    "proteines": 15.9,
+    "lipides": 0.8,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Filet de poisson blanc très frais": {
+    "kcal": 75,
+    "glucides": 0.0,
+    "proteines": 17.0,
+    "lipides": 0.7,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Crevettes décortiquées": {
+    "kcal": 85,
+    "glucides": 0.5,
+    "proteines": 18.0,
+    "lipides": 1.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Calamars": {
+    "kcal": 75,
+    "glucides": 1.0,
+    "proteines": 16.0,
+    "lipides": 1.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Morue dessalée": {
+    "kcal": 85,
+    "glucides": 0.0,
+    "proteines": 19.0,
+    "lipides": 0.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Saumon": {
+    "kcal": 180,
+    "glucides": 0.0,
+    "proteines": 19.9,
+    "lipides": 11.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Saumon fumé": {
+    "kcal": 172,
+    "glucides": 0.0,
+    "proteines": 20.9,
+    "lipides": 10.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Saumon très frais": {
+    "kcal": 180,
+    "glucides": 0.0,
+    "proteines": 19.9,
+    "lipides": 11.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Maquereau": {
+    "kcal": 205,
+    "glucides": 0.0,
+    "proteines": 19.0,
+    "lipides": 14.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Maquereau (frais ou en conserve)": {
+    "kcal": 205,
+    "glucides": 0.0,
+    "proteines": 19.0,
+    "lipides": 14.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Filet de truite": {
+    "kcal": 119,
+    "glucides": 0.0,
+    "proteines": 20.5,
+    "lipides": 4.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Filet de truite saumonée": {
+    "kcal": 148,
+    "glucides": 0.0,
+    "proteines": 20.2,
+    "lipides": 7.2,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Sardines en conserve": {
+    "kcal": 232,
+    "glucides": 0.0,
+    "proteines": 27.6,
+    "lipides": 13.3,
+    "fibres": 0.0,
+    "per": "unite"
+  },
+  "Sardines fraîches": {
+    "kcal": 162,
+    "glucides": 0.0,
+    "proteines": 20.4,
+    "lipides": 9.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Thon frais": {
+    "kcal": 144,
+    "glucides": 0.0,
+    "proteines": 23.3,
+    "lipides": 5.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Hareng mariné": {
+    "kcal": 200,
+    "glucides": 3.0,
+    "proteines": 17.0,
+    "lipides": 14.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Truite fumée": {
+    "kcal": 158,
+    "glucides": 0.5,
+    "proteines": 22.0,
+    "lipides": 7.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Boeuf haché 5 pour cent": {
+    "kcal": 121,
+    "glucides": 0.0,
+    "proteines": 20.5,
+    "lipides": 5.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Steak haché 5 pour cent": {
+    "kcal": 121,
+    "glucides": 0.0,
+    "proteines": 20.5,
+    "lipides": 5.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Boeuf à mijoter": {
+    "kcal": 120,
+    "glucides": 0.0,
+    "proteines": 21.0,
+    "lipides": 4.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Boeuf (steak ou bavette)": {
+    "kcal": 155,
+    "glucides": 0.0,
+    "proteines": 22.0,
+    "lipides": 7.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Steak de boeuf": {
+    "kcal": 155,
+    "glucides": 0.0,
+    "proteines": 22.0,
+    "lipides": 7.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Boeuf à sauter": {
+    "kcal": 155,
+    "glucides": 0.0,
+    "proteines": 22.0,
+    "lipides": 7.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Boeuf à brochette": {
+    "kcal": 155,
+    "glucides": 0.0,
+    "proteines": 22.0,
+    "lipides": 7.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Boeuf à carpaccio": {
+    "kcal": 125,
+    "glucides": 0.0,
+    "proteines": 22.0,
+    "lipides": 4.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Boeuf à braiser": {
+    "kcal": 130,
+    "glucides": 0.0,
+    "proteines": 20.0,
+    "lipides": 5.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Boeuf à émincer": {
+    "kcal": 155,
+    "glucides": 0.0,
+    "proteines": 22.0,
+    "lipides": 7.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Boeuf à pot-au-feu": {
+    "kcal": 135,
+    "glucides": 0.0,
+    "proteines": 20.0,
+    "lipides": 5.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Rôti de boeuf maigre": {
+    "kcal": 140,
+    "glucides": 0.0,
+    "proteines": 22.0,
+    "lipides": 6.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Foie de veau": {
+    "kcal": 135,
+    "glucides": 2.0,
+    "proteines": 20.0,
+    "lipides": 5.3,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Foie de génisse": {
+    "kcal": 130,
+    "glucides": 2.0,
+    "proteines": 19.5,
+    "lipides": 5.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Rognons": {
+    "kcal": 99,
+    "glucides": 1.0,
+    "proteines": 17.4,
+    "lipides": 2.8,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Joue de boeuf": {
+    "kcal": 145,
+    "glucides": 0.0,
+    "proteines": 20.5,
+    "lipides": 7.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Langue de boeuf": {
+    "kcal": 202,
+    "glucides": 0.0,
+    "proteines": 18.7,
+    "lipides": 14.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Jambon": {
+    "kcal": 107,
+    "glucides": 1.0,
+    "proteines": 17.5,
+    "lipides": 3.8,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Chorizo": {
+    "kcal": 455,
+    "glucides": 2.0,
+    "proteines": 22.0,
+    "lipides": 40.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Pois chiches secs": {
+    "kcal": 364,
+    "glucides": 61.0,
+    "proteines": 19.0,
+    "lipides": 6.0,
+    "fibres": 17.0,
+    "per": "100g"
+  },
+  "Lentilles sèches": {
+    "kcal": 339,
+    "glucides": 52.5,
+    "proteines": 24.0,
+    "lipides": 1.4,
+    "fibres": 10.7,
+    "per": "100g"
+  },
+  "Lentilles corail sèches": {
+    "kcal": 340,
+    "glucides": 53.0,
+    "proteines": 23.0,
+    "lipides": 1.5,
+    "fibres": 8.0,
+    "per": "100g"
+  },
+  "Lentilles vertes sèches": {
+    "kcal": 336,
+    "glucides": 51.5,
+    "proteines": 25.0,
+    "lipides": 1.4,
+    "fibres": 11.7,
+    "per": "100g"
+  },
+  "Lentilles jaunes sèches": {
+    "kcal": 340,
+    "glucides": 53.0,
+    "proteines": 23.0,
+    "lipides": 1.5,
+    "fibres": 8.0,
+    "per": "100g"
+  },
+  "Haricots rouges secs": {
+    "kcal": 325,
+    "glucides": 54.0,
+    "proteines": 22.0,
+    "lipides": 1.5,
+    "fibres": 24.0,
+    "per": "100g"
+  },
+  "Haricots blancs secs": {
+    "kcal": 325,
+    "glucides": 54.0,
+    "proteines": 22.0,
+    "lipides": 1.5,
+    "fibres": 24.0,
+    "per": "100g"
+  },
+  "Haricots noirs secs": {
+    "kcal": 333,
+    "glucides": 60.0,
+    "proteines": 21.0,
+    "lipides": 1.4,
+    "fibres": 16.0,
+    "per": "100g"
+  },
+  "Pois cassés secs": {
+    "kcal": 340,
+    "glucides": 60.0,
+    "proteines": 22.0,
+    "lipides": 1.3,
+    "fibres": 7.0,
+    "per": "100g"
+  },
+  "Flageolets secs": {
+    "kcal": 318,
+    "glucides": 57.0,
+    "proteines": 22.0,
+    "lipides": 1.4,
+    "fibres": 19.0,
+    "per": "100g"
+  },
+  "Edamame": {
+    "kcal": 121,
+    "glucides": 9.0,
+    "proteines": 11.0,
+    "lipides": 5.2,
+    "fibres": 5.0,
+    "per": "100g"
+  },
+  "Tofu": {
+    "kcal": 76,
+    "glucides": 1.2,
+    "proteines": 8.0,
+    "lipides": 4.5,
+    "fibres": 0.5,
+    "per": "100g"
+  },
+  "Salade verte": {
+    "kcal": 14,
+    "glucides": 1.6,
+    "proteines": 1.3,
+    "lipides": 0.2,
+    "fibres": 1.5,
+    "per": "100g"
+  },
+  "Oignon": {
+    "kcal": 36,
+    "glucides": 7.5,
+    "proteines": 1.0,
+    "lipides": 0.1,
+    "fibres": 1.3,
+    "per": "100g"
+  },
+  "Oignons": {
+    "kcal": 36,
+    "glucides": 7.5,
+    "proteines": 1.0,
+    "lipides": 0.1,
+    "fibres": 1.3,
+    "per": "100g"
+  },
+  "Oignon rouge": {
+    "kcal": 37,
+    "glucides": 8.0,
+    "proteines": 1.2,
+    "lipides": 0.1,
+    "fibres": 1.5,
+    "per": "100g"
+  },
+  "Tomates": {
+    "kcal": 16,
+    "glucides": 2.6,
+    "proteines": 0.9,
+    "lipides": 0.3,
+    "fibres": 1.1,
+    "per": "100g"
+  },
+  "Tomate": {
+    "kcal": 16,
+    "glucides": 2.6,
+    "proteines": 0.9,
+    "lipides": 0.3,
+    "fibres": 1.1,
+    "per": "100g"
+  },
+  "Tomates concassées": {
+    "kcal": 18,
+    "glucides": 3.0,
+    "proteines": 1.0,
+    "lipides": 0.3,
+    "fibres": 1.2,
+    "per": "100g"
+  },
+  "Épinards": {
+    "kcal": 21,
+    "glucides": 1.9,
+    "proteines": 2.6,
+    "lipides": 0.4,
+    "fibres": 2.3,
+    "per": "100g"
+  },
+  "Haricots verts": {
+    "kcal": 28,
+    "glucides": 4.5,
+    "proteines": 1.9,
+    "lipides": 0.2,
+    "fibres": 2.9,
+    "per": "100g"
+  },
+  "Courgettes": {
+    "kcal": 16,
+    "glucides": 2.3,
+    "proteines": 1.3,
+    "lipides": 0.2,
+    "fibres": 1.1,
+    "per": "100g"
+  },
+  "Courgette": {
+    "kcal": 16,
+    "glucides": 2.3,
+    "proteines": 1.3,
+    "lipides": 0.2,
+    "fibres": 1.1,
+    "per": "100g"
+  },
+  "Carottes": {
+    "kcal": 35,
+    "glucides": 6.9,
+    "proteines": 0.7,
+    "lipides": 0.1,
+    "fibres": 2.8,
+    "per": "100g"
+  },
+  "Poivrons": {
+    "kcal": 27,
+    "glucides": 4.4,
+    "proteines": 1.0,
+    "lipides": 0.3,
+    "fibres": 1.9,
+    "per": "100g"
+  },
+  "Poivron": {
+    "kcal": 27,
+    "glucides": 4.4,
+    "proteines": 1.0,
+    "lipides": 0.3,
+    "fibres": 1.9,
+    "per": "100g"
+  },
+  "Champignons": {
+    "kcal": 22,
+    "glucides": 2.1,
+    "proteines": 2.7,
+    "lipides": 0.3,
+    "fibres": 1.2,
+    "per": "100g"
+  },
+  "Brocolis": {
+    "kcal": 28,
+    "glucides": 3.1,
+    "proteines": 3.1,
+    "lipides": 0.4,
+    "fibres": 2.9,
+    "per": "100g"
+  },
+  "Petits pois": {
+    "kcal": 72,
+    "glucides": 10.0,
+    "proteines": 5.4,
+    "lipides": 0.4,
+    "fibres": 5.1,
+    "per": "100g"
+  },
+  "Concombre": {
+    "kcal": 10,
+    "glucides": 1.5,
+    "proteines": 0.6,
+    "lipides": 0.1,
+    "fibres": 0.5,
+    "per": "100g"
+  },
+  "Maïs": {
+    "kcal": 86,
+    "glucides": 18.0,
+    "proteines": 3.2,
+    "lipides": 1.2,
+    "fibres": 2.4,
+    "per": "100g"
+  },
+  "Poireaux": {
+    "kcal": 27,
+    "glucides": 5.0,
+    "proteines": 1.5,
+    "lipides": 0.3,
+    "fibres": 2.2,
+    "per": "100g"
+  },
+  "Céleri-rave": {
+    "kcal": 42,
+    "glucides": 8.5,
+    "proteines": 1.5,
+    "lipides": 0.3,
+    "fibres": 1.8,
+    "per": "100g"
+  },
+  "Navets": {
+    "kcal": 28,
+    "glucides": 5.5,
+    "proteines": 0.9,
+    "lipides": 0.1,
+    "fibres": 1.8,
+    "per": "100g"
+  },
+  "Roquette": {
+    "kcal": 25,
+    "glucides": 2.1,
+    "proteines": 2.6,
+    "lipides": 0.7,
+    "fibres": 1.6,
+    "per": "100g"
+  },
+  "Légumes mélangés": {
+    "kcal": 35,
+    "glucides": 6.0,
+    "proteines": 2.0,
+    "lipides": 0.3,
+    "fibres": 2.5,
+    "per": "100g"
+  },
+  "Légumes vapeur": {
+    "kcal": 35,
+    "glucides": 6.0,
+    "proteines": 2.0,
+    "lipides": 0.3,
+    "fibres": 2.5,
+    "per": "100g"
+  },
+  "Légumes pour wok": {
+    "kcal": 35,
+    "glucides": 6.0,
+    "proteines": 2.0,
+    "lipides": 0.3,
+    "fibres": 2.5,
+    "per": "100g"
+  },
+  "Légumes variés": {
+    "kcal": 35,
+    "glucides": 6.0,
+    "proteines": 2.0,
+    "lipides": 0.3,
+    "fibres": 2.5,
+    "per": "100g"
+  },
+  "Légumes (carotte, courgette)": {
+    "kcal": 26,
+    "glucides": 4.6,
+    "proteines": 1.0,
+    "lipides": 0.2,
+    "fibres": 2.0,
+    "per": "100g"
+  },
+  "Légumes (carotte, petits pois)": {
+    "kcal": 54,
+    "glucides": 8.5,
+    "proteines": 3.1,
+    "lipides": 0.3,
+    "fibres": 4.0,
+    "per": "100g"
+  },
+  "Légumes (carotte, petits pois, poivron)": {
+    "kcal": 45,
+    "glucides": 7.5,
+    "proteines": 2.5,
+    "lipides": 0.3,
+    "fibres": 3.5,
+    "per": "100g"
+  },
+  "Légumes (carotte, pousses de soja, poivron)": {
+    "kcal": 35,
+    "glucides": 5.5,
+    "proteines": 2.0,
+    "lipides": 0.3,
+    "fibres": 2.5,
+    "per": "100g"
+  },
+  "Légumes sautés (carotte, poivron, oignon)": {
+    "kcal": 33,
+    "glucides": 6.0,
+    "proteines": 1.0,
+    "lipides": 0.2,
+    "fibres": 2.0,
+    "per": "100g"
+  },
+  "Légumes croquants (poivron, concombre)": {
+    "kcal": 20,
+    "glucides": 3.5,
+    "proteines": 1.0,
+    "lipides": 0.2,
+    "fibres": 1.5,
+    "per": "100g"
+  },
+  "Légumes (courgette, poivron, champignons)": {
+    "kcal": 20,
+    "glucides": 3.0,
+    "proteines": 1.5,
+    "lipides": 0.2,
+    "fibres": 1.5,
+    "per": "100g"
+  },
+  "Légumes (courgette, poivron)": {
+    "kcal": 20,
+    "glucides": 3.0,
+    "proteines": 1.2,
+    "lipides": 0.2,
+    "fibres": 1.4,
+    "per": "100g"
+  },
+  "Légumes à griller": {
+    "kcal": 25,
+    "glucides": 4.0,
+    "proteines": 1.0,
+    "lipides": 0.3,
+    "fibres": 2.0,
+    "per": "100g"
+  },
+  "Légumes à griller (poivron, courgette, oignon)": {
+    "kcal": 25,
+    "glucides": 4.0,
+    "proteines": 1.0,
+    "lipides": 0.3,
+    "fibres": 2.0,
+    "per": "100g"
+  },
+  "Légumes à griller (poivron, courgette)": {
+    "kcal": 22,
+    "glucides": 3.5,
+    "proteines": 1.0,
+    "lipides": 0.3,
+    "fibres": 1.7,
+    "per": "100g"
+  },
+  "Légumes à griller (poivron, oignon)": {
+    "kcal": 30,
+    "glucides": 5.5,
+    "proteines": 1.0,
+    "lipides": 0.2,
+    "fibres": 1.7,
+    "per": "100g"
+  },
+  "Légumes à rôtir (carotte, poivron)": {
+    "kcal": 30,
+    "glucides": 5.5,
+    "proteines": 0.9,
+    "lipides": 0.2,
+    "fibres": 2.3,
+    "per": "100g"
+  },
+  "Mélange de légumes pour wok": {
+    "kcal": 35,
+    "glucides": 6.0,
+    "proteines": 2.0,
+    "lipides": 0.3,
+    "fibres": 2.5,
+    "per": "100g"
+  },
+  "Crudités (salade, tomate, oignon)": {
+    "kcal": 15,
+    "glucides": 2.5,
+    "proteines": 0.8,
+    "lipides": 0.2,
+    "fibres": 1.2,
+    "per": "100g"
+  },
+  "Crudités (salade, tomate, carotte)": {
+    "kcal": 18,
+    "glucides": 3.2,
+    "proteines": 0.9,
+    "lipides": 0.2,
+    "fibres": 1.5,
+    "per": "100g"
+  },
+  "Crudités (carotte, concombre)": {
+    "kcal": 22,
+    "glucides": 3.8,
+    "proteines": 0.7,
+    "lipides": 0.1,
+    "fibres": 1.6,
+    "per": "100g"
+  },
+  "Yaourt nature": {
+    "kcal": 55,
+    "glucides": 5.7,
+    "proteines": 3.5,
+    "lipides": 1.8,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Lait écrémé": {
+    "kcal": 34,
+    "glucides": 5.0,
+    "proteines": 3.4,
+    "lipides": 0.1,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Lait de coco allégé": {
+    "kcal": 90,
+    "glucides": 3.0,
+    "proteines": 0.7,
+    "lipides": 8.5,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Fromage râpé": {
+    "kcal": 392,
+    "glucides": 0.0,
+    "proteines": 27.0,
+    "lipides": 32.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Fromage râpé ou en tranche": {
+    "kcal": 392,
+    "glucides": 0.0,
+    "proteines": 27.0,
+    "lipides": 32.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Parmesan": {
+    "kcal": 431,
+    "glucides": 0.0,
+    "proteines": 38.0,
+    "lipides": 30.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Fromage frais allégé": {
+    "kcal": 80,
+    "glucides": 4.0,
+    "proteines": 8.0,
+    "lipides": 3.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Fromage blanc": {
+    "kcal": 72,
+    "glucides": 4.0,
+    "proteines": 7.5,
+    "lipides": 2.8,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Fromage de chèvre": {
+    "kcal": 245,
+    "glucides": 0.5,
+    "proteines": 16.0,
+    "lipides": 20.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Reblochon": {
+    "kcal": 331,
+    "glucides": 0.5,
+    "proteines": 21.0,
+    "lipides": 27.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Bleu": {
+    "kcal": 353,
+    "glucides": 0.5,
+    "proteines": 21.4,
+    "lipides": 30.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Oeuf": {
+    "kcal": 86,
+    "glucides": 0.4,
+    "proteines": 7.5,
+    "lipides": 6.0,
+    "fibres": 0.0,
+    "per": "unite"
+  },
+  "Oeufs": {
+    "kcal": 86,
+    "glucides": 0.4,
+    "proteines": 7.5,
+    "lipides": 6.0,
+    "fibres": 0.0,
+    "per": "unite"
+  },
+  "Sauce soja réduite en sel": {
+    "kcal": 63,
+    "glucides": 7.5,
+    "proteines": 7.8,
+    "lipides": 0.0,
+    "fibres": 0.5,
+    "per": "100g"
+  },
+  "Miel": {
+    "kcal": 304,
+    "glucides": 80.0,
+    "proteines": 0.4,
+    "lipides": 0.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Moutarde": {
+    "kcal": 66,
+    "glucides": 5.0,
+    "proteines": 4.0,
+    "lipides": 3.0,
+    "fibres": 3.0,
+    "per": "100g"
+  },
+  "Houmous": {
+    "kcal": 177,
+    "glucides": 11.0,
+    "proteines": 8.0,
+    "lipides": 11.0,
+    "fibres": 6.0,
+    "per": "100g"
+  },
+  "Vinaigre de riz": {
+    "kcal": 18,
+    "glucides": 4.0,
+    "proteines": 0.0,
+    "lipides": 0.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Vinaigre": {
+    "kcal": 18,
+    "glucides": 0.5,
+    "proteines": 0.0,
+    "lipides": 0.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Vinaigrette": {
+    "kcal": 450,
+    "glucides": 2.0,
+    "proteines": 0.0,
+    "lipides": 48.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Vinaigrette (huile d'olive, vinaigre)": {
+    "kcal": 450,
+    "glucides": 2.0,
+    "proteines": 0.0,
+    "lipides": 48.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Vinaigrette citronnée": {
+    "kcal": 250,
+    "glucides": 3.0,
+    "proteines": 0.5,
+    "lipides": 26.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Vinaigrette légère": {
+    "kcal": 180,
+    "glucides": 3.0,
+    "proteines": 0.5,
+    "lipides": 18.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Sauce hollandaise allégée": {
+    "kcal": 180,
+    "glucides": 3.0,
+    "proteines": 3.0,
+    "lipides": 17.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Sauce au bleu allégée": {
+    "kcal": 120,
+    "glucides": 4.0,
+    "proteines": 5.0,
+    "lipides": 10.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Bouillon de légumes": {
+    "kcal": 5,
+    "glucides": 0.5,
+    "proteines": 0.5,
+    "lipides": 0.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Bouillon ou vin rouge": {
+    "kcal": 20,
+    "glucides": 1.0,
+    "proteines": 0.2,
+    "lipides": 0.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Huile de colza": {
+    "kcal": 884,
+    "glucides": 0.0,
+    "proteines": 0.0,
+    "lipides": 100.0,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Pâte miso": {
+    "kcal": 198,
+    "glucides": 26.0,
+    "proteines": 11.0,
+    "lipides": 6.0,
+    "fibres": 5.0,
+    "per": "100g"
+  },
+  "Beurre de cacahuète": {
+    "kcal": 597,
+    "glucides": 20.0,
+    "proteines": 23.0,
+    "lipides": 51.0,
+    "fibres": 6.0,
+    "per": "100g"
+  },
+  "Gingembre frais": {
+    "kcal": 80,
+    "glucides": 17.0,
+    "proteines": 1.8,
+    "lipides": 0.8,
+    "fibres": 2.0,
+    "per": "100g"
+  },
+  "Piment doux ou gochujang": {
+    "kcal": 93,
+    "glucides": 16.0,
+    "proteines": 4.0,
+    "lipides": 2.0,
+    "fibres": 7.0,
+    "per": "100g"
+  },
+  "Abricots secs": {
+    "kcal": 241,
+    "glucides": 62.0,
+    "proteines": 3.4,
+    "lipides": 0.5,
+    "fibres": 7.3,
+    "per": "100g"
+  },
+  "Curry en poudre": {
+    "kcal": 325,
+    "glucides": 55.0,
+    "proteines": 14.0,
+    "lipides": 14.0,
+    "fibres": 33.0,
+    "per": "100g"
+  },
+  "Cumin": {
+    "kcal": 375,
+    "glucides": 44.0,
+    "proteines": 18.0,
+    "lipides": 22.0,
+    "fibres": 11.0,
+    "per": "100g"
+  },
+  "Curcuma": {
+    "kcal": 354,
+    "glucides": 65.0,
+    "proteines": 8.0,
+    "lipides": 10.0,
+    "fibres": 3.0,
+    "per": "100g"
+  },
+  "Paprika": {
+    "kcal": 289,
+    "glucides": 54.0,
+    "proteines": 15.0,
+    "lipides": 13.0,
+    "fibres": 35.0,
+    "per": "100g"
+  },
+  "Paprika fumé": {
+    "kcal": 289,
+    "glucides": 54.0,
+    "proteines": 15.0,
+    "lipides": 13.0,
+    "fibres": 35.0,
+    "per": "100g"
+  },
+  "Herbes de Provence": {
+    "kcal": 265,
+    "glucides": 50.0,
+    "proteines": 9.0,
+    "lipides": 7.0,
+    "fibres": 18.0,
+    "per": "100g"
+  },
+  "Romarin": {
+    "kcal": 131,
+    "glucides": 21.0,
+    "proteines": 3.3,
+    "lipides": 5.9,
+    "fibres": 14.0,
+    "per": "100g"
+  },
+  "Estragon": {
+    "kcal": 295,
+    "glucides": 50.0,
+    "proteines": 23.0,
+    "lipides": 7.0,
+    "fibres": 7.0,
+    "per": "100g"
+  },
+  "Basilic": {
+    "kcal": 23,
+    "glucides": 1.0,
+    "proteines": 3.2,
+    "lipides": 0.6,
+    "fibres": 1.6,
+    "per": "100g"
+  },
+  "Menthe": {
+    "kcal": 44,
+    "glucides": 5.3,
+    "proteines": 3.3,
+    "lipides": 0.9,
+    "fibres": 6.8,
+    "per": "100g"
+  },
+  "Persil": {
+    "kcal": 36,
+    "glucides": 4.4,
+    "proteines": 3.0,
+    "lipides": 0.8,
+    "fibres": 3.3,
+    "per": "100g"
+  },
+  "Aneth": {
+    "kcal": 43,
+    "glucides": 7.0,
+    "proteines": 3.5,
+    "lipides": 1.1,
+    "fibres": 2.1,
+    "per": "100g"
+  },
+  "Herbes": {
+    "kcal": 40,
+    "glucides": 5.0,
+    "proteines": 3.3,
+    "lipides": 0.9,
+    "fibres": 2.7,
+    "per": "100g"
+  },
+  "Herbes (persil, aneth)": {
+    "kcal": 40,
+    "glucides": 5.0,
+    "proteines": 3.3,
+    "lipides": 0.9,
+    "fibres": 2.7,
+    "per": "100g"
+  },
+  "Garam masala": {
+    "kcal": 379,
+    "glucides": 50.0,
+    "proteines": 15.0,
+    "lipides": 16.0,
+    "fibres": 16.0,
+    "per": "100g"
+  },
+  "Épices tandoori": {
+    "kcal": 300,
+    "glucides": 55.0,
+    "proteines": 12.0,
+    "lipides": 7.0,
+    "fibres": 20.0,
+    "per": "100g"
+  },
+  "Épices tajine (cumin, cannelle, curcuma)": {
+    "kcal": 300,
+    "glucides": 50.0,
+    "proteines": 12.0,
+    "lipides": 10.0,
+    "fibres": 15.0,
+    "per": "100g"
+  },
+  "Épices chili": {
+    "kcal": 314,
+    "glucides": 56.0,
+    "proteines": 14.0,
+    "lipides": 10.0,
+    "fibres": 25.0,
+    "per": "100g"
+  },
+  "Épices chili (cumin, paprika, piment)": {
+    "kcal": 314,
+    "glucides": 56.0,
+    "proteines": 14.0,
+    "lipides": 10.0,
+    "fibres": 25.0,
+    "per": "100g"
+  },
+  "Olives noires": {
+    "kcal": 145,
+    "glucides": 0.5,
+    "proteines": 1.0,
+    "lipides": 15.0,
+    "fibres": 3.2,
+    "per": "100g"
+  },
+  "Cacahuètes": {
+    "kcal": 567,
+    "glucides": 16.0,
+    "proteines": 25.8,
+    "lipides": 49.0,
+    "fibres": 8.5,
+    "per": "100g"
+  },
+  "Amandes effilées": {
+    "kcal": 579,
+    "glucides": 10.0,
+    "proteines": 21.0,
+    "lipides": 52.0,
+    "fibres": 10.9,
+    "per": "100g"
+  },
+  "Citron": {
+    "kcal": 21,
+    "glucides": 3.0,
+    "proteines": 0.9,
+    "lipides": 0.3,
+    "fibres": 1.5,
+    "per": "unite"
+  },
+  "Ail": {
+    "kcal": 7,
+    "glucides": 1.5,
+    "proteines": 0.3,
+    "lipides": 0.0,
+    "fibres": 0.1,
+    "per": "unite"
+  },
+  "Flocons d'avoine": {
+    "kcal": 368,
+    "glucides": 66.0,
+    "proteines": 13.0,
+    "lipides": 7.0,
+    "fibres": 10.0,
+    "per": "100g"
+  },
+  "Muesli sans sucre ajouté": {
+    "kcal": 370,
+    "glucides": 62.0,
+    "proteines": 11.0,
+    "lipides": 8.5,
+    "fibres": 7.5,
+    "per": "100g"
+  },
+  "Graines de chia": {
+    "kcal": 486,
+    "glucides": 42.0,
+    "proteines": 17.0,
+    "lipides": 31.0,
+    "fibres": 34.0,
+    "per": "100g"
+  },
+  "Graines de lin": {
+    "kcal": 534,
+    "glucides": 29.0,
+    "proteines": 18.0,
+    "lipides": 42.0,
+    "fibres": 27.0,
+    "per": "100g"
+  },
+  "Banane": {
+    "kcal": 90,
+    "glucides": 20.0,
+    "proteines": 1.1,
+    "lipides": 0.3,
+    "fibres": 2.6,
+    "per": "unite"
+  },
+  "Fruits rouges": {
+    "kcal": 40,
+    "glucides": 8.0,
+    "proteines": 0.8,
+    "lipides": 0.5,
+    "fibres": 3.0,
+    "per": "100g"
+  },
+  "Kiwi": {
+    "kcal": 55,
+    "glucides": 11.0,
+    "proteines": 1.1,
+    "lipides": 0.5,
+    "fibres": 3.0,
+    "per": "unite"
+  },
+  "Pomme": {
+    "kcal": 52,
+    "glucides": 12.0,
+    "proteines": 0.3,
+    "lipides": 0.2,
+    "fibres": 2.4,
+    "per": "unite"
+  },
+  "Purée d'amande": {
+    "kcal": 614,
+    "glucides": 15.0,
+    "proteines": 21.0,
+    "lipides": 56.0,
+    "fibres": 10.0,
+    "per": "100g"
+  },
+  "Sirop d'érable": {
+    "kcal": 260,
+    "glucides": 67.0,
+    "proteines": 0.1,
+    "lipides": 0.1,
+    "fibres": 0.0,
+    "per": "100g"
+  },
+  "Myrtilles": {
+    "kcal": 57,
+    "glucides": 12.0,
+    "proteines": 0.7,
+    "lipides": 0.3,
+    "fibres": 2.4,
+    "per": "100g"
+  },
+  "Noix": {
+    "kcal": 654,
+    "glucides": 14.0,
+    "proteines": 15.2,
+    "lipides": 65.0,
+    "fibres": 6.7,
+    "per": "100g"
+  },
+  "Confiture sans sucre ajouté": {
+    "kcal": 110,
+    "glucides": 27.0,
+    "proteines": 0.5,
+    "lipides": 0.1,
+    "fibres": 1.5,
+    "per": "100g"
+  }
+}
