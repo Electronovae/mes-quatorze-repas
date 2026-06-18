@@ -112,3 +112,62 @@ body {
 .tab-btn.active { color: var(--accent); background: var(--accent-soft); }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* ── Frigo tab ───────────────────────────────────────────────────────────── */
+
+.frigo-add-row {
+  display: flex; gap: 8px; margin-bottom: 16px; align-items: center;
+}
+.frigo-input {
+  flex: 1; font-family: var(--font-body); font-size: 14px;
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 9px 14px; background: var(--surface); color: var(--ink);
+  outline: none;
+}
+.frigo-input:focus { border-color: var(--accent); }
+
+.frigo-list { list-style: none; margin: 0; padding: 0; }
+.frigo-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 4px; border-bottom: 1px solid var(--line); font-size: 13.5px;
+}
+.frigo-name { flex: 1; }
+.frigo-remove {
+  background: none; border: none; font-size: 18px; color: var(--ink-faint);
+  cursor: pointer; padding: 2px 6px; line-height: 1;
+}
+.frigo-remove:active { transform: scale(0.88); }
+
+.frigo-empty {
+  text-align: center; color: var(--ink-soft); font-size: 13px;
+  line-height: 1.6; padding: 28px 20px 0;
+}
+.frigo-clear-btn { margin-top: 20px; width: 100%; justify-content: center; }
+
+/* ── Courses : section "déjà en stock" ──────────────────────────────────── */
+
+.shopping-all-stock {
+  list-style: none; text-align: center; padding: 24px 20px;
+  color: var(--accent); font-size: 14px; font-weight: 500;
+}
+.to-fridge-btn, .from-fridge-btn {
+  background: none; border: none; font-size: 16px; cursor: pointer;
+  padding: 2px 4px; opacity: 0.55; flex-shrink: 0;
+}
+.to-fridge-btn:hover, .from-fridge-btn:hover { opacity: 1; }
+.to-fridge-btn:active, .from-fridge-btn:active { transform: scale(0.88); }
+
+.instock-section { list-style: none; margin-top: 8px; }
+.instock-summary {
+  font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase;
+  letter-spacing: 0.04em; color: var(--ink-faint); cursor: pointer;
+  padding: 10px 4px; user-select: none;
+}
+.instock-list { list-style: none; margin: 4px 0 0; padding: 0; }
+.instock-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 4px; border-bottom: 1px solid var(--line);
+  font-size: 13.5px; opacity: 0.55;
+}
+.instock-item .ing-name { flex: 1; text-decoration: line-through; color: var(--ink-faint); }
+.instock-item .ing-qty { font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); white-space: nowrap; }

@@ -50,10 +50,22 @@
   <ul class="shopping-list" id="shopping-list"></ul>
 </div>
 
+<div class="view hidden" id="view-frigo" role="tabpanel">
+  <p class="hint">Note ce que tu as déjà chez toi. Ces ingrédients seront séparés dans ta liste de courses.</p>
+  <div class="frigo-add-row">
+    <input id="frigo-input" type="text" placeholder="Ex. : Riz, Huile d'olive…" list="frigo-datalist" class="frigo-input" autocomplete="off">
+    <datalist id="frigo-datalist"></datalist>
+    <button class="btn btn-primary" id="frigo-add-btn">Ajouter</button>
+  </div>
+  <ul class="frigo-list" id="frigo-list"></ul>
+  <div id="frigo-footer"></div>
+</div>
+
 <div class="tabbar" role="tablist">
   <button class="tab-btn active" data-view="choisir" role="tab" aria-selected="true">Choisir</button>
   <button class="tab-btn" data-view="semaine" role="tab" aria-selected="false">Ma semaine</button>
   <button class="tab-btn" data-view="courses" role="tab" aria-selected="false">Courses</button>
+  <button class="tab-btn" data-view="frigo" role="tab" aria-selected="false">Frigo</button>
 </div>
 
 <script src="app.js"></script>

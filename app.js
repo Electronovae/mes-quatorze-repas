@@ -1,5 +1,6 @@
 const DAYS = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"];
 const STORAGE_KEY = "mes-14-repas-semaine-v2";
+const FRIDGE_KEY  = "mes-14-repas-frigo";
 const fmt = new Intl.NumberFormat("fr-FR", {style:"currency", currency:"EUR"});
 const qtyFmt = (n) => {
   const rounded = Math.round(n * 10) / 10;
@@ -9,6 +10,7 @@ const qtyFmt = (n) => {
 let CATS = [];
 let week = new Array(14).fill(null);
 const expandedSlots = new Set();
+let fridgeItems = new Set(); // noms normalisés en minuscules
 
 function loadWeek(){
   try {
@@ -22,6 +24,81 @@ function loadWeek(){
 }
 function saveWeek(){
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(week)); } catch(e) {}
+}
+
+// ── Frigo ──────────────────────────────────────────────────────────────────
+
+function normFridge(name){ return name.trim().toLowerCase(); }
+
+function loadFridge(){
+  try {
+    const saved = JSON.parse(localStorage.getItem(FRIDGE_KEY) || "[]");
+    fridgeItems = new Set(Array.isArray(saved) ? saved.map(normFridge) : []);
+  } catch(e){ fridgeItems = new Set(); }
+}
+function saveFridge(){
+  try { localStorage.setItem(FRIDGE_KEY, JSON.stringify([...fridgeItems])); } catch(e) {}
+}
+function isInFridge(name){ return fridgeItems.has(normFridge(name)); }
+
+function addToFridge(name){
+  const n = normFridge(name);
+  if(!n) return;
+  fridgeItems.add(n);
+  saveFridge();
+  renderFridge();
+  renderShoppingList();
+}
+function removeFromFridge(name){
+  fridgeItems.delete(normFridge(name));
+  saveFridge();
+  renderFridge();
+  renderShoppingList();
+}
+function clearFridge(){
+  if(!confirm("Vider tout le frigo ?")) return;
+  fridgeItems.clear();
+  saveFridge();
+  renderFridge();
+  renderShoppingList();
+}
+
+function getAllIngredientNames(){
+  const names = new Set();
+  CATS.forEach(cat => cat.meals.forEach(m => m.ingredients.forEach(i => names.add(i.name))));
+  return [...names].sort((a,b) => a.localeCompare(b,"fr"));
+}
+
+function renderFridge(){
+  const list   = document.getElementById("frigo-list");
+  const footer = document.getElementById("frigo-footer");
+  const dl     = document.getElementById("frigo-datalist");
+  if(!list) return;
+
+  // Autocomplete datalist
+  if(dl){
+    dl.innerHTML = getAllIngredientNames()
+      .map(n => `<option value="${n}">`)
+      .join("");
+  }
+
+  const items = [...fridgeItems].sort((a,b) => a.localeCompare(b,"fr"));
+  if(items.length === 0){
+    list.innerHTML   = "";
+    footer.innerHTML = `<p class="frigo-empty">Ton frigo est vide.<br>Ajoute ce que tu as déjà pour qu'il disparaisse de ta liste de courses.</p>`;
+    return;
+  }
+  list.innerHTML = items.map(name =>
+    `<li class="frigo-item">
+      <span class="frigo-name">${name}</span>
+      <button class="frigo-remove" data-name="${name.replace(/"/g,"&quot;")}" aria-label="Retirer ${name}">×</button>
+    </li>`
+  ).join("");
+  list.querySelectorAll(".frigo-remove").forEach(btn =>
+    btn.addEventListener("click", () => removeFromFridge(btn.dataset.name))
+  );
+  footer.innerHTML = `<button class="btn frigo-clear-btn" id="frigo-clear-btn">Vider le frigo</button>`;
+  document.getElementById("frigo-clear-btn").addEventListener("click", clearFridge);
 }
 
 function getCat(id){ return CATS.find(c => c.id === id); }
@@ -201,14 +278,55 @@ function renderShoppingList(){
     root.innerHTML = `<div class="empty-state">Pas encore de repas dans ta semaine, donc rien à acheter pour l'instant.</div>`;
     return;
   }
-  root.innerHTML = items.map((item, i) => `<li class="shopping-item" data-idx="${i}">
-    <input type="checkbox" id="ing-${i}">
-    <span class="ing-name">${item.name}</span>
-    <span class="ing-qty">${qtyFmt(item.qty)} ${item.unit}</span>
-  </li>`).join("");
-  root.querySelectorAll(".shopping-item input").forEach(cb => {
-    cb.addEventListener("change", () => cb.closest(".shopping-item").classList.toggle("checked", cb.checked));
-  });
+
+  const toBuy   = items.filter(item => !isInFridge(item.name));
+  const inStock = items.filter(item =>  isInFridge(item.name));
+
+  let html = "";
+
+  if(toBuy.length === 0){
+    html += `<li class="shopping-all-stock">Tout est déjà dans ton frigo ! 🎉</li>`;
+  } else {
+    html += toBuy.map((item, i) => {
+      const safeName = item.name.replace(/"/g, "&quot;");
+      return `<li class="shopping-item" data-name="${safeName}">
+        <input type="checkbox" id="ing-${i}">
+        <span class="ing-name">${item.name}</span>
+        <span class="ing-qty">${qtyFmt(item.qty)} ${item.unit}</span>
+        <button class="to-fridge-btn" data-name="${safeName}" title="Ajouter au frigo">🧊</button>
+      </li>`;
+    }).join("");
+  }
+
+  if(inStock.length > 0){
+    html += `<li class="instock-section">
+      <details>
+        <summary class="instock-summary">Déjà en stock (${inStock.length})</summary>
+        <ul class="instock-list">
+          ${inStock.map(item => {
+            const safeName = item.name.replace(/"/g, "&quot;");
+            return `<li class="instock-item">
+              <span class="ing-name">${item.name}</span>
+              <span class="ing-qty">${qtyFmt(item.qty)} ${item.unit}</span>
+              <button class="from-fridge-btn" data-name="${safeName}" title="Retirer du frigo">×</button>
+            </li>`;
+          }).join("")}
+        </ul>
+      </details>
+    </li>`;
+  }
+
+  root.innerHTML = html;
+
+  root.querySelectorAll(".shopping-item input").forEach(cb =>
+    cb.addEventListener("change", () => cb.closest(".shopping-item").classList.toggle("checked", cb.checked))
+  );
+  root.querySelectorAll(".to-fridge-btn").forEach(btn =>
+    btn.addEventListener("click", () => addToFridge(btn.dataset.name))
+  );
+  root.querySelectorAll(".from-fridge-btn").forEach(btn =>
+    btn.addEventListener("click", () => removeFromFridge(btn.dataset.name))
+  );
 }
 
 function renderSummary(){
@@ -223,10 +341,11 @@ function renderAll(){
   renderWeek();
   renderShoppingList();
   renderSummary();
+  renderFridge();
 }
 
 function copyShoppingList(){
-  const items = computeShoppingList();
+  const items = computeShoppingList().filter(item => !isInFridge(item.name));
   if(items.length === 0) return;
   const text = items.map(item => "- " + qtyFmt(item.qty) + " " + item.unit + " " + item.name).join("\n");
   const btn = document.getElementById("copy-list-btn");
@@ -238,12 +357,13 @@ function copyShoppingList(){
 }
 
 function initTabs(){
+  const views = ["choisir", "semaine", "courses", "frigo"];
   document.querySelectorAll(".tab-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".tab-btn").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
       btn.classList.add("active");
       btn.setAttribute("aria-selected", "true");
-      ["choisir", "semaine", "courses"].forEach(name => {
+      views.forEach(name => {
         document.getElementById("view-" + name).classList.toggle("hidden", btn.dataset.view !== name);
       });
     });
@@ -254,7 +374,19 @@ async function init(){
   document.getElementById("draw-btn").addEventListener("click", drawWeek);
   document.getElementById("clear-btn").addEventListener("click", clearWeek);
   document.getElementById("copy-list-btn").addEventListener("click", copyShoppingList);
+  document.getElementById("frigo-add-btn").addEventListener("click", () => {
+    const input = document.getElementById("frigo-input");
+    const val = input.value.trim();
+    if(val){ addToFridge(val); input.value = ""; }
+  });
+  document.getElementById("frigo-input").addEventListener("keydown", e => {
+    if(e.key === "Enter"){
+      const val = e.target.value.trim();
+      if(val){ addToFridge(val); e.target.value = ""; }
+    }
+  });
   initTabs();
+  loadFridge();
   try {
     const res = await fetch("meals.json");
     const data = await res.json();
