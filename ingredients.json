@@ -1780,5 +1780,32 @@
     "fibres": 1.5,
     "per": "100g",
     "price": 0.8
+  },
+  "Ananas frais": {
+    "kcal": 50,
+    "glucides": 13.1,
+    "proteines": 0.5,
+    "lipides": 0.1,
+    "fibres": 1.4,
+    "per": "100g",
+    "price": 0.45
+  },
+  "Citron vert": {
+    "kcal": 19,
+    "glucides": 6.0,
+    "proteines": 0.4,
+    "lipides": 0.1,
+    "fibres": 1.9,
+    "per": "unite",
+    "price": 0.35
+  },
+  "Coriandre fraîche": {
+    "kcal": 23,
+    "glucides": 3.7,
+    "proteines": 2.1,
+    "lipides": 0.5,
+    "fibres": 2.8,
+    "per": "100g",
+    "price": 1.2
   }
 }

@@ -13,7 +13,7 @@ const qtyFmt = n => { const r = round1(n); return (r%1===0 ? r : r.toString().re
 
 // Ingrédients "aromates/assaisonnement" : ne doivent pas grossir proportionnellement au nombre de portions.
 // 2 portions ne veulent pas dire 2x plus d'oignon ou d'ail dans la poêle.
-const AROMATIC_RE = /\boignons?\b|oignon rouge|\bail\b|gousse|gingembre|herbes?\b|épices?\b|curry|cumin|curcuma|paprika|persil|aneth|basilic|menthe|romarin|estragon|garam masala|piment|vinaigre|moutarde|cannelle/i;
+const AROMATIC_RE = /\boignons?\b|oignon rouge|\bail\b|gousse|gingembre|herbes?\b|épices?\b|curry|cumin|curcuma|paprika|persil|aneth|basilic|menthe|romarin|estragon|garam masala|piment|vinaigre|moutarde|cannelle|coriandre/i;
 function isAromatic(name){ return AROMATIC_RE.test(name); }
 function scaledQty(ing, portions){
   if(portions<=1 || !isAromatic(ing.name)) return ing.qty*portions;
