@@ -550,10 +550,10 @@ function renderShoppingList(){
   root.querySelectorAll(".shopping-item input").forEach(cb=>cb.addEventListener("change",()=>cb.closest(".shopping-item").classList.toggle("checked",cb.checked)));
   root.querySelectorAll(".to-fridge-btn").forEach(btn=>btn.addEventListener("click",()=>{
     setFridgeQty(btn.dataset.name,parseFloat(btn.dataset.qty),btn.dataset.unit);
-    renderFridge(); renderShoppingList();
+    renderFridge(); renderShoppingList(); renderSummary();
   }));
   root.querySelectorAll(".from-fridge-btn").forEach(btn=>btn.addEventListener("click",()=>{
-    removeFridgeItem(btn.dataset.name); renderFridge(); renderShoppingList();
+    removeFridgeItem(btn.dataset.name); renderFridge(); renderShoppingList(); renderSummary();
   }));
 }
 
@@ -608,14 +608,14 @@ function renderFridge(){
     input.addEventListener("change",()=>{
       const val=parseFloat(input.value);
       setFridgeQty(input.dataset.name, isNaN(val)?0:val, input.dataset.unit);
-      renderFridge(); renderShoppingList(); renderCategories();
+      renderFridge(); renderShoppingList(); renderCategories(); renderSummary();
     });
   });
   listEl.querySelectorAll(".frigo-remove").forEach(btn=>btn.addEventListener("click",()=>{
-    removeFridgeItem(btn.dataset.name); renderFridge(); renderShoppingList(); renderCategories();
+    removeFridgeItem(btn.dataset.name); renderFridge(); renderShoppingList(); renderCategories(); renderSummary();
   }));
   document.getElementById("frigo-clear-btn").addEventListener("click",()=>{
-    if(confirm("Vider tout le frigo ?")){ fridgeItems=[]; saveFridge(); renderFridge(); renderShoppingList(); renderCategories(); }
+    if(confirm("Vider tout le frigo ?")){ fridgeItems=[]; saveFridge(); renderFridge(); renderShoppingList(); renderCategories(); renderSummary(); }
   });
 }
 
@@ -629,7 +629,7 @@ function handleFrigoAdd(){
   if(!name) return;
   setFridgeQty(name,qty,unit);
   input.value=""; qtyInput.value="";
-  renderFridge(); renderShoppingList(); renderCategories();
+  renderFridge(); renderShoppingList(); renderCategories(); renderSummary();
 }
 
 // ─── Petits déjeuners ────────────────────────────────────────────────────────
@@ -779,14 +779,8 @@ function renderProfile(){
 
 function renderSummary(){
   const filled=week.filter(Boolean).length;
-  const mainTotal=week.reduce((s,slot)=>slot?s+mealFullCost(getCat(slot.catId).meals[slot.mealIdx],slot.portions||1):s,0);
-  const pjCat=CATS.find(c=>c.id==="petits-dejeuners");
-  const pjTotal = pjCat ? [...selectedBreakfasts].reduce((s,id)=>{
-    const m=pjCat.meals.find(x=>x.id===id);
-    return m ? s + mealFullCost(m,1)*7 : s;
-  },0) : 0;
   document.getElementById("count-out").textContent=filled+" / 14";
-  document.getElementById("cost-out").textContent=fmt.format(mainTotal+pjTotal);
+  document.getElementById("cost-out").textContent=fmt.format(shoppingCostToBuy());
 }
 
 // ─── renderAll ────────────────────────────────────────────────────────────────
