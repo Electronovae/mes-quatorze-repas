@@ -89,6 +89,44 @@
   <div id="profile-content"></div>
 </div>
 
+<!-- Onglet Suivi -->
+<div class="view hidden" id="view-suivi" role="tabpanel">
+  <p class="hint">Coche les jours où tu as mangé comme prévu. Le suivi se construit jour après jour à partir de ce que tu coches ici.</p>
+
+  <div class="suivi-period-row">
+    <button class="suivi-chip active" data-period="7j">7 jours</button>
+    <button class="suivi-chip" data-period="4s">4 semaines</button>
+    <button class="suivi-chip" data-period="tout">Tout</button>
+  </div>
+
+  <div class="suivi-metrics-grid">
+    <div class="suivi-metric"><p class="suivi-metric-label">Apport moyen</p><p class="suivi-metric-value" id="suivi-avg">—</p></div>
+    <div class="suivi-metric"><p class="suivi-metric-label">Objectif</p><p class="suivi-metric-value" id="suivi-target">—</p></div>
+    <div class="suivi-metric"><p class="suivi-metric-label">Jours suivis</p><p class="suivi-metric-value" id="suivi-tracked">—</p></div>
+    <div class="suivi-metric"><p class="suivi-metric-label">Écart vs objectif</p><p class="suivi-metric-value" id="suivi-delta">—</p></div>
+  </div>
+
+  <div class="suivi-view-row">
+    <button class="suivi-view-chip active" data-view="kcal">Calories</button>
+    <button class="suivi-view-chip" data-view="macros">Macros</button>
+  </div>
+  <div class="suivi-legend" id="suivi-legend"></div>
+  <div class="suivi-chart-wrap"><canvas id="suivi-main-chart"></canvas></div>
+
+  <div class="suivi-section-head">
+    <p class="suivi-section-label">Poids</p>
+    <span class="suivi-weight-trend" id="suivi-weight-trend"></span>
+  </div>
+  <div class="suivi-chart-wrap suivi-chart-wrap-small"><canvas id="suivi-weight-chart"></canvas></div>
+  <div class="suivi-weight-add-row">
+    <input type="number" id="suivi-weight-input" placeholder="Poids cette semaine (kg)" step="0.1" min="20" max="300">
+    <button class="btn btn-primary" id="suivi-weight-save">Enregistrer</button>
+  </div>
+
+  <p class="suivi-section-label">Journal récent</p>
+  <div id="suivi-journal"></div>
+</div>
+
 <!-- Onglet Sources -->
 <div class="view hidden" id="view-sources" role="tabpanel">
   <div class="sources-content">
@@ -121,10 +159,12 @@
   <button class="tab-btn"        data-view="courses"    role="tab" aria-selected="false">Courses</button>
   <button class="tab-btn"        data-view="frigo"      role="tab" aria-selected="false">🧊 Frigo</button>
   <button class="tab-btn"        data-view="petitsdej"  role="tab" aria-selected="false">🌅 Petits-déj</button>
+  <button class="tab-btn"        data-view="suivi"      role="tab" aria-selected="false">📈 Suivi</button>
   <button class="tab-btn"        data-view="profil"     role="tab" aria-selected="false">⚙️ Profil</button>
   <button class="tab-btn"        data-view="sources"    role="tab" aria-selected="false">📚 Sources</button>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

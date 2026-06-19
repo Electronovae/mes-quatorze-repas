@@ -6,6 +6,8 @@ const FRIDGE_KEY  = "mes-14-repas-frigo-v2";       // [{name, qty, unit}]
 const PROFILE_KEY = "mes-14-repas-profil-v2";      // {personnes, pathologies, age, sexe, poids, taille, activite}
 const BREAKFASTS_KEY = "mes-14-repas-petitsdej";
 const THEME_KEY   = "mes-14-repas-theme";
+const SUIVI_KEY   = "mes-14-repas-suivi";    // {dateISO: {kcal,glucides,proteines,lipides,fibres}}
+const WEIGHT_KEY  = "mes-14-repas-poids";    // {weekMondayISO: poidsKg}
 
 const fmt    = new Intl.NumberFormat("fr-FR", {style:"currency", currency:"EUR"});
 const round1 = n => Math.round(n*10)/10;
@@ -47,6 +49,12 @@ let profile     = {personnes:2, pathologies:[], age:null, sexe:"f", poids:null, 
 let selectedBreakfasts = new Set();
 let fridgeFilterOn = false;
 let costMode = false;
+let suiviLog = {};      // {dateISO: {kcal,glucides,proteines,lipides,fibres}}
+let weightLog = {};     // {weekMondayISO: poidsKg}
+let suiviPeriod = "7j";
+let suiviView = "kcal";
+let suiviMainChart = null;
+let suiviWeightChart = null;
 const expandedSlots = new Set();
 
 // ─── Persistance ─────────────────────────────────────────────────────────────
@@ -71,6 +79,15 @@ function loadBreakfasts(){
   try { const r=JSON.parse(localStorage.getItem(BREAKFASTS_KEY)||"[]"); selectedBreakfasts=new Set(r); } catch(e){ selectedBreakfasts=new Set(); }
 }
 function saveBreakfasts(){ try{localStorage.setItem(BREAKFASTS_KEY,JSON.stringify([...selectedBreakfasts]));}catch(e){} }
+
+function loadSuivi(){
+  try { suiviLog = JSON.parse(localStorage.getItem(SUIVI_KEY)||"{}"); } catch(e){ suiviLog={}; }
+}
+function saveSuivi(){ try{ localStorage.setItem(SUIVI_KEY, JSON.stringify(suiviLog)); }catch(e){} }
+function loadWeightLog(){
+  try { weightLog = JSON.parse(localStorage.getItem(WEIGHT_KEY)||"{}"); } catch(e){ weightLog={}; }
+}
+function saveWeightLog(){ try{ localStorage.setItem(WEIGHT_KEY, JSON.stringify(weightLog)); }catch(e){} }
 
 function loadTheme(){
   let theme = null;
@@ -777,6 +794,212 @@ function renderProfile(){
 
 // ─── Summary ──────────────────────────────────────────────────────────────────
 
+// ─── Suivi ────────────────────────────────────────────────────────────────────
+
+function isoDate(d){
+  const y=d.getFullYear(), m=String(d.getMonth()+1).padStart(2,"0"), day=String(d.getDate()).padStart(2,"0");
+  return `${y}-${m}-${day}`;
+}
+function mondayOf(d){
+  const dt=new Date(d);
+  const day=dt.getDay(); // 0=dimanche..6=samedi
+  const diff=(day===0?-6:1-day);
+  dt.setDate(dt.getDate()+diff);
+  dt.setHours(0,0,0,0);
+  return dt;
+}
+const DAY_LABELS_SHORT=["lun.","mar.","mer.","jeu.","ven.","sam.","dim."];
+
+// Calcule le total nutritionnel planifié pour un jour de la semaine en cours (0=lundi..6=dimanche),
+// à partir du plan actuel (week[]) et des petits-déj sélectionnés s'il y en a ce jour-là.
+function plannedNutriForDayIndex(dayIdx){
+  const slotsMidi=week[dayIdx*2], slotsSoir=week[dayIdx*2+1];
+  const totals={kcal:0,glucides:0,proteines:0,lipides:0,fibres:0};
+  [slotsMidi,slotsSoir].forEach(slot=>{
+    if(!slot) return;
+    const meal=getCat(slot.catId).meals[slot.mealIdx];
+    const n=nutriForMeal(meal, slot.portions||1);
+    totals.kcal+=n.kcal; totals.glucides+=n.glucides; totals.proteines+=n.proteines; totals.lipides+=n.lipides; totals.fibres+=n.fibres;
+  });
+  return totals;
+}
+
+// Coche/décoche un jour comme "mangé comme prévu". À la coche, on enregistre un instantané
+// nutritionnel basé sur le plan du moment, qui ne bougera plus même si le plan change ensuite.
+function toggleSuiviDay(dateISO, dayIdx, checked){
+  if(checked){
+    suiviLog[dateISO]=plannedNutriForDayIndex(dayIdx);
+  } else {
+    delete suiviLog[dateISO];
+  }
+  saveSuivi();
+  renderSuivi();
+}
+
+function saveWeightEntry(){
+  const input=document.getElementById("suivi-weight-input");
+  const val=parseFloat(input.value);
+  if(isNaN(val) || val<=0) return;
+  const weekKey=isoDate(mondayOf(new Date()));
+  weightLog[weekKey]=val;
+  saveWeightLog();
+  input.value="";
+  renderSuivi();
+}
+
+function getPeriodDates(period){
+  const today=new Date();
+  if(period==="7j"){
+    const dates=[];
+    for(let i=6;i>=0;i--){ const d=new Date(today); d.setDate(d.getDate()-i); dates.push(d); }
+    return dates;
+  }
+  const days = period==="4s" ? 28 : 90;
+  const dates=[];
+  for(let i=days-1;i>=0;i--){ const d=new Date(today); d.setDate(d.getDate()-i); dates.push(d); }
+  return dates;
+}
+
+function renderSuiviLegend(){
+  const el=document.getElementById("suivi-legend");
+  if(!el) return;
+  if(suiviView==="kcal"){
+    el.innerHTML=`<span class="suivi-legend-item"><span class="suivi-legend-swatch" style="background:#1D9E75"></span>Apport réel</span>
+      <span class="suivi-legend-item"><span class="suivi-legend-dash"></span>Objectif</span>`;
+  } else {
+    el.innerHTML=`<span class="suivi-legend-item"><span class="suivi-legend-swatch" style="background:#1D9E75"></span>Protéines</span>
+      <span class="suivi-legend-item"><span class="suivi-legend-swatch" style="background:#C9622E"></span>Glucides</span>
+      <span class="suivi-legend-item"><span class="suivi-legend-swatch" style="background:#6B5FBE"></span>Lipides</span>`;
+  }
+}
+
+function renderSuivi(){
+  if(typeof Chart==="undefined") return; // Chart.js pas encore chargé (ou hors-ligne)
+
+  const tdee=computeTDEE();
+  const dates=getPeriodDates(suiviPeriod);
+  const isoList=dates.map(isoDate);
+  const kcalValues=isoList.map(iso=>suiviLog[iso] ? suiviLog[iso].kcal : null);
+  const trackedCount=kcalValues.filter(v=>v!=null).length;
+  const trackedAvg=trackedCount>0 ? Math.round(kcalValues.filter(v=>v!=null).reduce((a,b)=>a+b,0)/trackedCount) : null;
+
+  document.getElementById("suivi-avg").textContent = trackedAvg!=null ? trackedAvg+" kcal" : "—";
+  document.getElementById("suivi-target").textContent = tdee ? tdee+" kcal" : "profil incomplet";
+  document.getElementById("suivi-tracked").textContent = trackedCount+"/"+isoList.length;
+  const deltaEl=document.getElementById("suivi-delta");
+  if(trackedAvg!=null && tdee){
+    const delta=trackedAvg-tdee;
+    deltaEl.textContent=(delta>0?"+":"")+delta+" kcal";
+    deltaEl.style.color = Math.abs(delta)<=100 ? "var(--accent)" : "var(--cat-plaisir)";
+  } else {
+    deltaEl.textContent="—";
+    deltaEl.style.color="";
+  }
+
+  renderSuiviLegend();
+
+  const labels = suiviPeriod==="7j"
+    ? dates.map(d=>DAY_LABELS_SHORT[(d.getDay()+6)%7])
+    : dates.map(d=>d.getDate()+"/"+(d.getMonth()+1));
+
+  if(suiviMainChart) suiviMainChart.destroy();
+  const ctx=document.getElementById("suivi-main-chart");
+  if(!ctx) return;
+
+  if(suiviView==="kcal"){
+    suiviMainChart=new Chart(ctx,{
+      data:{ labels, datasets:[
+        { type:"bar", data:kcalValues, backgroundColor:"#1D9E75", borderRadius:4, maxBarThickness:24 },
+        tdee ? { type:"line", data:isoList.map(()=>tdee), borderColor:"#8A8A82", borderDash:[5,4], borderWidth:1.5, pointRadius:0 } : null
+      ].filter(Boolean) },
+      options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}},
+        scales:{ y:{ beginAtZero:true, ticks:{font:{size:10}} }, x:{ ticks:{font:{size:10}, maxRotation:0, autoSkip:true} } } }
+    });
+  } else {
+    suiviMainChart=new Chart(ctx,{
+      type:"bar",
+      data:{ labels, datasets:[
+        { label:"Protéines", data:isoList.map(iso=>suiviLog[iso]?suiviLog[iso].proteines:null), backgroundColor:"#1D9E75", stack:"s" },
+        { label:"Glucides",  data:isoList.map(iso=>suiviLog[iso]?suiviLog[iso].glucides:null),  backgroundColor:"#C9622E", stack:"s" },
+        { label:"Lipides",   data:isoList.map(iso=>suiviLog[iso]?suiviLog[iso].lipides:null),   backgroundColor:"#6B5FBE", stack:"s" }
+      ]},
+      options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}},
+        scales:{ y:{ stacked:true, beginAtZero:true, ticks:{font:{size:10}} }, x:{ stacked:true, ticks:{font:{size:10}, maxRotation:0, autoSkip:true} } } }
+    });
+  }
+
+  // Poids : on affiche les semaines renseignées, triées chronologiquement
+  const weightEntries=Object.entries(weightLog).sort((a,b)=>a[0]<b[0]?-1:1);
+  const trendEl=document.getElementById("suivi-weight-trend");
+  if(weightEntries.length>=2){
+    const diff=Math.round((weightEntries[weightEntries.length-1][1]-weightEntries[0][1])*10)/10;
+    trendEl.textContent=(diff>0?"+":"")+diff+" kg depuis "+weightEntries.length+" semaines";
+    trendEl.style.color = diff<=0 ? "var(--accent)" : "var(--cat-plaisir)";
+  } else {
+    trendEl.textContent = weightEntries.length===1 ? "Première pesée enregistrée" : "Pas encore de pesée";
+    trendEl.style.color="var(--ink-faint)";
+  }
+  if(suiviWeightChart) suiviWeightChart.destroy();
+  const wctx=document.getElementById("suivi-weight-chart");
+  if(wctx){
+    suiviWeightChart=new Chart(wctx,{
+      type:"line",
+      data:{ labels:weightEntries.map(([k])=>{ const d=new Date(k); return d.getDate()+"/"+(d.getMonth()+1); }),
+             datasets:[{ data:weightEntries.map(([,v])=>v), borderColor:"#6B5FBE", backgroundColor:"#6B5FBE", borderWidth:2, pointRadius:3, tension:0.3 }] },
+      options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}},
+        scales:{ y:{ ticks:{font:{size:10}, callback:v=>v+"kg"} }, x:{ ticks:{font:{size:10}} } } }
+    });
+  }
+
+  // Journal : les jours de la semaine calendaire en cours, du lundi à aujourd'hui, le plus récent en premier
+  const journalRoot=document.getElementById("suivi-journal");
+  const today=new Date(); today.setHours(0,0,0,0);
+  const monday=mondayOf(today);
+  const journalDays=[];
+  for(let i=0;i<7;i++){
+    const d=new Date(monday); d.setDate(d.getDate()+i);
+    if(d>today) break;
+    journalDays.push({date:d, dayIdx:i});
+  }
+  journalDays.reverse();
+  journalRoot.innerHTML=journalDays.map(({date,dayIdx})=>{
+    const iso=isoDate(date);
+    const checked=!!suiviLog[iso];
+    const label = iso===isoDate(today) ? "Aujourd'hui" : date.toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"short"});
+    const kcalLabel = checked ? suiviLog[iso].kcal+" kcal" : "";
+    return `<label class="suivi-journal-row">
+      <input type="checkbox" class="suivi-journal-cb" data-iso="${iso}" data-dayidx="${dayIdx}" ${checked?"checked":""}>
+      <span class="suivi-journal-date">${label}</span>
+      <span class="suivi-journal-kcal">${kcalLabel}</span>
+    </label>`;
+  }).join("") || `<p class="suivi-empty">Reviens ici une fois que tu auras planifié ta semaine.</p>`;
+
+  journalRoot.querySelectorAll(".suivi-journal-cb").forEach(cb=>{
+    cb.addEventListener("change",()=>toggleSuiviDay(cb.dataset.iso, parseInt(cb.dataset.dayidx), cb.checked));
+  });
+}
+
+function initSuivi(){
+  document.querySelectorAll(".suivi-chip").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      document.querySelectorAll(".suivi-chip").forEach(b=>b.classList.remove("active"));
+      btn.classList.add("active");
+      suiviPeriod=btn.dataset.period;
+      renderSuivi();
+    });
+  });
+  document.querySelectorAll(".suivi-view-chip").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      document.querySelectorAll(".suivi-view-chip").forEach(b=>b.classList.remove("active"));
+      btn.classList.add("active");
+      suiviView=btn.dataset.view;
+      renderSuivi();
+    });
+  });
+  document.getElementById("suivi-weight-save").addEventListener("click", saveWeightEntry);
+  document.getElementById("suivi-weight-input").addEventListener("keydown",e=>{ if(e.key==="Enter") saveWeightEntry(); });
+}
+
 function renderSummary(){
   const filled=week.filter(Boolean).length;
   document.getElementById("count-out").textContent=filled+" / 14";
@@ -798,7 +1021,7 @@ function renderAll(){
 
 // ─── Onglets ──────────────────────────────────────────────────────────────────
 
-const ALL_VIEWS = ["choisir","semaine","courses","frigo","petitsdej","profil","sources"];
+const ALL_VIEWS = ["choisir","semaine","courses","frigo","petitsdej","suivi","profil","sources"];
 
 function initTabs(){
   document.querySelectorAll(".tab-btn").forEach(btn=>{
@@ -806,6 +1029,7 @@ function initTabs(){
       document.querySelectorAll(".tab-btn").forEach(b=>{b.classList.remove("active");b.setAttribute("aria-selected","false");});
       btn.classList.add("active"); btn.setAttribute("aria-selected","true");
       ALL_VIEWS.forEach(name=>document.getElementById("view-"+name).classList.toggle("hidden",btn.dataset.view!==name));
+      if(btn.dataset.view==="suivi") renderSuivi();
     });
   });
 }
@@ -822,10 +1046,13 @@ async function init(){
   const themeBtn = document.getElementById("theme-toggle");
   if(themeBtn) themeBtn.addEventListener("click", toggleTheme);
   initTabs();
+  initSuivi();
 
   loadProfile();
   loadFridge();
   loadBreakfasts();
+  loadSuivi();
+  loadWeightLog();
 
   try {
     const [mealsRes, ingRes] = await Promise.all([fetch("meals.json"), fetch("ingredients.json")]);
