@@ -37,9 +37,9 @@
 
 <div class="app-shell">
 
-<!-- Onglet Choisir -->
+<!-- Onglet Repas -->
 <div class="view" id="view-choisir" role="tabpanel">
-  <p class="hint">Touche un plat pour l'ajouter. ✓ = correspond à ton profil, 🧊 = déjà (en partie) dans ton frigo.</p>
+  <p class="hint">Touche un plat pour l'ajouter. ✓ = correspond à ton profil, 🧊 = déjà (en partie) dans ton frigo. Les petits-déj sont en bas, avec des cases à cocher.</p>
   <div id="fridge-filter-bar"></div>
   <div id="categories" class="categories-grid"></div>
 </div>
@@ -54,7 +54,10 @@
 <div class="view hidden" id="view-courses" role="tabpanel">
   <div class="shopping-header">
     <p class="hint" style="margin:0;">Liste cumulée selon les portions. Les items déjà dans ton frigo sont déduits.</p>
-    <button class="btn" id="copy-list-btn">Copier</button>
+    <div class="shopping-header-actions">
+      <button class="btn" id="fill-fridge-btn">🧊 Remplir avec les cochés</button>
+      <button class="btn" id="copy-list-btn">Copier</button>
+    </div>
   </div>
   <ul class="shopping-list" id="shopping-list"></ul>
 </div>
@@ -76,12 +79,7 @@
   <div id="frigo-footer"></div>
 </div>
 
-<!-- Onglet Petits déjeuners -->
-<div class="view hidden" id="view-petitsdej" role="tabpanel">
-  <p class="hint">Coche les petits déjeuners que tu veux cette semaine. Leurs ingrédients (x7) s'ajoutent à ta liste de courses.</p>
-  <div class="premium-badge">⭐ Fonctionnalité premium</div>
-  <div id="breakfasts-list"></div>
-</div>
+
 
 <!-- Onglet Profil -->
 <div class="view hidden" id="view-profil" role="tabpanel">
@@ -154,13 +152,12 @@
 </div>
 
 <div class="tabbar" role="tablist">
-  <button class="tab-btn active" data-view="choisir"    role="tab" aria-selected="true">Choisir</button>
-  <button class="tab-btn"        data-view="semaine"    role="tab" aria-selected="false">Semaine</button>
-  <button class="tab-btn"        data-view="courses"    role="tab" aria-selected="false">Courses</button>
+  <button class="tab-btn active" data-view="choisir"    role="tab" aria-selected="true">🍽️ Repas</button>
+  <button class="tab-btn"        data-view="semaine"    role="tab" aria-selected="false">📅 Semaine</button>
+  <button class="tab-btn"        data-view="courses"    role="tab" aria-selected="false">🛒 Courses</button>
   <button class="tab-btn"        data-view="frigo"      role="tab" aria-selected="false">🧊 Frigo</button>
-  <button class="tab-btn"        data-view="petitsdej"  role="tab" aria-selected="false">🌅 Petits-déj</button>
   <button class="tab-btn"        data-view="suivi"      role="tab" aria-selected="false">📈 Suivi</button>
-  <button class="tab-btn"        data-view="profil"     role="tab" aria-selected="false">⚙️ Profil</button>
+  <button class="tab-btn"        data-view="profil"     role="tab" aria-selected="false">👤 Profil</button>
   <button class="tab-btn"        data-view="sources"    role="tab" aria-selected="false">📚 Sources</button>
 </div>
 

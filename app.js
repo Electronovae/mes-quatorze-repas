@@ -56,6 +56,7 @@ let suiviView = "kcal";
 let suiviMainChart = null;
 let suiviWeightChart = null;
 const expandedSlots = new Set();
+const expandedBreakfasts = new Set();
 
 // ─── Persistance ─────────────────────────────────────────────────────────────
 
@@ -195,9 +196,9 @@ function suggestedPortionFactor(meal){
   const baseKcal = nutriForMeal(meal,1).kcal;
   if(!baseKcal) return null;
   let factor = targetKcal / baseKcal;
-  // Fourchette resserrée : les recettes sont déjà calibrées pour une portion adulte standard,
-  // on ajuste modérément plutôt que de tripler les quantités.
-  factor = Math.min(1.5, Math.max(0.75, factor));
+  // Fourchette élargie : un plafond trop bas empêchait d'atteindre des objectifs caloriques élevés
+  // (grande taille, forte activité). On laisse de la marge, sans non plus tripler un plat à lui seul.
+  factor = Math.min(2, Math.max(0.75, factor));
   return Math.round(factor*4)/4;
 }
 
@@ -230,6 +231,15 @@ function mealExcluded(meal){
 
 function getCat(id){ return CATS.find(c=>c.id===id); }
 function countInCat(id){ return week.filter(s=>s&&s.catId===id).length; }
+function findWeekSlotIndex(catId,mealIdx){ return week.findIndex(s=>s&&s.catId===catId&&s.mealIdx===mealIdx); }
+
+// Renvoie les indices des plats les moins chers (au moins 20% de la catégorie, ou le quota si plus grand),
+// pour piocher dedans au hasard plutôt que de prendre systématiquement les mêmes moins chers.
+function cheapestPool(cat, indices){
+  const sorted=[...indices].sort((a,b)=>mealCostToBuy(cat.meals[a],1)-mealCostToBuy(cat.meals[b],1));
+  const size=Math.max(cat.quota, Math.ceil(sorted.length*0.2));
+  return sorted.slice(0, size);
+}
 function shuffle(arr){ for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];} return arr; }
 
 function defaultPortionsFor(meal){
@@ -254,6 +264,10 @@ function rerollSlot(slotIdx){
   if(!cands.length) cands=cat.meals.map((_,i)=>i).filter(i=>i!==slot.mealIdx&&!mealExcluded(cat.meals[i]));
   if(!cands.length) cands=cat.meals.map((_,i)=>i).filter(i=>i!==slot.mealIdx);
   if(!cands.length) return;
+  if(costMode){
+    const cheapIdxs=cheapestPool(cat, cat.meals.map((_,i)=>i)).filter(i=>cands.includes(i));
+    if(cheapIdxs.length) cands=cheapIdxs;
+  }
   const newIdx=cands[Math.floor(Math.random()*cands.length)];
   week[slotIdx]={catId:slot.catId,mealIdx:newIdx,portions:defaultPortionsFor(cat.meals[newIdx])};
   saveWeek(); renderAll();
@@ -270,7 +284,7 @@ function drawWeek(){
     if(pool.length<cat.quota) pool = cat.meals.map((_,i)=>i); // pas assez de plats compatibles, on retombe sur tout
     let chosen;
     if(costMode){
-      chosen = [...pool].sort((a,b)=>mealCostToBuy(cat.meals[a],1)-mealCostToBuy(cat.meals[b],1)).slice(0,cat.quota);
+      chosen = shuffle(cheapestPool(cat, pool)).slice(0,cat.quota);
     } else {
       chosen = shuffle(pool).slice(0,cat.quota);
     }
@@ -307,23 +321,28 @@ function renderCategories(){
 
     const cards=mealsToShow.map(({m,idx})=>{
       const disabled=used>=cat.quota;
+      const inWeekIdx=findWeekSlotIndex(cat.id,idx);
       const matchesProfil = profile.pathologies.length===0 || (m.pathologies||[]).some(p=>profile.pathologies.includes(p));
       const cov = hasFridge ? mealFridgeCoverage(m) : null;
       const fridgeBadge = cov && cov.matched>0 ? `<span class="fridge-badge ${cov.full?"fridge-full":""}">${cov.full?"🧊 faisable maintenant":`🧊 ${cov.matched}/${cov.total} en stock`}</span>` : "";
       const profBadge = matchesProfil && profile.pathologies.length>0 ? `<span class="match-badge">✓ ton profil</span>` : "";
+      const inWeekBadge = inWeekIdx!==-1 ? `<span class="inweek-badge">✓ dans ta semaine</span>` : "";
       const fullCost = mealFullCost(m,1);
       const toBuyCost = costMode ? mealCostToBuy(m,1) : null;
       const priceHtml = (costMode && toBuyCost!==fullCost)
         ? `<span class="price"><span class="price-strike">${fmt.format(fullCost)}</span> ${fmt.format(toBuyCost)} à acheter</span>`
         : `<span class="price">${fmt.format(fullCost)}</span>`;
+      const actionBtn = inWeekIdx!==-1
+        ? `<button class="btn remove-from-card-btn" data-slot="${inWeekIdx}">Retirer du plan</button>`
+        : `<button class="btn add-btn" data-cat="${cat.id}" data-idx="${idx}" ${disabled?"disabled":""}>${disabled?"Quota atteint":"Ajouter"}</button>`;
       return `<div class="meal-card ${matchesProfil&&profile.pathologies.length>0?"meal-match":""}">
-        <div class="badge-row">${profBadge}${fridgeBadge}</div>
+        <div class="badge-row">${inWeekBadge}${profBadge}${fridgeBadge}</div>
         <p class="name">${m.name}</p>
         <p class="portion">${m.ingredients.map(i=>qtyFmt(i.qty)+" "+i.unit+" "+i.name).join(", ")}</p>
         <p class="benefit">${m.benefit}</p>
         <div class="row">
           ${priceHtml}
-          <button class="btn add-btn" data-cat="${cat.id}" data-idx="${idx}" ${disabled?"disabled":""}>${disabled?"Quota atteint":"Ajouter"}</button>
+          ${actionBtn}
         </div>
       </div>`;
     }).join("") || `<p class="empty-cat-state">Aucun plat disponible ici (exclusions alimentaires ou filtre frigo trop strict).</p>`;
@@ -334,12 +353,65 @@ function renderCategories(){
         <span class="quota-badge" style="color:var(${cat.colorVar})">${used} sur ${cat.quota} / semaine</span>
         <span class="chevron">⌄</span>
       </button>
-      <div class="cat-body">${cards}</div>
+      <div class="cat-body"><div class="cat-body-inner">${cards}</div></div>
     </div>`;
-  }).join("");
+  }).join("") + renderPetitsDejCategory(openIds);
 
   root.querySelectorAll(".cat-head").forEach(btn=>btn.addEventListener("click",()=>btn.closest(".cat").classList.toggle("open")));
   root.querySelectorAll(".add-btn").forEach(btn=>btn.addEventListener("click",()=>addToWeek(btn.dataset.cat,parseInt(btn.dataset.idx))));
+  root.querySelectorAll(".remove-from-card-btn").forEach(btn=>btn.addEventListener("click",()=>removeFromWeek(parseInt(btn.dataset.slot))));
+  root.querySelectorAll(".pj-checkbox").forEach(cb=>cb.addEventListener("change",()=>{
+    if(cb.checked) selectedBreakfasts.add(cb.dataset.id); else selectedBreakfasts.delete(cb.dataset.id);
+    saveBreakfasts();
+    renderWeek(); renderShoppingList(); renderSummary(); renderCategories();
+  }));
+  root.querySelectorAll(".pj-toggle").forEach(btn=>btn.addEventListener("click",()=>{
+    const id=btn.dataset.id;
+    if(expandedBreakfasts.has(id)) expandedBreakfasts.delete(id); else expandedBreakfasts.add(id);
+    renderCategories();
+  }));
+}
+
+// Petits-déjeuners : rendus comme une catégorie de plus dans Choisir, mais en cases à cocher
+// (pas de notion de quota par repas, juste un nombre de jours sélectionnés dans la semaine).
+function renderPetitsDejCategory(openIds){
+  const pjCat=CATS.find(c=>c.id==="petits-dejeuners");
+  if(!pjCat) return "";
+  const isOpen=openIds.includes(pjCat.id);
+  const cards=pjCat.meals.filter(m=>!mealExcluded(m)).map(m=>{
+    const checked=selectedBreakfasts.has(m.id);
+    const isExpanded=expandedBreakfasts.has(m.id);
+    const nutri=nutriForMeal(m,1);
+    const matchesProfil=profile.pathologies.length===0||(m.pathologies||[]).some(p=>profile.pathologies.includes(p));
+    const ingHtml=m.ingredients.map(i=>`<li>${qtyFmt(i.qty)} ${i.unit} de ${i.name}</li>`).join("");
+    const recHtml=m.recipe.map(step=>`<li>${step}</li>`).join("");
+    return `<div class="meal-card pj-meal-card ${checked?"pj-card-checked":""} ${matchesProfil&&profile.pathologies.length>0?"meal-match":""}">
+      <div class="badge-row">${matchesProfil&&profile.pathologies.length>0?`<span class="match-badge">✓ ton profil</span>`:""}</div>
+      <label class="pj-card-head">
+        <input type="checkbox" class="pj-checkbox" data-id="${m.id}" ${checked?"checked":""}>
+        <span class="name">${m.name}</span>
+      </label>
+      <p class="benefit">${m.benefit}</p>
+      <div class="row">
+        <span class="price">${fmt.format(mealFullCost(m,1))}/j · ${nutri.kcal} kcal · ${qtyFmt(nutri.proteines)}g prot.</span>
+        <button class="btn pj-toggle" data-id="${m.id}">${isExpanded?"Masquer":"Recette"}</button>
+      </div>
+      <div class="pj-detail ${isExpanded?"pj-detail-open":""}">
+        <p class="detail-label">Ingrédients</p>
+        <ul class="ingredient-list">${ingHtml}</ul>
+        <p class="detail-label">Recette</p>
+        <ol class="recipe-list">${recHtml}</ol>
+      </div>
+    </div>`;
+  }).join("");
+  return `<div class="cat ${isOpen?"open":""}" data-cat-id="${pjCat.id}">
+    <button class="cat-head" type="button">
+      <span class="name">${pjCat.name}</span>
+      <span class="quota-badge" style="color:var(${pjCat.colorVar})">${selectedBreakfasts.size} sur ${pjCat.quota} sélectionnés</span>
+      <span class="chevron">⌄</span>
+    </button>
+    <div class="cat-body"><div class="cat-body-inner">${cards}</div></div>
+  </div>`;
 }
 
 function renderFridgeFilterBar(){
@@ -574,6 +646,18 @@ function renderShoppingList(){
   }));
 }
 
+function fillFridgeFromChecked(){
+  const checkedItems = Array.from(document.querySelectorAll(".shopping-item input:checked"));
+  if(checkedItems.length===0) return;
+  checkedItems.forEach(cb=>{
+    const row=cb.closest(".shopping-item");
+    const btn=row ? row.querySelector(".to-fridge-btn") : null;
+    if(!btn) return;
+    setFridgeQty(btn.dataset.name, parseFloat(btn.dataset.qty), btn.dataset.unit);
+  });
+  renderFridge(); renderShoppingList(); renderCategories(); renderSummary();
+}
+
 function copyShoppingList(){
   const items=computeShoppingList().filter(i=>fridgeStatus(i).status!=="full");
   if(!items.length) return;
@@ -649,39 +733,6 @@ function handleFrigoAdd(){
   renderFridge(); renderShoppingList(); renderCategories(); renderSummary();
 }
 
-// ─── Petits déjeuners ────────────────────────────────────────────────────────
-
-function renderBreakfasts(){
-  const root=document.getElementById("breakfasts-list");
-  if(!root) return;
-  const pjCat=CATS.find(c=>c.id==="petits-dejeuners");
-  if(!pjCat){ root.innerHTML=`<p class="hint">Chargement…</p>`; return; }
-
-  root.innerHTML=pjCat.meals.filter(m=>!mealExcluded(m)).map(m=>{
-    const checked=selectedBreakfasts.has(m.id);
-    const nutri=nutriForMeal(m,1);
-    const matchesProfil=profile.pathologies.length===0||(m.pathologies||[]).some(p=>profile.pathologies.includes(p));
-    return `<label class="pj-card ${checked?"pj-checked":""} ${matchesProfil&&profile.pathologies.length>0?"meal-match":""}">
-      <input type="checkbox" class="pj-checkbox" data-id="${m.id}" ${checked?"checked":""}>
-      <div class="pj-info">
-        <p class="pj-name">${m.name}</p>
-        <p class="pj-benefit">${m.benefit}</p>
-        <div class="pj-row">
-          <span class="price">${fmt.format(mealFullCost(m,1))}/j</span>
-          <span class="pj-nutri">${nutri.kcal} kcal · ${qtyFmt(nutri.proteines)}g P · ${qtyFmt(nutri.glucides)}g G</span>
-        </div>
-      </div>
-    </label>`;
-  }).join("");
-
-  root.querySelectorAll(".pj-checkbox").forEach(cb=>cb.addEventListener("change",()=>{
-    if(cb.checked) selectedBreakfasts.add(cb.dataset.id); else selectedBreakfasts.delete(cb.dataset.id);
-    saveBreakfasts();
-    cb.closest("label").classList.toggle("pj-checked",cb.checked);
-    renderWeek(); renderShoppingList(); renderSummary();
-  }));
-}
-
 // ─── Profil & préférences ─────────────────────────────────────────────────────
 
 function renderProfile(){
@@ -741,7 +792,7 @@ function renderProfile(){
         </select>
       </label>
       ${tdee
-        ? `<div class="tdee-result">Besoin estimé : <strong>${tdee} kcal/jour</strong>. Les portions de tes repas sont ajustées automatiquement vers cet objectif (méthode Mifflin-St Jeor).</div>`
+        ? `<div class="tdee-result">Besoin estimé : <strong>${tdee} kcal/jour</strong>. Les portions de tes repas sont ajustées vers cet objectif, dans une fourchette raisonnable (jusqu'à ×2 d'un plat). Si l'objectif reste élevé après ajustement, mieux vaut ajouter une collation ou un féculent en plus plutôt que démesurer un seul plat.</div>`
         : `<div class="tdee-hint">Renseigne âge, poids et taille pour activer l'ajustement automatique des portions.</div>`
       }
       <p class="tdee-disclaimer">Estimation indicative, pas un avis médical personnalisé. En cas de pathologie, suis les recommandations de ton médecin ou diététicien.</p>
@@ -760,7 +811,7 @@ function renderProfile(){
     else { profile.pathologies=profile.pathologies.filter(p=>p!==cb.dataset.id); }
     saveProfile();
     cb.closest("label").classList.toggle("patho-active",cb.checked);
-    renderCategories(); renderBreakfasts();
+    renderCategories();
   }));
   ["age","poids","taille"].forEach(field=>{
     document.getElementById("stat-"+field).addEventListener("change",e=>{
@@ -778,7 +829,7 @@ function renderProfile(){
     if(val && !(profile.exclusions||[]).some(e=>normName(e)===normName(val))){
       profile.exclusions=[...(profile.exclusions||[]),val];
       saveProfile();
-      renderProfile(); renderCategories(); renderBreakfasts();
+      renderProfile(); renderCategories();
     }
     input.value="";
   });
@@ -788,7 +839,7 @@ function renderProfile(){
   root.querySelectorAll(".exclusion-remove").forEach(btn=>btn.addEventListener("click",()=>{
     profile.exclusions=(profile.exclusions||[]).filter(e=>e!==btn.dataset.name);
     saveProfile();
-    renderProfile(); renderCategories(); renderBreakfasts();
+    renderProfile(); renderCategories();
   }));
 }
 
@@ -1015,13 +1066,12 @@ function renderAll(){
   renderShoppingList();
   renderSummary();
   renderFridge();
-  renderBreakfasts();
   renderProfile();
 }
 
 // ─── Onglets ──────────────────────────────────────────────────────────────────
 
-const ALL_VIEWS = ["choisir","semaine","courses","frigo","petitsdej","suivi","profil","sources"];
+const ALL_VIEWS = ["choisir","semaine","courses","frigo","suivi","profil","sources"];
 
 function initTabs(){
   document.querySelectorAll(".tab-btn").forEach(btn=>{
@@ -1041,6 +1091,7 @@ async function init(){
   document.getElementById("draw-btn").addEventListener("click", drawWeek);
   document.getElementById("clear-btn").addEventListener("click", clearWeek);
   document.getElementById("copy-list-btn").addEventListener("click", copyShoppingList);
+  document.getElementById("fill-fridge-btn").addEventListener("click", fillFridgeFromChecked);
   document.getElementById("frigo-add-btn").addEventListener("click", handleFrigoAdd);
   document.getElementById("frigo-input").addEventListener("keydown",e=>{ if(e.key==="Enter") handleFrigoAdd(); });
   const themeBtn = document.getElementById("theme-toggle");
