@@ -11,6 +11,16 @@ const fmt    = new Intl.NumberFormat("fr-FR", {style:"currency", currency:"EUR"}
 const round1 = n => Math.round(n*10)/10;
 const qtyFmt = n => { const r = round1(n); return (r%1===0 ? r : r.toString().replace(".",",")).toString(); };
 
+// Ingrédients "aromates/assaisonnement" : ne doivent pas grossir proportionnellement au nombre de portions.
+// 2 portions ne veulent pas dire 2x plus d'oignon ou d'ail dans la poêle.
+const AROMATIC_RE = /\boignons?\b|oignon rouge|\bail\b|gousse|gingembre|herbes?\b|épices?\b|curry|cumin|curcuma|paprika|persil|aneth|basilic|menthe|romarin|estragon|garam masala|piment|vinaigre|moutarde|cannelle/i;
+function isAromatic(name){ return AROMATIC_RE.test(name); }
+function scaledQty(ing, portions){
+  if(portions<=1 || !isAromatic(ing.name)) return ing.qty*portions;
+  const extra = portions-1;
+  return ing.qty*(1+extra*0.3); // montée douce au-delà d'1 portion
+}
+
 const ACTIVITY_FACTORS = {
   sedentaire: {label:"Sédentaire (peu/pas de sport)", factor:1.2},
   legere:     {label:"Activité légère (1-3x/semaine)", factor:1.375},
@@ -33,7 +43,7 @@ let CATS        = [];
 let INGREDIENTS = {};
 let week        = new Array(14).fill(null);
 let fridgeItems = [];
-let profile     = {personnes:2, pathologies:[], age:null, sexe:"f", poids:null, taille:null, activite:"moderee"};
+let profile     = {personnes:2, pathologies:[], age:null, sexe:"f", poids:null, taille:null, activite:"moderee", exclusions:[]};
 let selectedBreakfasts = new Set();
 let fridgeFilterOn = false;
 const expandedSlots = new Set();
@@ -109,7 +119,7 @@ function nutriForIngredient(ing){
 function nutriForMeal(meal,portions){
   const t = {kcal:0,glucides:0,proteines:0,lipides:0,fibres:0};
   meal.ingredients.forEach(ing=>{
-    const n=nutriForIngredient({...ing,qty:ing.qty*portions});
+    const n=nutriForIngredient({...ing,qty:scaledQty(ing,portions)});
     t.kcal+=n.kcal; t.glucides+=n.glucides; t.proteines+=n.proteines; t.lipides+=n.lipides; t.fibres+=n.fibres;
   });
   return {kcal:Math.round(t.kcal), glucides:round1(t.glucides), proteines:round1(t.proteines), lipides:round1(t.lipides), fibres:round1(t.fibres)};
@@ -131,14 +141,18 @@ function computeTDEE(){
 function suggestedPortionFactor(meal){
   const tdee = computeTDEE();
   if(!tdee) return null;
+  // Léger déficit si objectif perte de poids déclaré, plutôt que viser le maintien strict.
+  const target = profile.pathologies.includes("obesite") ? tdee*0.85 : tdee;
   const hasBreakfast = selectedBreakfasts.size>0;
   const shareMain = hasBreakfast ? 0.375 : 0.5; // part du midi ou du soir dans la journée
-  const targetKcal = tdee * shareMain;
+  const targetKcal = target * shareMain;
   const baseKcal = nutriForMeal(meal,1).kcal;
   if(!baseKcal) return null;
   let factor = targetKcal / baseKcal;
-  factor = Math.min(3, Math.max(0.5, factor));
-  return Math.round(factor*2)/2; // arrondi au 0.5 le plus proche
+  // Fourchette resserrée : les recettes sont déjà calibrées pour une portion adulte standard,
+  // on ajuste modérément plutôt que de tripler les quantités.
+  factor = Math.min(1.5, Math.max(0.75, factor));
+  return Math.round(factor*4)/4;
 }
 
 // ─── Compatibilité frigo ──────────────────────────────────────────────────────
@@ -156,6 +170,14 @@ function mealFridgeCoverage(meal){
     }
   });
   return {matched, total:meal.ingredients.length, full: full && meal.ingredients.length>0};
+}
+
+function mealExcluded(meal){
+  if(!profile.exclusions || !profile.exclusions.length) return false;
+  return meal.ingredients.some(ing=>{
+    const n=normName(ing.name);
+    return profile.exclusions.some(excl=>n.includes(normName(excl)));
+  });
 }
 
 // ─── Semaine helpers ─────────────────────────────────────────────────────────
@@ -182,7 +204,8 @@ function rerollSlot(slotIdx){
   const slot=week[slotIdx]; if(!slot) return;
   const cat=getCat(slot.catId);
   const used=week.filter((s,i)=>s&&s.catId===slot.catId&&i!==slotIdx).map(s=>s.mealIdx);
-  let cands=cat.meals.map((_,i)=>i).filter(i=>i!==slot.mealIdx&&!used.includes(i));
+  let cands=cat.meals.map((_,i)=>i).filter(i=>i!==slot.mealIdx&&!used.includes(i)&&!mealExcluded(cat.meals[i]));
+  if(!cands.length) cands=cat.meals.map((_,i)=>i).filter(i=>i!==slot.mealIdx&&!mealExcluded(cat.meals[i]));
   if(!cands.length) cands=cat.meals.map((_,i)=>i).filter(i=>i!==slot.mealIdx);
   if(!cands.length) return;
   const newIdx=cands[Math.floor(Math.random()*cands.length)];
@@ -197,7 +220,9 @@ function setPortions(slotIdx,delta){
 function drawWeek(){
   const mainCats = CATS.filter(c=>c.id!=="petits-dejeuners");
   let picks=[]; mainCats.forEach(cat=>{
-    shuffle(cat.meals.map((_,i)=>i)).slice(0,cat.quota).forEach(idx=>picks.push({catId:cat.id,mealIdx:idx,portions:defaultPortionsFor(cat.meals[idx])}));
+    let pool = cat.meals.map((_,i)=>i).filter(i=>!mealExcluded(cat.meals[i]));
+    if(pool.length<cat.quota) pool = cat.meals.map((_,i)=>i); // pas assez de plats compatibles, on retombe sur tout
+    shuffle(pool).slice(0,cat.quota).forEach(idx=>picks.push({catId:cat.id,mealIdx:idx,portions:defaultPortionsFor(cat.meals[idx])}));
   });
   week=shuffle(picks); expandedSlots.clear(); saveWeek(); renderAll();
 }
@@ -215,7 +240,7 @@ function renderCategories(){
     const used=countInCat(cat.id);
     const isOpen=openIds.includes(cat.id);
 
-    let mealsToShow = cat.meals.map((m,idx)=>({m,idx}));
+    let mealsToShow = cat.meals.map((m,idx)=>({m,idx})).filter(({m})=>!mealExcluded(m));
     if(hasFridge){
       mealsToShow.sort((a,b)=>{
         const ca=mealFridgeCoverage(a.m), cb=mealFridgeCoverage(b.m);
@@ -242,7 +267,7 @@ function renderCategories(){
           <button class="btn add-btn" data-cat="${cat.id}" data-idx="${idx}" ${disabled?"disabled":""}>${disabled?"Quota atteint":"Ajouter"}</button>
         </div>
       </div>`;
-    }).join("") || `<p class="empty-cat-state">Aucun plat ne correspond à ton frigo actuel dans cette catégorie.</p>`;
+    }).join("") || `<p class="empty-cat-state">Aucun plat disponible ici (exclusions alimentaires ou filtre frigo trop strict).</p>`;
 
     return `<div class="cat ${isOpen?"open":""}" data-cat-id="${cat.id}">
       <button class="cat-head" type="button">
@@ -291,7 +316,7 @@ function renderWeek(){
     const cat=getCat(slot.catId); const meal=cat.meals[slot.mealIdx]; const portions=slot.portions||1;
     const isExpanded=expandedSlots.has(i);
     const nutri=nutriForMeal(meal,portions);
-    const ingHtml=meal.ingredients.map(ing=>`<li>${qtyFmt(ing.qty*portions)} ${ing.unit} de ${ing.name}</li>`).join("");
+    const ingHtml=meal.ingredients.map(ing=>`<li>${qtyFmt(scaledQty(ing,portions))} ${ing.unit} de ${ing.name}</li>`).join("");
     const recHtml=meal.recipe.map(step=>`<li>${step}</li>`).join("");
     return `<div class="slot ${isExpanded?"detail-open":""}">
       <div class="slot-top">
@@ -360,7 +385,7 @@ function computeShoppingList(){
     const portions=slot.portions||1;
     meal.ingredients.forEach(ing=>{
       const key=normName(ing.name)+"|"+ing.unit;
-      map.set(key,(map.get(key)||0)+ing.qty*portions);
+      map.set(key,(map.get(key)||0)+scaledQty(ing,portions));
     });
   });
   const pjCat=CATS.find(c=>c.id==="petits-dejeuners");
@@ -536,7 +561,7 @@ function renderBreakfasts(){
   const pjCat=CATS.find(c=>c.id==="petits-dejeuners");
   if(!pjCat){ root.innerHTML=`<p class="hint">Chargement…</p>`; return; }
 
-  root.innerHTML=pjCat.meals.map(m=>{
+  root.innerHTML=pjCat.meals.filter(m=>!mealExcluded(m)).map(m=>{
     const checked=selectedBreakfasts.has(m.id);
     const nutri=nutriForMeal(m,1);
     const matchesProfil=profile.pathologies.length===0||(m.pathologies||[]).some(p=>profile.pathologies.includes(p));
@@ -557,7 +582,7 @@ function renderBreakfasts(){
     if(cb.checked) selectedBreakfasts.add(cb.dataset.id); else selectedBreakfasts.delete(cb.dataset.id);
     saveBreakfasts();
     cb.closest("label").classList.toggle("pj-checked",cb.checked);
-    renderWeek(); renderShoppingList();
+    renderWeek(); renderShoppingList(); renderSummary();
   }));
 }
 
@@ -586,6 +611,18 @@ function renderProfile(){
             <input type="checkbox" class="patho-cb" data-id="${p.id}" ${profile.pathologies.includes(p.id)?"checked":""}> ${p.label}
           </label>
         `).join("")}
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <p class="profile-label">Aliments à exclure <span class="profile-hint">(masque tous les plats qui en contiennent)</span></p>
+      <div class="exclusion-add-row">
+        <input id="exclusion-input" type="text" placeholder="Ex. : Oignon, Brocolis…" list="exclusion-datalist" class="frigo-input" autocomplete="off">
+        <datalist id="exclusion-datalist">${getAllIngredientNames().map(n=>`<option value="${n}">`).join("")}</datalist>
+        <button class="btn btn-primary" id="exclusion-add-btn">+</button>
+      </div>
+      <div class="exclusion-chips">
+        ${(profile.exclusions||[]).map(e=>`<span class="exclusion-chip">${e}<button class="exclusion-remove" data-name="${e.replace(/"/g,"&quot;")}">×</button></span>`).join("") || `<p class="exclusion-empty">Aucune exclusion.</p>`}
       </div>
     </div>
 
@@ -638,15 +675,39 @@ function renderProfile(){
   document.getElementById("stat-sexe").addEventListener("change",e=>{ profile.sexe=e.target.value; saveProfile(); renderProfile(); });
   document.getElementById("stat-activite").addEventListener("change",e=>{ profile.activite=e.target.value; saveProfile(); renderProfile(); });
   document.getElementById("theme-toggle-profile").addEventListener("click", toggleTheme);
+
+  document.getElementById("exclusion-add-btn").addEventListener("click",()=>{
+    const input=document.getElementById("exclusion-input");
+    const val=input.value.trim();
+    if(val && !(profile.exclusions||[]).some(e=>normName(e)===normName(val))){
+      profile.exclusions=[...(profile.exclusions||[]),val];
+      saveProfile();
+      renderProfile(); renderCategories(); renderBreakfasts();
+    }
+    input.value="";
+  });
+  document.getElementById("exclusion-input").addEventListener("keydown",e=>{
+    if(e.key==="Enter") document.getElementById("exclusion-add-btn").click();
+  });
+  root.querySelectorAll(".exclusion-remove").forEach(btn=>btn.addEventListener("click",()=>{
+    profile.exclusions=(profile.exclusions||[]).filter(e=>e!==btn.dataset.name);
+    saveProfile();
+    renderProfile(); renderCategories(); renderBreakfasts();
+  }));
 }
 
 // ─── Summary ──────────────────────────────────────────────────────────────────
 
 function renderSummary(){
   const filled=week.filter(Boolean).length;
-  const total=week.reduce((s,slot)=>slot?s+getCat(slot.catId).meals[slot.mealIdx].pricePerPortion*(slot.portions||1):s,0);
+  const mainTotal=week.reduce((s,slot)=>slot?s+getCat(slot.catId).meals[slot.mealIdx].pricePerPortion*(slot.portions||1):s,0);
+  const pjCat=CATS.find(c=>c.id==="petits-dejeuners");
+  const pjTotal = pjCat ? [...selectedBreakfasts].reduce((s,id)=>{
+    const m=pjCat.meals.find(x=>x.id===id);
+    return m ? s + m.pricePerPortion*7 : s;
+  },0) : 0;
   document.getElementById("count-out").textContent=filled+" / 14";
-  document.getElementById("cost-out").textContent=fmt.format(total);
+  document.getElementById("cost-out").textContent=fmt.format(mainTotal+pjTotal);
 }
 
 // ─── renderAll ────────────────────────────────────────────────────────────────

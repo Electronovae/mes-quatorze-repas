@@ -10,7 +10,7 @@
           "id": "volaille-1",
           "name": "Poulet teriyaki maison, riz, brocolis",
           "benefit": "Protéine maigre et fibres du brocoli, sauce maison pour limiter le sel et le sucre.",
-          "pricePerPortion": 2.8,
+          "pricePerPortion": 1.96,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -60,7 +60,7 @@
           "id": "volaille-2",
           "name": "Poulet à la coréenne allégé, riz, légumes sautés",
           "benefit": "Bien moins de sel que la version classique, légumes sautés pour les fibres.",
-          "pricePerPortion": 2.9,
+          "pricePerPortion": 2.03,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -105,7 +105,7 @@
           "id": "volaille-3",
           "name": "Wok de poulet, légumes, sauce soja réduite en sel",
           "benefit": "Grosse densité de légumes pour peu de calories.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -150,7 +150,7 @@
           "id": "volaille-4",
           "name": "Brochettes tandoori, légumes grillés, semoule",
           "benefit": "Marinade au yaourt et épices, pas besoin de sel ajouté.",
-          "pricePerPortion": 2.7,
+          "pricePerPortion": 1.89,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -195,7 +195,7 @@
           "id": "volaille-5",
           "name": "Tajine de poulet, abricots secs, carottes, semoule",
           "benefit": "Parfums d'épices sans sel ajouté, fibres des carottes.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -245,7 +245,7 @@
           "id": "volaille-6",
           "name": "Escalope de dinde, purée de patate douce, haricots verts",
           "benefit": "La volaille la plus maigre, index glycémique modéré de la patate douce.",
-          "pricePerPortion": 2.3,
+          "pricePerPortion": 1.61,
           "ingredients": [
             {
               "name": "Escalope de dinde",
@@ -280,7 +280,7 @@
           "id": "volaille-7",
           "name": "Poulet curry coco léger, riz",
           "benefit": "Version allégée du curry coco classique.",
-          "pricePerPortion": 2.9,
+          "pricePerPortion": 2.03,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -324,7 +324,7 @@
         {
           "name": "Poulet basquaise allégé, riz",
           "benefit": "Plat mijoté riche en légumes, peu de matière grasse ajoutée.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -369,7 +369,7 @@
         {
           "name": "Suprême de poulet à la moutarde légère, haricots verts, pommes de terre",
           "benefit": "Sauce moutarde-yaourt sans crème, peu de sel.",
-          "pricePerPortion": 2.7,
+          "pricePerPortion": 1.89,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -414,7 +414,7 @@
         {
           "name": "Poulet au citron et romarin, semoule, courgettes",
           "benefit": "Aromates au lieu du sel, plat léger et parfumé.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -459,7 +459,7 @@
         {
           "name": "Émincé de poulet à l'orientale, boulgour, courgettes",
           "benefit": "Épices à la place du sel, boulgour riche en fibres.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -504,7 +504,7 @@
         {
           "name": "Brochettes de poulet teriyaki, riz, edamame",
           "benefit": "Variante en brochettes du teriyaki, pratique pour varier la présentation.",
-          "pricePerPortion": 2.8,
+          "pricePerPortion": 1.96,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -549,7 +549,7 @@
         {
           "name": "Poulet chasseur allégé, riz",
           "benefit": "Sauce tomate-champignons sans crème ni vin en excès.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -594,7 +594,7 @@
         {
           "name": "Wrap de poulet effiloché, tortilla complète, crudités, yaourt",
           "benefit": "Format pratique pour un repas sur le pouce, sauce yaourt à la place de la mayonnaise.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -634,7 +634,7 @@
         {
           "name": "Poulet rôti aux herbes, pommes de terre grenaille, haricots verts",
           "benefit": "Cuisson au four sans matière grasse ajoutée.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Blanc de poulet ou cuisse",
@@ -674,7 +674,7 @@
         {
           "name": "Poulet à l'estragon allégé, riz, petits pois",
           "benefit": "Sauce à l'estragon allégée au yaourt plutôt qu'à la crème.",
-          "pricePerPortion": 2.7,
+          "pricePerPortion": 1.89,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -719,7 +719,7 @@
         {
           "name": "Sauté de poulet aux poivrons et oignons, riz",
           "benefit": "Plat simple et rapide, riche en légumes colorés.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -759,7 +759,7 @@
         {
           "name": "Poulet mariné au paprika fumé, semoule, carottes",
           "benefit": "Marinade aux épices fumées pour du goût sans sel.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -799,7 +799,7 @@
         {
           "name": "Dinde à la provençale, pâtes complètes",
           "benefit": "Volaille la plus maigre avec une sauce tomate maison peu salée.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Escalope de dinde",
@@ -839,7 +839,7 @@
         {
           "name": "Poulet satay, riz, concombre",
           "benefit": "Sauce cacahuète maison en petite quantité, moins sucrée que la version restaurant.",
-          "pricePerPortion": 2.9,
+          "pricePerPortion": 2.03,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -893,7 +893,7 @@
           "id": "legumineuses-1",
           "name": "Dahl de lentilles corail et pois cassés, riz",
           "benefit": "Deux légumineuses combinées dans le même plat pour varier les profils de fibres et les acides aminés.",
-          "pricePerPortion": 1.7,
+          "pricePerPortion": 1.19,
           "ingredients": [
             {
               "name": "Lentilles corail sèches",
@@ -945,7 +945,7 @@
           "id": "legumineuses-2",
           "name": "Chana masala, pois chiches et lentilles vertes, épinards, riz",
           "benefit": "Même principe: deux légumineuses qui se complètent dans l'assiette.",
-          "pricePerPortion": 1.85,
+          "pricePerPortion": 1.29,
           "ingredients": [
             {
               "name": "Pois chiches secs",
@@ -997,7 +997,7 @@
           "id": "legumineuses-3",
           "name": "Chili, haricots rouges et pois chiches, maïs, poivrons",
           "benefit": "Mélange de légumineuses, aucune viande, très riche en fibres.",
-          "pricePerPortion": 1.75,
+          "pricePerPortion": 1.22,
           "ingredients": [
             {
               "name": "Haricots rouges secs",
@@ -1049,7 +1049,7 @@
           "id": "legumineuses-4",
           "name": "Salade tiède de lentilles et pois chiches, tomates, oignon rouge",
           "benefit": "Plat froid pratique, deux légumineuses pour varier les apports.",
-          "pricePerPortion": 1.65,
+          "pricePerPortion": 1.15,
           "ingredients": [
             {
               "name": "Lentilles sèches",
@@ -1096,7 +1096,7 @@
           "id": "legumineuses-5",
           "name": "Buddha bowl patate douce, pois chiches et edamame, houmous, quinoa",
           "benefit": "Trois sources de légumineuses, très forte densité de fibres.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Patate douce",
@@ -1143,7 +1143,7 @@
           "id": "legumineuses-6",
           "name": "Curry de légumes, lentilles corail et haricots blancs, riz",
           "benefit": "Encore deux légumineuses associées, sans viande.",
-          "pricePerPortion": 1.8,
+          "pricePerPortion": 1.26,
           "ingredients": [
             {
               "name": "Lentilles corail sèches",
@@ -1194,7 +1194,7 @@
         {
           "name": "Houmous de pois chiches et lentilles, crudités, pain complet",
           "benefit": "Houmous maison combinant deux légumineuses, riche en fibres.",
-          "pricePerPortion": 1.5,
+          "pricePerPortion": 1.05,
           "ingredients": [
             {
               "name": "Pois chiches secs",
@@ -1236,7 +1236,7 @@
         {
           "name": "Curry de pois chiches et haricots rouges, épinards, riz",
           "benefit": "Deux légumineuses associées, riche en fibres et sans viande.",
-          "pricePerPortion": 1.75,
+          "pricePerPortion": 1.22,
           "ingredients": [
             {
               "name": "Pois chiches secs",
@@ -1283,7 +1283,7 @@
         {
           "name": "Soupe de lentilles corail et pois cassés, carottes",
           "benefit": "Soupe réconfortante à deux légumineuses, très peu de sel nécessaire.",
-          "pricePerPortion": 1.4,
+          "pricePerPortion": 0.98,
           "ingredients": [
             {
               "name": "Lentilles corail sèches",
@@ -1325,7 +1325,7 @@
         {
           "name": "Salade de haricots blancs et flageolets, tomates, basilic",
           "benefit": "Salade froide pratique, deux légumineuses pour varier les fibres.",
-          "pricePerPortion": 1.6,
+          "pricePerPortion": 1.12,
           "ingredients": [
             {
               "name": "Haricots blancs secs",
@@ -1372,7 +1372,7 @@
         {
           "name": "Galettes de pois chiches et lentilles, salade",
           "benefit": "Version maison des galettes végétales, deux légumineuses pour la texture et les fibres.",
-          "pricePerPortion": 1.7,
+          "pricePerPortion": 1.19,
           "ingredients": [
             {
               "name": "Pois chiches secs",
@@ -1414,7 +1414,7 @@
         {
           "name": "Riz cantonais aux légumes et edamame, oeuf",
           "benefit": "Edamame comme source de légumineuse dans un plat familier.",
-          "pricePerPortion": 1.8,
+          "pricePerPortion": 1.26,
           "ingredients": [
             {
               "name": "Riz cru",
@@ -1461,7 +1461,7 @@
         {
           "name": "Tacos de haricots noirs et maïs, tortilla complète, salade",
           "benefit": "Deux légumineuses pour un repas mexicain léger et sans viande.",
-          "pricePerPortion": 1.65,
+          "pricePerPortion": 1.15,
           "ingredients": [
             {
               "name": "Haricots noirs secs",
@@ -1503,7 +1503,7 @@
         {
           "name": "Velouté de lentilles corail et pois chiches, croutons complets",
           "benefit": "Velouté à deux légumineuses, fibres élevées pour peu de calories.",
-          "pricePerPortion": 1.5,
+          "pricePerPortion": 1.05,
           "ingredients": [
             {
               "name": "Lentilles corail sèches",
@@ -1545,7 +1545,7 @@
         {
           "name": "Poêlée de flageolets et haricots verts, tomates",
           "benefit": "Association légumineuse et légume vert frais, très digeste.",
-          "pricePerPortion": 1.5,
+          "pricePerPortion": 1.05,
           "ingredients": [
             {
               "name": "Flageolets secs",
@@ -1587,7 +1587,7 @@
         {
           "name": "Curry de lentilles vertes et pois chiches, épinards, riz",
           "benefit": "Encore une association de deux légumineuses pour varier les apports en fibres.",
-          "pricePerPortion": 1.75,
+          "pricePerPortion": 1.22,
           "ingredients": [
             {
               "name": "Lentilles vertes sèches",
@@ -1634,7 +1634,7 @@
         {
           "name": "Salade de pois chiches et edamame, concombre, menthe",
           "benefit": "Salade fraîche à deux légumineuses, idéale en été.",
-          "pricePerPortion": 1.7,
+          "pricePerPortion": 1.19,
           "ingredients": [
             {
               "name": "Pois chiches secs",
@@ -1681,7 +1681,7 @@
         {
           "name": "Chili sin carne, haricots noirs et rouges, poivrons",
           "benefit": "Variante du chili avec deux types de haricots, sans viande.",
-          "pricePerPortion": 1.7,
+          "pricePerPortion": 1.19,
           "ingredients": [
             {
               "name": "Haricots noirs secs",
@@ -1728,7 +1728,7 @@
         {
           "name": "Couscous de légumineuses, légumes, semoule complète",
           "benefit": "Version végétarienne du couscous, deux légumineuses pour les protéines.",
-          "pricePerPortion": 1.8,
+          "pricePerPortion": 1.26,
           "ingredients": [
             {
               "name": "Pois chiches secs",
@@ -1770,7 +1770,7 @@
         {
           "name": "Dahl de lentilles jaunes et pois chiches, riz complet",
           "benefit": "Variante du dahl avec des lentilles jaunes, toujours deux légumineuses associées.",
-          "pricePerPortion": 1.6,
+          "pricePerPortion": 1.12,
           "ingredients": [
             {
               "name": "Lentilles jaunes sèches",
@@ -1826,7 +1826,7 @@
           "id": "poisson-maigre-1",
           "name": "Papillote de colin, citron, herbes, légumes vapeur, riz",
           "benefit": "Cuisson sans matière grasse, quasiment sans sel.",
-          "pricePerPortion": 2.1,
+          "pricePerPortion": 1.47,
           "ingredients": [
             {
               "name": "Filet de colin",
@@ -1873,7 +1873,7 @@
           "id": "poisson-maigre-2",
           "name": "Crevettes poêlées, ail, citron, courgettes, riz",
           "benefit": "Très peu de graisses saturées, riche en protéines.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Crevettes décortiquées",
@@ -1920,7 +1920,7 @@
           "id": "poisson-maigre-3",
           "name": "Curry de poisson blanc, lait de coco léger, légumes",
           "benefit": "Poisson maigre, épices pour le goût sans ajouter de sel.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Filet de colin ou cabillaud",
@@ -1962,7 +1962,7 @@
           "id": "poisson-maigre-4",
           "name": "Riz, sauce hollandaise allégée, poisson blanc, brocolis",
           "benefit": "Version plus légère de ton classique, sauce réduite en beurre.",
-          "pricePerPortion": 2.3,
+          "pricePerPortion": 1.61,
           "ingredients": [
             {
               "name": "Filet de poisson blanc",
@@ -2004,7 +2004,7 @@
           "id": "poisson-maigre-5",
           "name": "Cabillaud poêlé, purée de pommes de terre, poireaux",
           "benefit": "Poireaux riches en fibres, cuisson sans excès de matière grasse.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Filet de cabillaud",
@@ -2041,7 +2041,7 @@
           "id": "poisson-maigre-6",
           "name": "Pad thaï maison aux crevettes",
           "benefit": "Bien moins sucré et salé que la version restaurant.",
-          "pricePerPortion": 2.8,
+          "pricePerPortion": 1.96,
           "ingredients": [
             {
               "name": "Crevettes décortiquées",
@@ -2092,7 +2092,7 @@
         {
           "name": "Tartare de poisson blanc mariné au citron, riz, concombre",
           "benefit": "Préparation crue marinée, sans matière grasse de cuisson.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Filet de poisson blanc très frais",
@@ -2134,7 +2134,7 @@
         {
           "name": "Brochettes de crevettes marinées, riz, légumes grillés",
           "benefit": "Marinade ail-citron sans sel ajouté.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Crevettes décortiquées",
@@ -2181,7 +2181,7 @@
         {
           "name": "Filet de sole meunière allégée, pommes de terre vapeur, haricots verts",
           "benefit": "Version allégée de la meunière, peu de beurre utilisé.",
-          "pricePerPortion": 2.7,
+          "pricePerPortion": 1.89,
           "ingredients": [
             {
               "name": "Filet de sole",
@@ -2223,7 +2223,7 @@
         {
           "name": "Curry de crevettes au lait de coco léger, riz",
           "benefit": "Crustacé maigre, lait de coco en petite quantité.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Crevettes décortiquées",
@@ -2265,7 +2265,7 @@
         {
           "name": "Soupe thaï de crevettes, nouilles de riz",
           "benefit": "Bouillon parfumé sans sel ajouté, léger pour le soir.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Crevettes décortiquées",
@@ -2307,7 +2307,7 @@
         {
           "name": "Merlu poêlé, purée de céleri-rave, brocolis",
           "benefit": "Purée de céleri-rave en alternative à la pomme de terre, faible en sel.",
-          "pricePerPortion": 2.2,
+          "pricePerPortion": 1.54,
           "ingredients": [
             {
               "name": "Filet de merlu",
@@ -2344,7 +2344,7 @@
         {
           "name": "Riz cantonais aux crevettes et petits pois",
           "benefit": "Plat complet et léger, peu de matière grasse ajoutée.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Crevettes décortiquées",
@@ -2391,7 +2391,7 @@
         {
           "name": "Salade de la mer, vinaigrette citronnée",
           "benefit": "Salade froide pratique, riche en protéines maigres.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Crevettes décortiquées",
@@ -2433,7 +2433,7 @@
         {
           "name": "Filet de lieu noir vapeur, sauce citron-herbes, riz, courgettes",
           "benefit": "Cuisson vapeur, aucune matière grasse de cuisson nécessaire.",
-          "pricePerPortion": 2.2,
+          "pricePerPortion": 1.54,
           "ingredients": [
             {
               "name": "Filet de lieu noir",
@@ -2480,7 +2480,7 @@
         {
           "name": "Brandade légère de morue, pommes de terre, lait écrémé",
           "benefit": "Version allégée d'un classique, lait écrémé à la place de la crème.",
-          "pricePerPortion": 2.0,
+          "pricePerPortion": 1.4,
           "ingredients": [
             {
               "name": "Morue dessalée",
@@ -2522,7 +2522,7 @@
         {
           "name": "Wok de crevettes et légumes, sauce soja réduite en sel, nouilles",
           "benefit": "Plat complet en une poêlée, peu de matière grasse.",
-          "pricePerPortion": 2.7,
+          "pricePerPortion": 1.89,
           "ingredients": [
             {
               "name": "Crevettes décortiquées",
@@ -2564,7 +2564,7 @@
         {
           "name": "Truite vapeur, citron, amandes, riz, haricots verts",
           "benefit": "Quelques amandes pour le croquant, sans excès de matière grasse.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Filet de truite",
@@ -2611,7 +2611,7 @@
         {
           "name": "Calamars sautés à l'ail et au persil, riz, salade",
           "benefit": "Fruit de mer maigre, cuisson rapide à feu vif.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Calamars",
@@ -2658,7 +2658,7 @@
         {
           "name": "Cabillaud à la provençale, semoule",
           "benefit": "Sauce tomate maison aux herbes, peu de sel grâce aux aromates.",
-          "pricePerPortion": 2.3,
+          "pricePerPortion": 1.61,
           "ingredients": [
             {
               "name": "Filet de cabillaud",
@@ -2714,7 +2714,7 @@
           "id": "poisson-gras-1",
           "name": "Pâtes au saumon allégées, yaourt à la place de la crème",
           "benefit": "Oméga-3 du saumon, moins de graisses saturées: utile aussi pour ton cholestérol.",
-          "pricePerPortion": 3.0,
+          "pricePerPortion": 2.1,
           "ingredients": [
             {
               "name": "Saumon",
@@ -2758,7 +2758,7 @@
           "id": "poisson-gras-2",
           "name": "Maquereau grillé ou en conserve, pommes de terre vapeur, salade",
           "benefit": "Le poisson gras le moins cher, riche en EPA et DHA.",
-          "pricePerPortion": 2.0,
+          "pricePerPortion": 1.4,
           "ingredients": [
             {
               "name": "Maquereau (frais ou en conserve)",
@@ -2792,7 +2792,7 @@
           "id": "poisson-gras-3",
           "name": "Sardines en conserve, salade de tomates, pain complet",
           "benefit": "La solution la plus économique pour faire le plein d'oméga-3.",
-          "pricePerPortion": 1.7,
+          "pricePerPortion": 1.19,
           "ingredients": [
             {
               "name": "Sardines en conserve",
@@ -2825,7 +2825,7 @@
           "id": "poisson-gras-4",
           "name": "Poke bowl saumon, edamame, concombre, riz vinaigré",
           "benefit": "Sans avocat: edamame et concombre apportent fraîcheur et texture.",
-          "pricePerPortion": 3.5,
+          "pricePerPortion": 2.45,
           "ingredients": [
             {
               "name": "Saumon",
@@ -2869,7 +2869,7 @@
           "id": "poisson-gras-5",
           "name": "Risotto au saumon fumé et petits pois",
           "benefit": "Option plus gourmande, saumon fumé en petite quantité pour limiter le sel.",
-          "pricePerPortion": 3.1,
+          "pricePerPortion": 2.17,
           "ingredients": [
             {
               "name": "Saumon fumé",
@@ -2912,7 +2912,7 @@
         {
           "name": "Saumon teriyaki au four, riz, brocolis",
           "benefit": "Cuisson au four sans matière grasse ajoutée, riche en oméga-3.",
-          "pricePerPortion": 3.2,
+          "pricePerPortion": 2.24,
           "ingredients": [
             {
               "name": "Saumon",
@@ -2956,7 +2956,7 @@
         {
           "name": "Truite saumonée grillée, pommes de terre vapeur, salade",
           "benefit": "Alternative au saumon classique, également riche en oméga-3.",
-          "pricePerPortion": 2.8,
+          "pricePerPortion": 1.96,
           "ingredients": [
             {
               "name": "Filet de truite saumonée",
@@ -2990,7 +2990,7 @@
         {
           "name": "Tartare de saumon au citron et aneth, riz, concombre",
           "benefit": "Préparation crue, oméga-3 préservés sans cuisson.",
-          "pricePerPortion": 3.3,
+          "pricePerPortion": 2.31,
           "ingredients": [
             {
               "name": "Saumon très frais",
@@ -3034,7 +3034,7 @@
         {
           "name": "Maquereau mariné façon escabèche légère, pommes de terre, salade",
           "benefit": "Préparation marinée économique, toujours riche en oméga-3.",
-          "pricePerPortion": 2.0,
+          "pricePerPortion": 1.4,
           "ingredients": [
             {
               "name": "Maquereau",
@@ -3078,7 +3078,7 @@
         {
           "name": "Pavé de thon mi-cuit, riz vinaigré, edamame",
           "benefit": "Thon frais riche en oméga-3, cuisson rapide pour rester tendre.",
-          "pricePerPortion": 3.4,
+          "pricePerPortion": 2.38,
           "ingredients": [
             {
               "name": "Thon frais",
@@ -3117,7 +3117,7 @@
         {
           "name": "Saumon en papillote, citron et herbes, légumes vapeur",
           "benefit": "Cuisson en papillote sans matière grasse ajoutée.",
-          "pricePerPortion": 3.0,
+          "pricePerPortion": 2.1,
           "ingredients": [
             {
               "name": "Saumon",
@@ -3156,7 +3156,7 @@
         {
           "name": "Sardines grillées, pommes de terre, salade de tomates",
           "benefit": "Sardines fraîches grillées, alternative économique au saumon.",
-          "pricePerPortion": 2.2,
+          "pricePerPortion": 1.54,
           "ingredients": [
             {
               "name": "Sardines fraîches",
@@ -3190,7 +3190,7 @@
         {
           "name": "Curry de saumon au lait de coco léger, riz",
           "benefit": "Curry parfumé, lait de coco en petite quantité.",
-          "pricePerPortion": 3.1,
+          "pricePerPortion": 2.17,
           "ingredients": [
             {
               "name": "Saumon",
@@ -3229,7 +3229,7 @@
         {
           "name": "Tartines de sardines écrasées, pain complet, tomates",
           "benefit": "Option rapide et économique pour les oméga-3.",
-          "pricePerPortion": 1.5,
+          "pricePerPortion": 1.05,
           "ingredients": [
             {
               "name": "Sardines en conserve",
@@ -3263,7 +3263,7 @@
         {
           "name": "Saumon poêlé, lentilles corail, épinards",
           "benefit": "Association poisson gras et légumineuse, repas complet en fibres et oméga-3.",
-          "pricePerPortion": 2.9,
+          "pricePerPortion": 2.03,
           "ingredients": [
             {
               "name": "Saumon",
@@ -3297,7 +3297,7 @@
         {
           "name": "Maquereau au four, pommes de terre, oignons",
           "benefit": "Cuisson au four simple, pas de matière grasse ajoutée.",
-          "pricePerPortion": 2.0,
+          "pricePerPortion": 1.4,
           "ingredients": [
             {
               "name": "Maquereau",
@@ -3330,7 +3330,7 @@
         {
           "name": "Wok de saumon et légumes, sauce soja réduite en sel, riz",
           "benefit": "Façon différente de cuisiner le saumon, beaucoup de légumes.",
-          "pricePerPortion": 3.0,
+          "pricePerPortion": 2.1,
           "ingredients": [
             {
               "name": "Saumon",
@@ -3369,7 +3369,7 @@
         {
           "name": "Truite fumée, salade de pommes de terre, vinaigrette légère",
           "benefit": "Option froide pratique, toujours riche en oméga-3.",
-          "pricePerPortion": 2.7,
+          "pricePerPortion": 1.89,
           "ingredients": [
             {
               "name": "Truite fumée",
@@ -3403,7 +3403,7 @@
         {
           "name": "Hareng mariné, pommes de terre vapeur, salade verte",
           "benefit": "Poisson gras traditionnel, déjà mariné donc sans cuisson nécessaire.",
-          "pricePerPortion": 1.9,
+          "pricePerPortion": 1.33,
           "ingredients": [
             {
               "name": "Hareng mariné",
@@ -3436,7 +3436,7 @@
         {
           "name": "Saumon grillé, riz complet, petits pois",
           "benefit": "Version simple et rapide, riz complet pour plus de fibres.",
-          "pricePerPortion": 3.0,
+          "pricePerPortion": 2.1,
           "ingredients": [
             {
               "name": "Saumon",
@@ -3478,7 +3478,7 @@
           "id": "viande-rouge-1",
           "name": "Boeuf bourguignon allégé, carottes, champignons, pommes de terre",
           "benefit": "Mijoté longuement avec peu de matière grasse ajoutée, riche en fer.",
-          "pricePerPortion": 3.2,
+          "pricePerPortion": 2.24,
           "ingredients": [
             {
               "name": "Boeuf à mijoter",
@@ -3523,7 +3523,7 @@
           "id": "viande-rouge-2",
           "name": "Foie de volaille poêlé, pommes de terre vapeur, oignons",
           "benefit": "Abat que tu apprécies, très riche en fer, naturellement maigre.",
-          "pricePerPortion": 2.0,
+          "pricePerPortion": 1.4,
           "ingredients": [
             {
               "name": "Foie de volaille",
@@ -3553,7 +3553,7 @@
           "id": "viande-rouge-3",
           "name": "Boeuf, frites de patate douce au four, sauce au bleu allégée",
           "benefit": "Cuisson au four plutôt qu'en friture, sauce en petite quantité.",
-          "pricePerPortion": 3.4,
+          "pricePerPortion": 2.38,
           "ingredients": [
             {
               "name": "Boeuf (steak ou bavette)",
@@ -3583,7 +3583,7 @@
           "id": "viande-rouge-4",
           "name": "Steak haché à 5 pour cent, purée de patate douce, haricots verts",
           "benefit": "Le steak haché le plus maigre du rayon.",
-          "pricePerPortion": 2.7,
+          "pricePerPortion": 1.89,
           "ingredients": [
             {
               "name": "Steak haché 5 pour cent",
@@ -3613,7 +3613,7 @@
           "id": "viande-rouge-5",
           "name": "Rognons sautés, riz, champignons",
           "benefit": "Autre abat apprécié, très maigre et riche en fer.",
-          "pricePerPortion": 2.1,
+          "pricePerPortion": 1.47,
           "ingredients": [
             {
               "name": "Rognons",
@@ -3642,7 +3642,7 @@
         {
           "name": "Boeuf à la provençale, semoule",
           "benefit": "Mijoté à la tomate, peu de matière grasse ajoutée.",
-          "pricePerPortion": 3.0,
+          "pricePerPortion": 2.1,
           "ingredients": [
             {
               "name": "Boeuf à mijoter",
@@ -3677,7 +3677,7 @@
         {
           "name": "Joue de boeuf mijotée, purée de pommes de terre, carottes",
           "benefit": "Morceau naturellement maigre une fois bien mijoté, riche en fer.",
-          "pricePerPortion": 2.8,
+          "pricePerPortion": 1.96,
           "ingredients": [
             {
               "name": "Joue de boeuf",
@@ -3712,7 +3712,7 @@
         {
           "name": "Langue de boeuf sauce légère, pommes de terre, haricots verts",
           "benefit": "Abat apprécié, naturellement maigre une fois cuit longuement.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Langue de boeuf",
@@ -3741,7 +3741,7 @@
         {
           "name": "Steak de boeuf grillé, légumes grillés, pommes de terre",
           "benefit": "Cuisson simple à la poêle ou au grill, sans sauce grasse.",
-          "pricePerPortion": 3.2,
+          "pricePerPortion": 2.24,
           "ingredients": [
             {
               "name": "Steak de boeuf",
@@ -3771,7 +3771,7 @@
         {
           "name": "Boeuf sauté aux légumes, sauce soja réduite en sel, riz",
           "benefit": "Façon asiatique de cuisiner le boeuf, beaucoup de légumes.",
-          "pricePerPortion": 3.0,
+          "pricePerPortion": 2.1,
           "ingredients": [
             {
               "name": "Boeuf à sauter",
@@ -3806,7 +3806,7 @@
         {
           "name": "Boulettes de boeuf maigre, sauce tomate légère, riz",
           "benefit": "Boulettes maison avec une viande maigre, sauce tomate sans excès de sel.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Boeuf haché 5 pour cent",
@@ -3836,7 +3836,7 @@
         {
           "name": "Foie de veau poêlé, pommes de terre, oignons",
           "benefit": "Abat très riche en fer, naturellement maigre.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Foie de veau",
@@ -3866,7 +3866,7 @@
         {
           "name": "Carpaccio de boeuf, roquette, parmesan, citron",
           "benefit": "Viande crue donc sans matière grasse de cuisson, à réserver à une viande de qualité.",
-          "pricePerPortion": 3.3,
+          "pricePerPortion": 2.31,
           "ingredients": [
             {
               "name": "Boeuf à carpaccio",
@@ -3901,7 +3901,7 @@
         {
           "name": "Boeuf braisé aux carottes, pommes de terre vapeur",
           "benefit": "Mijoté classique allégé, riche en légumes.",
-          "pricePerPortion": 2.9,
+          "pricePerPortion": 2.03,
           "ingredients": [
             {
               "name": "Boeuf à braiser",
@@ -3936,7 +3936,7 @@
         {
           "name": "Rôti de boeuf maigre, légumes rôtis, pommes de terre",
           "benefit": "Cuisson au four sans ajout de matière grasse.",
-          "pricePerPortion": 3.1,
+          "pricePerPortion": 2.17,
           "ingredients": [
             {
               "name": "Rôti de boeuf maigre",
@@ -3966,7 +3966,7 @@
         {
           "name": "Émincé de boeuf à la moutarde légère, riz, haricots verts",
           "benefit": "Sauce moutarde-yaourt sans crème.",
-          "pricePerPortion": 3.0,
+          "pricePerPortion": 2.1,
           "ingredients": [
             {
               "name": "Boeuf à émincer",
@@ -4006,7 +4006,7 @@
         {
           "name": "Brochettes de boeuf et légumes grillés, semoule",
           "benefit": "Format brochettes pratique, beaucoup de légumes grillés.",
-          "pricePerPortion": 3.1,
+          "pricePerPortion": 2.17,
           "ingredients": [
             {
               "name": "Boeuf à brochette",
@@ -4036,7 +4036,7 @@
         {
           "name": "Foie de génisse poêlé, purée de pommes de terre, oignons",
           "benefit": "Autre option d'abat riche en fer et naturellement maigre.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Foie de génisse",
@@ -4066,7 +4066,7 @@
         {
           "name": "Pot-au-feu léger, bouillon",
           "benefit": "Plat mijoté traditionnel, naturellement pauvre en matière grasse ajoutée.",
-          "pricePerPortion": 3.0,
+          "pricePerPortion": 2.1,
           "ingredients": [
             {
               "name": "Boeuf à pot-au-feu",
@@ -4101,7 +4101,7 @@
         {
           "name": "Steak haché grillé, poêlée de courgettes et poivrons, riz",
           "benefit": "Poêlée de légumes colorés avec une viande maigre grillée.",
-          "pricePerPortion": 2.7,
+          "pricePerPortion": 1.89,
           "ingredients": [
             {
               "name": "Steak haché 5 pour cent",
@@ -4150,7 +4150,7 @@
           "id": "plaisir-1",
           "name": "Carbonara allégée, dinde fumée et yaourt",
           "benefit": "Bien moins de sel et de graisses saturées que la version lardons-crème.",
-          "pricePerPortion": 2.1,
+          "pricePerPortion": 1.47,
           "ingredients": [
             {
               "name": "Pâtes crues",
@@ -4190,7 +4190,7 @@
           "id": "plaisir-2",
           "name": "Kebab maison poulet, pain complet, crudités, sauce yaourt",
           "benefit": "Sans la sauce blanche industrielle ni la viande grasse du kebab classique.",
-          "pricePerPortion": 2.8,
+          "pricePerPortion": 1.96,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -4230,7 +4230,7 @@
           "id": "plaisir-3",
           "name": "Tartiflette allégée, reblochon réduit, dinde, fromage blanc",
           "benefit": "Le plaisir reste, la portion de fromage gras est nettement réduite.",
-          "pricePerPortion": 3.5,
+          "pricePerPortion": 2.45,
           "ingredients": [
             {
               "name": "Pommes de terre",
@@ -4270,7 +4270,7 @@
           "id": "plaisir-4",
           "name": "Gnocchis, sauce légère au bleu, allumettes de dinde",
           "benefit": "Sauce allégée au yaourt, dinde à la place des lardons.",
-          "pricePerPortion": 2.7,
+          "pricePerPortion": 1.89,
           "ingredients": [
             {
               "name": "Gnocchis",
@@ -4305,7 +4305,7 @@
           "id": "plaisir-5",
           "name": "Pizza maison saumon-épinard, pâte fine",
           "benefit": "Fromage en quantité raisonnable, garniture riche en oméga-3.",
-          "pricePerPortion": 3.0,
+          "pricePerPortion": 2.1,
           "ingredients": [
             {
               "name": "Pâte à pizza fine",
@@ -4340,7 +4340,7 @@
           "id": "plaisir-6",
           "name": "Croque-monsieur pain complet, peu de fromage, salade",
           "benefit": "Pain complet pour les fibres, fromage limité à une portion raisonnable.",
-          "pricePerPortion": 2.2,
+          "pricePerPortion": 1.54,
           "ingredients": [
             {
               "name": "Pain complet",
@@ -4375,7 +4375,7 @@
           "id": "plaisir-7",
           "name": "Burger maison poulet, pain complet, frites de patate douce au four",
           "benefit": "Cuisson au four plutôt qu'en friture.",
-          "pricePerPortion": 2.9,
+          "pricePerPortion": 2.03,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -4404,7 +4404,7 @@
         {
           "name": "Quiche allégée jambon-épinards, pâte fine, salade",
           "benefit": "Appareil au lait écrémé plutôt qu'à la crème, fromage limité.",
-          "pricePerPortion": 2.3,
+          "pricePerPortion": 1.61,
           "ingredients": [
             {
               "name": "Pâte à tarte fine",
@@ -4449,7 +4449,7 @@
         {
           "name": "Lasagnes allégées, salade",
           "benefit": "Béchamel maison au lait écrémé, viande maigre, fromage limité.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Pâtes à lasagne",
@@ -4494,7 +4494,7 @@
         {
           "name": "Risotto au jambon et petits pois, parmesan",
           "benefit": "Risotto classique avec jambon dégraissé et parmesan en petite quantité.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Riz cru",
@@ -4539,7 +4539,7 @@
         {
           "name": "Tacos de poulet maison, tortilla complète, crudités, sauce yaourt",
           "benefit": "Sauce yaourt à la place de la crème fraîche, viande maigre.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -4574,7 +4574,7 @@
         {
           "name": "Hachis parmentier allégé, salade",
           "benefit": "Purée allégée au lait écrémé, viande maigre.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Boeuf haché 5 pour cent",
@@ -4609,7 +4609,7 @@
         {
           "name": "Quesadilla poulet-fromage allégée, tortilla complète, salade",
           "benefit": "Fromage limité à une portion raisonnable, viande maigre.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -4644,7 +4644,7 @@
         {
           "name": "Pâtes à la bolognaise allégée, pâtes complètes",
           "benefit": "Viande maigre et tomates maison, moins de sel qu'une sauce industrielle.",
-          "pricePerPortion": 2.3,
+          "pricePerPortion": 1.61,
           "ingredients": [
             {
               "name": "Pâtes complètes crues",
@@ -4679,7 +4679,7 @@
         {
           "name": "Galettes de pommes de terre allégées, saumon fumé, salade",
           "benefit": "Galettes cuites à la poêle avec peu de matière grasse, garniture riche en oméga-3.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Pommes de terre",
@@ -4714,7 +4714,7 @@
         {
           "name": "Wrap césar allégé, tortilla complète",
           "benefit": "Sauce césar maison au yaourt plutôt qu'à la mayonnaise.",
-          "pricePerPortion": 2.4,
+          "pricePerPortion": 1.68,
           "ingredients": [
             {
               "name": "Blanc de poulet",
@@ -4754,7 +4754,7 @@
         {
           "name": "Pizza maison poulet-champignons, pâte fine",
           "benefit": "Fromage en quantité raisonnable, garniture protéinée.",
-          "pricePerPortion": 2.7,
+          "pricePerPortion": 1.89,
           "ingredients": [
             {
               "name": "Pâte à pizza fine",
@@ -4789,7 +4789,7 @@
         {
           "name": "Gratin dauphinois allégé, filet de poisson",
           "benefit": "Lait écrémé à la place de la crème, accompagné d'une protéine maigre.",
-          "pricePerPortion": 2.5,
+          "pricePerPortion": 1.75,
           "ingredients": [
             {
               "name": "Pommes de terre",
@@ -4824,7 +4824,7 @@
         {
           "name": "Risotto chorizo allégé",
           "benefit": "Chorizo en quantité réduite par rapport à la version classique, juste pour le goût fumé.",
-          "pricePerPortion": 2.3,
+          "pricePerPortion": 1.61,
           "ingredients": [
             {
               "name": "Riz cru",
@@ -4864,7 +4864,7 @@
         {
           "name": "Croque-monsieur au saumon, pain complet, salade",
           "benefit": "Variante au saumon fumé du croque classique, fromage limité.",
-          "pricePerPortion": 2.6,
+          "pricePerPortion": 1.82,
           "ingredients": [
             {
               "name": "Pain complet",
@@ -4908,7 +4908,7 @@
           "id": "vegetarien-1",
           "name": "Omelette aux légumes, salade",
           "benefit": "Riche en protéines, presque pas de matière grasse ajoutée.",
-          "pricePerPortion": 1.5,
+          "pricePerPortion": 1.05,
           "ingredients": [
             {
               "name": "Oeufs",
@@ -4945,7 +4945,7 @@
           "id": "vegetarien-2",
           "name": "Soupe miso, tofu, champignons, nouilles soba",
           "benefit": "Léger pour le soir, protéines végétales, attention à ne pas resaler.",
-          "pricePerPortion": 2.1,
+          "pricePerPortion": 1.47,
           "ingredients": [
             {
               "name": "Tofu",
@@ -4987,7 +4987,7 @@
           "id": "vegetarien-3",
           "name": "Gratin de légumes, courgette, poireaux, tomate, peu de fromage",
           "benefit": "Beaucoup de légumes pour peu de fromage.",
-          "pricePerPortion": 1.9,
+          "pricePerPortion": 1.33,
           "ingredients": [
             {
               "name": "Courgettes",
@@ -5029,7 +5029,7 @@
           "id": "vegetarien-4",
           "name": "Risotto aux champignons et petits pois",
           "benefit": "Plat végétarien réconfortant, fibres des champignons et des petits pois.",
-          "pricePerPortion": 2.0,
+          "pricePerPortion": 1.4,
           "ingredients": [
             {
               "name": "Riz cru",
@@ -5076,7 +5076,7 @@
           "id": "vegetarien-5",
           "name": "Tofu sauté, légumes, riz, sauce soja réduite en sel",
           "benefit": "Protéine végétale, sauce allégée en sel.",
-          "pricePerPortion": 1.9,
+          "pricePerPortion": 1.33,
           "ingredients": [
             {
               "name": "Tofu",
@@ -5117,7 +5117,7 @@
         {
           "name": "Curry de légumes et tofu, lait de coco léger, riz",
           "benefit": "Protéine végétale et légumes variés, lait de coco en petite quantité.",
-          "pricePerPortion": 1.9,
+          "pricePerPortion": 1.33,
           "ingredients": [
             {
               "name": "Tofu",
@@ -5164,7 +5164,7 @@
         {
           "name": "Wok de légumes et tofu, sauce soja réduite en sel, nouilles",
           "benefit": "Plat complet en une poêlée, riche en légumes.",
-          "pricePerPortion": 1.9,
+          "pricePerPortion": 1.33,
           "ingredients": [
             {
               "name": "Tofu",
@@ -5206,7 +5206,7 @@
         {
           "name": "Quiche aux légumes et fromage de chèvre allégée, salade",
           "benefit": "Appareil au lait écrémé, fromage de chèvre en petite quantité pour le goût.",
-          "pricePerPortion": 2.0,
+          "pricePerPortion": 1.4,
           "ingredients": [
             {
               "name": "Pâte à tarte fine",
@@ -5258,7 +5258,7 @@
         {
           "name": "Galettes de quinoa et légumes, salade",
           "benefit": "Quinoa riche en protéines complètes pour un plat végétarien équilibré.",
-          "pricePerPortion": 1.7,
+          "pricePerPortion": 1.19,
           "ingredients": [
             {
               "name": "Quinoa cru",
@@ -5300,7 +5300,7 @@
         {
           "name": "Poêlée de courgettes et champignons, oeuf poché",
           "benefit": "Plat léger et rapide, riche en protéines grâce aux oeufs.",
-          "pricePerPortion": 1.4,
+          "pricePerPortion": 0.98,
           "ingredients": [
             {
               "name": "Courgettes",
@@ -5337,7 +5337,7 @@
         {
           "name": "Riz sauté aux légumes et oeuf, sauce soja réduite en sel",
           "benefit": "Plat simple et complet, peu de matière grasse.",
-          "pricePerPortion": 1.6,
+          "pricePerPortion": 1.12,
           "ingredients": [
             {
               "name": "Riz cru",
@@ -5379,7 +5379,7 @@
         {
           "name": "Tarte fine aux légumes, pâte fine",
           "benefit": "Pâte fine, beaucoup de légumes, fromage limité.",
-          "pricePerPortion": 1.9,
+          "pricePerPortion": 1.33,
           "ingredients": [
             {
               "name": "Pâte à pizza ou tarte fine",
@@ -5426,7 +5426,7 @@
         {
           "name": "Velouté de courgettes, croutons complets, fromage frais",
           "benefit": "Velouté léger, fromage frais allégé pour la texture.",
-          "pricePerPortion": 1.4,
+          "pricePerPortion": 0.98,
           "ingredients": [
             {
               "name": "Courgettes",
@@ -5468,7 +5468,7 @@
         {
           "name": "Curry de pommes de terre et épinards, riz",
           "benefit": "Plat indien classique, riche en fibres et en fer végétal.",
-          "pricePerPortion": 1.5,
+          "pricePerPortion": 1.05,
           "ingredients": [
             {
               "name": "Pommes de terre",
@@ -5515,7 +5515,7 @@
         {
           "name": "Soupe de légumes et vermicelles, parmesan",
           "benefit": "Plat léger et réconfortant, riche en légumes.",
-          "pricePerPortion": 1.3,
+          "pricePerPortion": 0.91,
           "ingredients": [
             {
               "name": "Légumes variés",
@@ -5552,7 +5552,7 @@
         {
           "name": "Tofu grillé mariné, riz complet, légumes vapeur",
           "benefit": "Tofu mariné pour plus de goût sans ajouter de sel en excès.",
-          "pricePerPortion": 1.7,
+          "pricePerPortion": 1.19,
           "ingredients": [
             {
               "name": "Tofu",
@@ -5594,7 +5594,7 @@
         {
           "name": "Oeufs cocotte aux épinards et tomates, pain complet",
           "benefit": "Plat simple et rapide, riche en protéines.",
-          "pricePerPortion": 1.4,
+          "pricePerPortion": 0.98,
           "ingredients": [
             {
               "name": "Oeuf",
@@ -5636,7 +5636,7 @@
         {
           "name": "Galette de légumes et fromage frais, salade",
           "benefit": "Galette maison peu grasse, fromage frais allégé en accompagnement.",
-          "pricePerPortion": 1.6,
+          "pricePerPortion": 1.12,
           "ingredients": [
             {
               "name": "Légumes (carotte, courgette)",
@@ -5682,7 +5682,7 @@
         {
           "name": "Poêlée de patate douce et épinards, oeuf au plat",
           "benefit": "Index glycémique modéré de la patate douce, repas simple et nourrissant.",
-          "pricePerPortion": 1.5,
+          "pricePerPortion": 1.05,
           "ingredients": [
             {
               "name": "Patate douce",
@@ -5719,7 +5719,7 @@
         {
           "name": "Risotto aux courgettes et petits pois, parmesan",
           "benefit": "Risotto végétarien léger, parmesan en petite quantité pour le goût.",
-          "pricePerPortion": 1.8,
+          "pricePerPortion": 1.26,
           "ingredients": [
             {
               "name": "Riz cru",
