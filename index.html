@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-title" content="Mes 14 repas">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#F1ECE0">
-<meta name="description" content="Planification de repas hebdomadaire par catégories, avec frigo, nutrition et profil pathologies.">
+<meta name="description" content="Planification de repas hebdomadaire par catégories, avec frigo, nutrition et profil personnalisé.">
 <title>Mes 14 repas</title>
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%232F5D45'/%3E%3Ctext x='60' y='80' font-family='Georgia,serif' font-size='56' font-weight='700' fill='white' text-anchor='middle'%3E14%3C/text%3E%3C/svg%3E">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%232F5D45'/%3E%3Ctext x='60' y='80' font-family='Georgia,serif' font-size='56' font-weight='700' fill='white' text-anchor='middle'%3E14%3C/text%3E%3C/svg%3E">
@@ -19,7 +19,10 @@
 </head>
 <body>
 
-<div class="app-bar"><h1>Mes 14 repas</h1></div>
+<div class="app-bar">
+  <h1>Mes 14 repas</h1>
+  <button class="theme-toggle-btn" id="theme-toggle" aria-label="Changer de thème">🌙</button>
+</div>
 
 <div class="summary-bar">
   <div class="summary-stats">
@@ -32,15 +35,18 @@
   </div>
 </div>
 
+<div class="app-shell">
+
 <!-- Onglet Choisir -->
 <div class="view" id="view-choisir" role="tabpanel">
-  <p class="hint">Touche un plat pour l'ajouter. Les repas avec ✓ correspondent à ton profil pathologique.</p>
-  <div id="categories"></div>
+  <p class="hint">Touche un plat pour l'ajouter. ✓ = correspond à ton profil, 🧊 = déjà (en partie) dans ton frigo.</p>
+  <div id="fridge-filter-bar"></div>
+  <div id="categories" class="categories-grid"></div>
 </div>
 
 <!-- Onglet Ma semaine -->
 <div class="view hidden" id="view-semaine" role="tabpanel">
-  <p class="hint">Touche un repas pour voir ingrédients, nutrition et recette. Les portions ajustent les quantités.</p>
+  <p class="hint">Touche un repas pour voir ingrédients, nutrition et recette. Les portions sont pré-ajustées à ton objectif si ton profil est renseigné.</p>
   <div id="week-list"></div>
 </div>
 
@@ -55,7 +61,7 @@
 
 <!-- Onglet Frigo -->
 <div class="view hidden" id="view-frigo" role="tabpanel">
-  <p class="hint">Note ce que tu as déjà chez toi. Les quantités seront déduites de ta liste de courses.</p>
+  <p class="hint">Note ce que tu as déjà chez toi. Les quantités sont déduites de ta liste de courses et influencent les suggestions de plats.</p>
   <div class="frigo-add-row">
     <input id="frigo-input" type="text" placeholder="Ingrédient…" list="frigo-datalist" class="frigo-input" autocomplete="off">
     <datalist id="frigo-datalist"></datalist>
@@ -79,8 +85,34 @@
 
 <!-- Onglet Profil -->
 <div class="view hidden" id="view-profil" role="tabpanel">
-  <p class="hint">Renseigne ton profil une fois. L'application met en avant les repas adaptés à tes conditions.</p>
+  <p class="hint">Renseigne ton profil une fois. L'application met en avant les repas adaptés et ajuste les portions.</p>
   <div id="profile-content"></div>
+</div>
+
+<!-- Onglet Sources -->
+<div class="view hidden" id="view-sources" role="tabpanel">
+  <div class="sources-content">
+    <h2>D'où viennent ces données ?</h2>
+    <p>Cette application est un outil de planification personnel, pas un dispositif médical. Voici les bases utilisées pour construire ses recommandations :</p>
+
+    <h3>Valeurs nutritionnelles</h3>
+    <p>Les valeurs caloriques et macronutriments (protéines, glucides, lipides, fibres) sont estimées à partir de la table de composition nutritionnelle CIQUAL (ANSES, Agence nationale de sécurité sanitaire de l'alimentation, de l'environnement et du travail). Ce sont des moyennes par ingrédient brut ; elles ne tiennent pas compte des variations entre marques ou modes de cuisson précis.</p>
+
+    <h3>Besoin calorique journalier</h3>
+    <p>Le calcul du besoin énergétique utilise l'équation de Mifflin-St Jeor, une formule largement validée et couramment recommandée pour estimer le métabolisme de base à partir de l'âge, du sexe, du poids et de la taille, multipliée par un facteur d'activité physique. C'est une estimation de population, pas une mesure individuelle : la dépense énergétique réelle varie selon de nombreux facteurs propres à chaque personne.</p>
+
+    <h3>Repères généraux pour les catégories de repas</h3>
+    <p>La structure des catégories (privilégier les légumineuses et le poisson, limiter les portions de viande rouge et les plats plaisir) s'inspire des grandes lignes communément retrouvées dans les recommandations de santé publique sur l'alimentation (par exemple celles du PNNS, Programme National Nutrition Santé, et les repères généraux de l'OMS sur la consommation de fruits, légumes, légumineuses et limitation des sucres et graisses saturées). Ces repères sont génériques et ne remplacent pas un avis individualisé.</p>
+
+    <h3>Profils pathologies</h3>
+    <p>Le marquage des repas par pathologie (hypertriglycéridémie, stéatose hépatique, diabète de type 2, hypertension, obésité, hypercholestérolémie) reflète des principes généraux couramment associés à ces conditions (réduction des sucres rapides et graisses saturées, apport en fibres et oméga-3, contrôle des portions). Ce n'est pas un protocole diététique validé cliniquement.</p>
+
+    <div class="sources-disclaimer">
+      Cet outil ne remplace pas le suivi d'un médecin, d'un.e diététicien.ne ou d'un.e nutritionniste. En cas de pathologie diagnostiquée, les recommandations alimentaires doivent être validées par un professionnel de santé.
+    </div>
+  </div>
+</div>
+
 </div>
 
 <div class="tabbar" role="tablist">
@@ -88,8 +120,9 @@
   <button class="tab-btn"        data-view="semaine"    role="tab" aria-selected="false">Semaine</button>
   <button class="tab-btn"        data-view="courses"    role="tab" aria-selected="false">Courses</button>
   <button class="tab-btn"        data-view="frigo"      role="tab" aria-selected="false">🧊 Frigo</button>
-  <button class="tab-btn"        data-view="petitsdej"  role="tab" aria-selected="false">🌅 Dej</button>
-  <button class="tab-btn"        data-view="profil"     role="tab" aria-selected="false">⚙️</button>
+  <button class="tab-btn"        data-view="petitsdej"  role="tab" aria-selected="false">🌅 Petits-déj</button>
+  <button class="tab-btn"        data-view="profil"     role="tab" aria-selected="false">⚙️ Profil</button>
+  <button class="tab-btn"        data-view="sources"    role="tab" aria-selected="false">📚 Sources</button>
 </div>
 
 <script src="app.js"></script>
