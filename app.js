@@ -46,6 +46,7 @@ let fridgeItems = [];
 let profile     = {personnes:2, pathologies:[], age:null, sexe:"f", poids:null, taille:null, activite:"moderee", exclusions:[]};
 let selectedBreakfasts = new Set();
 let fridgeFilterOn = false;
+let costMode = false;
 const expandedSlots = new Set();
 
 // ─── Persistance ─────────────────────────────────────────────────────────────
@@ -115,6 +116,34 @@ function nutriForIngredient(ing){
     lipides:   data.lipides   * factor,
     fibres:    data.fibres    * factor,
   };
+}
+
+function ingredientPrice(name, qty){
+  const data = INGREDIENTS[name];
+  if(!data || data.price==null) return 0;
+  const factor = data.per==="unite" ? qty : qty/100;
+  return data.price*factor;
+}
+
+// Coût plein d'un plat (toutes les portions, sans tenir compte du frigo)
+function mealFullCost(meal, portions){
+  let cost=0;
+  meal.ingredients.forEach(ing=>cost+=ingredientPrice(ing.name, scaledQty(ing,portions)));
+  return Math.round(cost*100)/100;
+}
+
+// Coût "à acheter" d'un plat pris isolément, en déduisant ce qu'il y a déjà au frigo.
+// Approximation par plat (ne gère pas le partage du stock entre plusieurs plats, voir computeShoppingList pour l'agrégat exact).
+function mealCostToBuy(meal, portions){
+  let cost=0;
+  meal.ingredients.forEach(ing=>{
+    const qty=scaledQty(ing,portions);
+    const f=fridgeEntry(ing.name);
+    let toBuy=qty;
+    if(f && f.unit===ing.unit) toBuy=Math.max(0, qty-f.qty);
+    cost+=ingredientPrice(ing.name, toBuy);
+  });
+  return Math.round(cost*100)/100;
 }
 function nutriForMeal(meal,portions){
   const t = {kcal:0,glucides:0,proteines:0,lipides:0,fibres:0};
@@ -222,7 +251,13 @@ function drawWeek(){
   let picks=[]; mainCats.forEach(cat=>{
     let pool = cat.meals.map((_,i)=>i).filter(i=>!mealExcluded(cat.meals[i]));
     if(pool.length<cat.quota) pool = cat.meals.map((_,i)=>i); // pas assez de plats compatibles, on retombe sur tout
-    shuffle(pool).slice(0,cat.quota).forEach(idx=>picks.push({catId:cat.id,mealIdx:idx,portions:defaultPortionsFor(cat.meals[idx])}));
+    let chosen;
+    if(costMode){
+      chosen = [...pool].sort((a,b)=>mealCostToBuy(cat.meals[a],1)-mealCostToBuy(cat.meals[b],1)).slice(0,cat.quota);
+    } else {
+      chosen = shuffle(pool).slice(0,cat.quota);
+    }
+    chosen.forEach(idx=>picks.push({catId:cat.id,mealIdx:idx,portions:defaultPortionsFor(cat.meals[idx])}));
   });
   week=shuffle(picks); expandedSlots.clear(); saveWeek(); renderAll();
 }
@@ -241,7 +276,9 @@ function renderCategories(){
     const isOpen=openIds.includes(cat.id);
 
     let mealsToShow = cat.meals.map((m,idx)=>({m,idx})).filter(({m})=>!mealExcluded(m));
-    if(hasFridge){
+    if(costMode){
+      mealsToShow.sort((a,b)=>mealCostToBuy(a.m,1)-mealCostToBuy(b.m,1));
+    } else if(hasFridge){
       mealsToShow.sort((a,b)=>{
         const ca=mealFridgeCoverage(a.m), cb=mealFridgeCoverage(b.m);
         return (cb.matched/cb.total) - (ca.matched/ca.total);
@@ -257,13 +294,18 @@ function renderCategories(){
       const cov = hasFridge ? mealFridgeCoverage(m) : null;
       const fridgeBadge = cov && cov.matched>0 ? `<span class="fridge-badge ${cov.full?"fridge-full":""}">${cov.full?"🧊 faisable maintenant":`🧊 ${cov.matched}/${cov.total} en stock`}</span>` : "";
       const profBadge = matchesProfil && profile.pathologies.length>0 ? `<span class="match-badge">✓ ton profil</span>` : "";
+      const fullCost = mealFullCost(m,1);
+      const toBuyCost = costMode ? mealCostToBuy(m,1) : null;
+      const priceHtml = (costMode && toBuyCost!==fullCost)
+        ? `<span class="price"><span class="price-strike">${fmt.format(fullCost)}</span> ${fmt.format(toBuyCost)} à acheter</span>`
+        : `<span class="price">${fmt.format(fullCost)}</span>`;
       return `<div class="meal-card ${matchesProfil&&profile.pathologies.length>0?"meal-match":""}">
         <div class="badge-row">${profBadge}${fridgeBadge}</div>
         <p class="name">${m.name}</p>
         <p class="portion">${m.ingredients.map(i=>qtyFmt(i.qty)+" "+i.unit+" "+i.name).join(", ")}</p>
         <p class="benefit">${m.benefit}</p>
         <div class="row">
-          <span class="price">${fmt.format(m.pricePerPortion)}</span>
+          ${priceHtml}
           <button class="btn add-btn" data-cat="${cat.id}" data-idx="${idx}" ${disabled?"disabled":""}>${disabled?"Quota atteint":"Ajouter"}</button>
         </div>
       </div>`;
@@ -286,12 +328,23 @@ function renderCategories(){
 function renderFridgeFilterBar(){
   const root = document.getElementById("fridge-filter-bar");
   if(!root) return;
-  if(fridgeItems.length===0){ root.innerHTML=""; return; }
-  root.innerHTML = `<label class="fridge-filter-toggle">
-    <input type="checkbox" id="fridge-filter-cb" ${fridgeFilterOn?"checked":""}>
-    Ne montrer que les plats faisables avec mon frigo
+  let html = `<label class="fridge-filter-toggle">
+    <input type="checkbox" id="cost-mode-cb" ${costMode?"checked":""}>
+    💰 Mode courses optimisées (priorise les moins chers, frigo déduit)
   </label>`;
-  document.getElementById("fridge-filter-cb").addEventListener("change",e=>{
+  if(fridgeItems.length>0){
+    html += `<label class="fridge-filter-toggle">
+      <input type="checkbox" id="fridge-filter-cb" ${fridgeFilterOn?"checked":""}>
+      🧊 Ne montrer que les plats faisables avec mon frigo
+    </label>`;
+  }
+  root.innerHTML = html;
+  document.getElementById("cost-mode-cb").addEventListener("change",e=>{
+    costMode = e.target.checked;
+    renderCategories();
+  });
+  const fridgeCb = document.getElementById("fridge-filter-cb");
+  if(fridgeCb) fridgeCb.addEventListener("change",e=>{
     fridgeFilterOn = e.target.checked;
     renderCategories();
   });
@@ -322,7 +375,7 @@ function renderWeek(){
       <div class="slot-top">
         <span class="day">${dayLabel}</span>
         <span class="info"><span class="tag" style="background:var(${cat.colorVar})">${cat.name}</span><span class="mname">${meal.name}</span></span>
-        <span class="mprice">${fmt.format(meal.pricePerPortion*portions)}</span>
+        <span class="mprice">${fmt.format(mealFullCost(meal,portions))}</span>
       </div>
       <div class="slot-controls">
         <div class="portion-stepper">
@@ -355,7 +408,7 @@ function renderWeek(){
       return `<div class="slot slot-pj">
         <div class="slot-top">
           <span class="info"><span class="tag" style="background:var(--cat-petits-dejeuners)">${m.name}</span></span>
-          <span class="mprice">${fmt.format(m.pricePerPortion)}/j</span>
+          <span class="mprice">${fmt.format(mealFullCost(m,1))}/j</span>
         </div>
         <div class="nutri-strip">
           <span>${nutri.kcal} kcal</span><span>${qtyFmt(nutri.proteines)}g prot.</span><span>${qtyFmt(nutri.glucides)}g glu.</span><span>${qtyFmt(nutri.lipides)}g lip.</span><span>${qtyFmt(nutri.fibres)}g fib.</span>
@@ -416,6 +469,25 @@ function fridgeStatus(ing){
   return {status:"partial",toBuy:ing.qty-f.qty,inStock:f.qty};
 }
 
+// Coût réel des courses restantes, calculé sur la liste agrégée (donc sans double-compter le frigo
+// si plusieurs plats partagent le même ingrédient, contrairement à mealCostToBuy plat par plat).
+function shoppingCostToBuy(){
+  const items=computeShoppingList();
+  let total=0;
+  items.forEach(item=>{
+    const {status,toBuy}=fridgeStatus(item);
+    const qty = status==="full" ? 0 : toBuy;
+    total+=ingredientPrice(item.name, qty);
+  });
+  return Math.round(total*100)/100;
+}
+function shoppingFullCost(){
+  const items=computeShoppingList();
+  let total=0;
+  items.forEach(item=>total+=ingredientPrice(item.name, item.qty));
+  return Math.round(total*100)/100;
+}
+
 function renderShoppingList(){
   const root=document.getElementById("shopping-list");
   const items=computeShoppingList();
@@ -426,10 +498,17 @@ function renderShoppingList(){
   const toBuy   = items.filter(i=>fridgeStatus(i).status!=="full");
   const inStock = items.filter(i=>fridgeStatus(i).status==="full");
   const pct = items.length>0 ? Math.round(inStock.length/items.length*100) : 0;
+  const costToBuy = shoppingCostToBuy();
+  const fullCost = shoppingFullCost();
+  const saved = Math.max(0, Math.round((fullCost-costToBuy)*100)/100);
 
   let html=`<div class="completion-bar-wrap">
     <div class="completion-bar-track"><div class="completion-bar-fill" style="width:${pct}%"></div></div>
     <span class="completion-label">${pct}% déjà en stock (${inStock.length}/${items.length})</span>
+  </div>
+  <div class="shopping-cost-summary">
+    <span class="shopping-cost-main">Coût des courses : <strong>${fmt.format(costToBuy)}</strong></span>
+    ${saved>0 ? `<span class="shopping-cost-saved">${fmt.format(saved)} économisés grâce au frigo</span>` : ""}
   </div>`;
 
   if(toBuy.length===0){
@@ -571,7 +650,7 @@ function renderBreakfasts(){
         <p class="pj-name">${m.name}</p>
         <p class="pj-benefit">${m.benefit}</p>
         <div class="pj-row">
-          <span class="price">${fmt.format(m.pricePerPortion)}/j</span>
+          <span class="price">${fmt.format(mealFullCost(m,1))}/j</span>
           <span class="pj-nutri">${nutri.kcal} kcal · ${qtyFmt(nutri.proteines)}g P · ${qtyFmt(nutri.glucides)}g G</span>
         </div>
       </div>
@@ -700,11 +779,11 @@ function renderProfile(){
 
 function renderSummary(){
   const filled=week.filter(Boolean).length;
-  const mainTotal=week.reduce((s,slot)=>slot?s+getCat(slot.catId).meals[slot.mealIdx].pricePerPortion*(slot.portions||1):s,0);
+  const mainTotal=week.reduce((s,slot)=>slot?s+mealFullCost(getCat(slot.catId).meals[slot.mealIdx],slot.portions||1):s,0);
   const pjCat=CATS.find(c=>c.id==="petits-dejeuners");
   const pjTotal = pjCat ? [...selectedBreakfasts].reduce((s,id)=>{
     const m=pjCat.meals.find(x=>x.id===id);
-    return m ? s + m.pricePerPortion*7 : s;
+    return m ? s + mealFullCost(m,1)*7 : s;
   },0) : 0;
   document.getElementById("count-out").textContent=filled+" / 14";
   document.getElementById("cost-out").textContent=fmt.format(mainTotal+pjTotal);
